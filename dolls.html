@@ -1,0 +1,461 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0"><title>陀螺天堂 - 娃娃介紹</title>  <link rel="preconnect" href="https://telegraph-image-1n0.pages.dev" crossorigin>
+  <link rel="dns-prefetch" href="https://telegraph-image-1n0.pages.dev">
+  <link rel="stylesheet" href="style.css">
+  <style>
+    body { background-image:url('https://telegraph-image-1n0.pages.dev/file/AgACAgUAAyEGAAS3SV8sAAIDl2oKsIrQ--LWATlPU2Lr4azsyw-mAAKhD2sbx8dQVB2-s2pJCrnTAQADAgADeQADOwQ.jpg');background-size:cover;background-position:center center;background-attachment:fixed; }
+    .section     { background:rgba(7,6,15,0.82)  !important; }
+    .section-alt { background:rgba(15,12,12,0.88) !important; }
+  </style>
+<style>
+.d-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(200px,1fr));gap:10px;margin-bottom:30px}
+.d-card{padding:10px 12px;border-radius:6px;display:flex;flex-direction:column}
+.d-name{font-weight:bold;font-size:1em;margin-bottom:5px;border-bottom:1px dashed rgba(255,255,255,.1);padding-bottom:4px}
+.d-stat{font-size:0.82em;color:var(--text-muted);line-height:1.7}
+.c-gen{background:rgba(158,158,158,.1);border:1px solid rgba(158,158,158,.2)}.c-gen .d-name{color:#bdbdbd}
+.c-adv{background:rgba(67,160,71,.1);border:1px solid rgba(67,160,71,.2)}.c-adv .d-name{color:#69f0ae}
+.c-rare{background:rgba(30,136,229,.1);border:1px solid rgba(30,136,229,.2)}.c-rare .d-name{color:#82b1ff}
+.c-hero{background:rgba(229,57,53,.1);border:1px solid rgba(229,57,53,.2)}.c-hero .d-name{color:#ff8a80}
+.c-legend{background:rgba(142,36,170,.1);border:1px solid rgba(142,36,170,.2)}.c-legend .d-name{color:#ce93d8}
+.c-myth{background:rgba(249,168,37,.1);border:1px solid rgba(249,168,37,.2)}.c-myth .d-name{color:var(--gold)}
+.c-unique{background:rgba(0,188,212,.1);border:1px solid rgba(0,188,212,.2)}.c-unique .d-name{color:#4dd0e1}
+.d-sec{margin-top:30px;margin-bottom:14px;font-size:1.05em;display:flex;align-items:center;padding:8px 12px;border-radius:6px}
+.d-badge{font-size:.82em;margin-left:auto;padding:2px 10px;border-radius:20px;background:rgba(255,255,255,.08)}
+.coll-table{width:100%;border-collapse:collapse;font-size:13px;min-width:700px}
+.coll-table th{padding:12px 14px;background:rgba(0,229,255,.15);color:var(--accent);text-align:left;border-bottom:2px solid rgba(0,229,255,.2)}
+.coll-table td{padding:10px 14px;border-bottom:1px solid var(--border);color:var(--text-muted)}
+.coll-table tr:nth-child(even) td{background:var(--bg2)}
+.coll-table td:nth-child(2){font-weight:bold;color:var(--text)}
+.coll-table td:nth-child(3){color:#ff8a80;font-weight:bold}
+.d-anchor-nav{position:sticky;top:0;background:var(--bg);padding:10px 0;border-bottom:1px solid var(--border);margin-bottom:20px;z-index:10;display:flex;gap:8px;overflow-x:auto;white-space:nowrap;box-shadow:0 2px 8px rgba(0,0,0,.3)}
+.d-anchor-nav a{text-decoration:none;padding:5px 14px;border-radius:20px;font-size:13px;border:1px solid;flex-shrink:0}
+.page-tabs{display:flex;gap:8px;flex-wrap:wrap;margin-bottom:30px;position:sticky;top:56px;z-index:100;background:var(--bg);padding:10px 0}
+.page-tab{padding:9px 20px;cursor:pointer;color:var(--text-muted);border:1px solid var(--border);border-radius:6px;font-size:14px;background:var(--bg2);transition:color .2s,background .2s,border-color .2s;white-space:nowrap}
+.page-tab:hover{color:var(--text);border-color:var(--accent)}
+.page-tab.active{color:#fff;background:var(--accent);border-color:var(--accent);font-weight:bold}
+.tab-content{display:none}.tab-content.active{display:block}
+</style>
+</head>
+<body>
+<nav class="topnav"><a class="topnav-logo" href="index.html">🌀 陀螺天堂</a><div class="topnav-sep"></div><div class="topnav-links" id="navLinks"><a class="topnav-link" href="index.html">首頁</a><a class="topnav-link" href="sponsor.html">贊助系統</a><a class="topnav-link" href="events-list.html">活動介紹</a><a class="topnav-link" href="features.html">遊戲特色</a><a class="topnav-link" href="items.html">裝備與道具</a><a class="topnav-link" href="boss.html">BOSS介紹</a><a class="topnav-link" href="maps.html">地圖特殊掉落</a><a class="topnav-link" href="download.html">檔案下載</a><a class="topnav-link" href="rates.html">版本倍率</a><a class="topnav-link" href="promote.html">推文與直播</a><div class="topnav-dropdown"><a class="topnav-link">遊戲規章 ▾</a><div class="dropdown-menu"><a href="rules.html">伺服器規章</a><a href="disclaimer.html">免責聲明</a><a href="anti-cheat.html">防作弊聲明</a></div></div><div class="topnav-dropdown"><a class="topnav-link">聯絡我們 ▾</a><div class="dropdown-menu"><a href="https://lin.ee/qUdjymV" target="_blank">LINE 官方社群</a><a href="sponsor.html">贊助方案</a><a href="#" onclick="document.getElementById('modal-gift').classList.add('open');return false;">申請新手禮包</a></div></div></div><div class="topnav-right"><a class="topnav-line-btn" href="https://lin.ee/qUdjymV" target="_blank">LINE 客服</a></div><div class="hamburger" onclick="document.getElementById('navLinks').classList.toggle('open')"><span></span><span></span><span></span></div></nav>
+<div class="float-sidebar"><button class="float-btn sponsor" data-modal="modal-sponsor"><span class="fb-icon">💰</span><span class="fb-label">贊助方案</span></button><button class="float-btn gift" data-modal="modal-gift"><span class="fb-icon">🎁</span><span class="fb-label">申請禮包</span></button><button class="float-btn line-btn" data-modal="modal-line"><span class="fb-icon"><img loading="lazy" src="https://upload.wikimedia.org/wikipedia/commons/4/41/LINE_logo.svg" alt="LINE"></span><span class="fb-label">LINE</span></button></div>
+<div class="float-modal" id="modal-sponsor"><div class="float-modal-box"><span class="modal-close">✕</span><div class="modal-title">💰 贊助方案</div><div class="modal-body"><p>▸ 贊助詳情請加入 LINE 社群詢問</p></div><a class="modal-btn" href="sponsor.html">查看贊助頁面</a></div></div>
+<div class="float-modal" id="modal-gift"><div class="float-modal-box"><span class="modal-close">✕</span><div class="modal-title">🎁 預約LINE禮包</div><div class="modal-body"><p>▸ 煉獄耳環<br>▸ 名譽貨幣【刻印】× 100<br>▸ 巧克力蛋糕【刻印】× 100<br>▸ 永久巧克力（永久三水）<br>▸ 永久名譽貨幣（永久三水）<br>▸ 象牙塔治癒藥水 × 10000<br><br><strong>加入 LINE 官方社群後私訊管理員即可領取。</strong></p></div><a class="modal-btn" href="event-line.html">查看禮包詳情</a></div></div>
+<div class="float-modal" id="modal-line"><div class="float-modal-box"><span class="modal-close">✕</span><div class="modal-title">💬 LINE 聯絡方式</div><div class="modal-body" style="text-align:center"><img loading="lazy" src="https://telegraph-image-1n0.pages.dev/file/AgACAgUAAyEGAAS3SV8sAAIDmGoKtRjS1aZ_pX1e1lD0BSHr0duBAAKmD2sbx8dQVFmjNE0p1cLBAQADAgADeAADOwQ.png" alt="LINE QR Code" style="width:150px;height:150px;margin:0 auto 12px;display:block;border-radius:8px;"></div><a class="modal-btn" href="https://line.me/ti/g2/FGmufEHakxKximWBYuLDBHET6-u8SLaGILTzCQ?utm_source=invitation&utm_medium=link_copy&utm_campaign=default" target="_blank">加入 LINE 官方社群</a></div></div>
+
+<div class="hero" style="height:240px"><div class="hero-bg" style="background:linear-gradient(135deg,#0a1818,#180a18);"></div><div class="hero-content"><div class="hero-badge">DOLL SYSTEM</div><h1 class="hero-title"><span style="font-size:2rem">娃娃介紹</span></h1><p class="hero-tagline">可愛的戰鬥夥伴，強力的屬性加成</p></div></div>
+
+<div class="container" style="padding-top:40px;padding-bottom:80px">
+
+  <div class="page-tabs">
+    <button class="page-tab active" onclick="switchTab('atlas')">🧸 娃娃總覽</button>
+    <button class="page-tab" onclick="switchTab('collection')">🏆 收藏清單</button>
+  </div>
+
+  <!-- ══ TAB 1: 娃娃總覽 ══ -->
+  <div id="tab-atlas" class="tab-content active">
+
+    <div style="background:var(--bg2);border:1px solid rgba(249,168,37,.2);border-radius:10px;padding:18px;margin-bottom:16px">
+      <h3 style="margin-top:0;color:var(--gold);font-size:1em;border-left:3px solid var(--gold);padding-left:10px">💡 重要提示</h3>
+      <ul style="margin:8px 0 0 0;padding-left:20px;color:var(--text-muted);line-height:1.9">
+        <li><strong style="color:var(--text)">召喚方式：</strong>所有娃娃皆須使用 <span style="color:#ff6b6b;font-weight:bold">"娃娃石"</span> 召喚（主城 NPC 購買）。</li>
+        <li><strong style="color:var(--text)">圖鑑查詢：</strong>詳細圖鑑請至官方論壇參閱（已有智能調整）。</li>
+        <li><strong style="color:var(--text)">自動功能：</strong>自動召喚請於 <span style="color:var(--accent);font-weight:bold">LH狀態設定</span>，並設定「自動娃娃卷軸」。</li>
+      </ul>
+    </div>
+
+    <div style="background:rgba(229,57,53,.1);border:2px dashed rgba(229,57,53,.4);border-radius:8px;padding:16px;margin-bottom:24px;text-align:center">
+      <strong style="color:#ff8a80;font-size:1em">⚠️ 官方嚴正注意 ⚠️</strong>
+      <div style="color:#ffcdd2;margin-top:6px;font-weight:bold">
+        目前「唯一娃娃」尚未開放合成！<br>
+        若玩家自行嘗試合成導致異常，<span style="text-decoration:underline">官方將不予補發</span>，請務必留意！
+      </div>
+    </div>
+
+    <div class="d-anchor-nav">
+      <a href="#gen-doll" style="background:rgba(158,158,158,.15);color:#bdbdbd;border-color:rgba(158,158,158,.3)">⚪ 一般</a>
+      <a href="#adv-doll" style="background:rgba(67,160,71,.12);color:#69f0ae;border-color:rgba(67,160,71,.25)">🟢 高級</a>
+      <a href="#rare-doll" style="background:rgba(30,136,229,.12);color:#82b1ff;border-color:rgba(30,136,229,.25)">🔵 稀有</a>
+      <a href="#hero-doll" style="background:rgba(229,57,53,.12);color:#ff8a80;border-color:rgba(229,57,53,.25)">🔴 英雄</a>
+      <a href="#legend-doll" style="background:rgba(142,36,170,.12);color:#ce93d8;border-color:rgba(142,36,170,.25)">🟣 傳說</a>
+      <a href="#myth-doll" style="background:rgba(249,168,37,.12);color:var(--gold);border-color:rgba(249,168,37,.25)">👑 神話 / 唯一</a>
+    </div>
+
+    <h3 id="gen-doll" class="d-sec" style="background:rgba(158,158,158,.1);color:#bdbdbd;border-left:4px solid #9e9e9e">⚪ 一般娃娃 <span class="d-badge">13 隻</span></h3>
+    <div class="d-grid">
+      <div class="d-card c-gen"><span class="d-name">肥肥</span><span class="d-stat">負重+100</span></div>
+      <div class="d-card c-gen"><span class="d-name">雪怪</span><span class="d-stat">防禦-2</span></div>
+      <div class="d-card c-gen"><span class="d-name">蛇女</span><span class="d-stat">每64秒魔力恢復25</span></div>
+      <div class="d-card c-gen"><span class="d-name">石頭高崙</span><span class="d-stat">傷害減免+1</span></div>
+      <div class="d-card c-gen"><span class="d-name">野狼寶寶</span><span class="d-stat">近距離攻擊+1</span></div>
+      <div class="d-card c-gen"><span class="d-name">木刻人偶</span><span class="d-stat">體力上限+50</span></div>
+      <div class="d-card c-gen"><span class="d-name">希爾黛絲</span><span class="d-stat">遠距離攻擊+1</span></div>
+      <div class="d-card c-gen"><span class="d-name">奎斯坦修</span><span class="d-stat">體力上限+50</span></div>
+      <div class="d-card c-gen"><span class="d-name">火焰娃娃</span><span class="d-stat">防禦-2</span></div>
+      <div class="d-card c-gen"><span class="d-name">橘炙娃娃(紅)</span><span class="d-stat">每64秒魔力恢復25</span></div>
+      <div class="d-card c-gen"><span class="d-name">橘炙娃娃(綠)</span><span class="d-stat">近距離攻擊+1</span></div>
+      <div class="d-card c-gen"><span class="d-name">橘炙娃娃(橘)</span><span class="d-stat">傷害減免+1</span></div>
+      <div class="d-card c-gen"><span class="d-name">橘炙娃娃(藍)</span><span class="d-stat">遠距離攻擊+1</span></div>
+    </div>
+
+    <h3 id="adv-doll" class="d-sec" style="background:rgba(67,160,71,.1);color:#69f0ae;border-left:4px solid #43a047">🟢 高級娃娃 <span class="d-badge">30 隻</span></h3>
+    <div class="d-grid">
+      <div class="d-card c-adv"><span class="d-name">雪人</span><span class="d-stat">每64秒魔力恢復25, 魔力上限+50</span></div>
+      <div class="d-card c-adv"><span class="d-name">長者</span><span class="d-stat">智力+1</span></div>
+      <div class="d-card c-adv"><span class="d-name">美人魚</span><span class="d-stat">每64秒魔力恢復25, 魔力上限+50</span></div>
+      <div class="d-card c-adv"><span class="d-name">稻草人</span><span class="d-stat">遠距離攻擊+1, 遠距離命中+1</span></div>
+      <div class="d-card c-adv"><span class="d-name">熔岩高崙</span><span class="d-stat">防禦-2, 傷害減免+1</span></div>
+      <div class="d-card c-adv"><span class="d-name">思克巴</span><span class="d-stat">每64秒魔力恢復25, 魔力上限+50</span></div>
+      <div class="d-card c-adv"><span class="d-name">史巴托</span><span class="d-stat">近距離攻擊+1, 近距離命中+1</span></div>
+      <div class="d-card c-adv"><span class="d-name">亞力安</span><span class="d-stat">遠距離攻擊+1, 遠距離命中+1</span></div>
+      <div class="d-card c-adv"><span class="d-name">王族(男)</span><span class="d-stat">近距離攻擊+1, 近距離命中+1</span></div>
+      <div class="d-card c-adv"><span class="d-name">王族(女)</span><span class="d-stat">近距離攻擊+1, 近距離命中+1</span></div>
+      <div class="d-card c-adv"><span class="d-name">騎士(男)</span><span class="d-stat">防禦-2, 傷害減免+1</span></div>
+      <div class="d-card c-adv"><span class="d-name">騎士(女)</span><span class="d-stat">防禦-2, 傷害減免+1</span></div>
+      <div class="d-card c-adv"><span class="d-name">法師(男)</span><span class="d-stat">智力+1</span></div>
+      <div class="d-card c-adv"><span class="d-name">法師(女)</span><span class="d-stat">智力+1</span></div>
+      <div class="d-card c-adv"><span class="d-name">妖精(男)</span><span class="d-stat">遠距離攻擊+1, 遠距離命中+1</span></div>
+      <div class="d-card c-adv"><span class="d-name">妖精(女)</span><span class="d-stat">遠距離攻擊+1, 遠距離命中+1</span></div>
+      <div class="d-card c-adv"><span class="d-name">黑妖(男)</span><span class="d-stat">智力+1, 魔力上限+70</span></div>
+      <div class="d-card c-adv"><span class="d-name">黑妖(女)</span><span class="d-stat">近距離攻擊+1, 近距離命中+1</span></div>
+      <div class="d-card c-adv"><span class="d-name">暗黑騎士(男)</span><span class="d-stat">防禦-2, 傷害減免+1</span></div>
+      <div class="d-card c-adv"><span class="d-name">暗黑騎士(女)</span><span class="d-stat">防禦-2, 傷害減免+1</span></div>
+      <div class="d-card c-adv"><span class="d-name">神聖劍士(男)</span><span class="d-stat">智力+1</span></div>
+      <div class="d-card c-adv"><span class="d-name">神聖劍士(女)</span><span class="d-stat">智力+1</span></div>
+      <div class="d-card c-adv"><span class="d-name">槍手(男)</span><span class="d-stat">每64秒魔力恢復25, 魔力上限+50</span></div>
+      <div class="d-card c-adv"><span class="d-name">槍手(女)</span><span class="d-stat">每64秒魔力恢復25, 魔力上限+50</span></div>
+      <div class="d-card c-adv"><span class="d-name">龍騎士(男)</span><span class="d-stat">每64秒體力恢復25, 體力上限+50</span></div>
+      <div class="d-card c-adv"><span class="d-name">龍騎士(女)</span><span class="d-stat">每64秒體力恢復25, 體力上限+50</span></div>
+      <div class="d-card c-adv"><span class="d-name">少年帕克</span><span class="d-stat">每64秒體力恢復25, 體力上限+50</span></div>
+      <div class="d-card c-adv"><span class="d-name">少女帕歐</span><span class="d-stat">每64秒體力恢復25, 體力上限+50</span></div>
+      <div class="d-card c-adv"><span class="d-name">狂戰士</span><span class="d-stat">每64秒體力恢復25, 體力上限+50</span></div>
+      <div class="d-card c-adv"><span class="d-name">紅色妖魔</span><span class="d-stat">遠距離攻擊+1, 遠距離命中+1</span></div>
+    </div>
+
+    <h3 id="rare-doll" class="d-sec" style="background:rgba(30,136,229,.1);color:#82b1ff;border-left:4px solid #1e88e5">🔵 稀有娃娃 <span class="d-badge">33 隻</span></h3>
+    <div class="d-grid">
+      <div class="d-card c-rare"><span class="d-name">黑長者</span><span class="d-stat">防禦-3, 力量+1, 近距離攻擊+5, 近距離命中+5</span></div>
+      <div class="d-card c-rare"><span class="d-name">食人妖精王</span><span class="d-stat">防禦-3, 傷害減免+2</span></div>
+      <div class="d-card c-rare"><span class="d-name">飛龍</span><span class="d-stat">遠距離攻擊+3, 遠距離命中+3</span></div>
+      <div class="d-card c-rare"><span class="d-name">阿魯巴</span><span class="d-stat">防禦-3, 傷害減免+2</span></div>
+      <div class="d-card c-rare"><span class="d-name">鑽石高崙</span><span class="d-stat">防禦-3, 傷害減免+2</span></div>
+      <div class="d-card c-rare"><span class="d-name">思克巴女皇</span><span class="d-stat">每64秒魔力恢復35, 魔力上限+70</span></div>
+      <div class="d-card c-rare"><span class="d-name">巨人</span><span class="d-stat">防禦-3, 傷害減免+2</span></div>
+      <div class="d-card c-rare"><span class="d-name">巨大守護螞蟻</span><span class="d-stat">每64秒體力恢復35, 體力上限+100</span></div>
+      <div class="d-card c-rare"><span class="d-name">黃金騎士</span><span class="d-stat">近距離攻擊+3, 近距離命中+3</span></div>
+      <div class="d-card c-rare"><span class="d-name">樹精</span><span class="d-stat">每64秒魔力恢復35, 魔力上限+70</span></div>
+      <div class="d-card c-rare"><span class="d-name">曼波兔</span><span class="d-stat">每64秒體力恢復35, 體力上限+100</span></div>
+      <div class="d-card c-rare"><span class="d-name">力卡溫</span><span class="d-stat">近距離攻擊+3, 近距離命中+3</span></div>
+      <div class="d-card c-rare"><span class="d-name">哈維(藍)</span><span class="d-stat">智力+1, 魔力上限+70</span></div>
+      <div class="d-card c-rare"><span class="d-name">黃金安迪斯</span><span class="d-stat">每64秒體力恢復35, 體力上限+100</span></div>
+      <div class="d-card c-rare"><span class="d-name">騎士帕克</span><span class="d-stat">近距離攻擊+3, 近距離命中+3</span></div>
+      <div class="d-card c-rare"><span class="d-name">拉拉</span><span class="d-stat">智力+1, 魔力上限+70</span></div>
+      <div class="d-card c-rare"><span class="d-name">丹迪</span><span class="d-stat">遠距離攻擊+3, 遠距離命中+3</span></div>
+      <div class="d-card c-rare"><span class="d-name">達伊諾思投手</span><span class="d-stat">遠距離攻擊+3, 遠距離命中+3</span></div>
+      <div class="d-card c-rare"><span class="d-name">榭莉</span><span class="d-stat">遠距離攻擊+3, 遠距離命中+3</span></div>
+      <div class="d-card c-rare"><span class="d-name">達伊諾思打者</span><span class="d-stat">近距離攻擊+3, 近距離命中+3</span></div>
+      <div class="d-card c-rare"><span class="d-name">黃金巡守</span><span class="d-stat">遠距離攻擊+3, 遠距離命中+3</span></div>
+      <div class="d-card c-rare"><span class="d-name">蕾雅</span><span class="d-stat">智力+1, 魔力上限+70</span></div>
+      <div class="d-card c-rare"><span class="d-name">孫悟空</span><span class="d-stat">負重增加+1000</span></div>
+      <div class="d-card c-rare"><span class="d-name">沙悟淨</span><span class="d-stat">負重增加+1000</span></div>
+      <div class="d-card c-rare"><span class="d-name">豬八戒</span><span class="d-stat">負重增加+1000</span></div>
+      <div class="d-card c-rare"><span class="d-name">老虎</span><span class="d-stat">近距離攻擊+3, 近距離命中+3</span></div>
+      <div class="d-card c-rare"><span class="d-name">阿勒尼亞</span><span class="d-stat">每64秒體力恢復35, 體力上限+100</span></div>
+      <div class="d-card c-rare"><span class="d-name">哈維</span><span class="d-stat">智力+1, 魔力上限+70</span></div>
+      <div class="d-card c-rare"><span class="d-name">秩序的死亡之劍</span><span class="d-stat">每64秒魔力恢復35, 魔力上限+70</span></div>
+      <div class="d-card c-rare"><span class="d-name">渾沌的活鎧甲</span><span class="d-stat">每64秒魔力恢復35, 魔力上限+70</span></div>
+      <div class="d-card c-rare"><span class="d-name">葛林</span><span class="d-stat">每64秒體力恢復35, 體力上限+100</span></div>
+      <div class="d-card c-rare"><span class="d-name">聖誕妖精</span><span class="d-stat">每64秒魔力恢復35, 魔力上限+70</span></div>
+      <div class="d-card c-rare"><span class="d-name">阿魯巴(藍)</span><span class="d-stat">防禦-3, 傷害減免+2</span></div>
+    </div>
+
+    <h3 id="hero-doll" class="d-sec" style="background:rgba(229,57,53,.1);color:#ff8a80;border-left:4px solid #e53935">🔴 英雄娃娃 <span class="d-badge">33 隻</span></h3>
+    <div class="d-grid">
+      <div class="d-card c-hero"><span class="d-name">巴風特</span><span class="d-stat">智力+1, 魔攻+2, 防禦-3, 魔力上限+100, 每64秒魔力恢復30</span></div>
+      <div class="d-card c-hero"><span class="d-name">騎士范德</span><span class="d-stat">防禦-3, 力量+1, 近距離攻擊+5, 近距離命中+5</span></div>
+      <div class="d-card c-hero"><span class="d-name">艾莉絲</span><span class="d-stat">智力+1, 魔攻+2, 防禦-3, 魔力上限+100, 每64秒魔力恢復30</span></div>
+      <div class="d-card c-hero"><span class="d-name">獨眼巨人</span><span class="d-stat">傷害減免+3, 負重+1000, 防禦-4, 每64秒體力恢復35</span></div>
+      <div class="d-card c-hero"><span class="d-name">木乃伊王</span><span class="d-stat">智力+1, 魔攻+2, 防禦-3, 魔力上限+100, 每64秒魔力恢復30</span></div>
+      <div class="d-card c-hero"><span class="d-name">幻象眼魔</span><span class="d-stat">防禦-3, 敏捷+1, 遠距離攻擊+5, 遠距離命中+5</span></div>
+      <div class="d-card c-hero"><span class="d-name">巫妖</span><span class="d-stat">智力+1, 魔攻+2, 防禦-3, 魔力上限+100, 每64秒魔力恢復30</span></div>
+      <div class="d-card c-hero"><span class="d-name">吸血鬼</span><span class="d-stat">智力+1, 魔攻+2, 防禦-3, 魔力上限+100, 每64秒魔力恢復30</span></div>
+      <div class="d-card c-hero"><span class="d-name">伊弗利特</span><span class="d-stat">防禦-3, 力量+1, 近距離攻擊+5, 近距離命中+5</span></div>
+      <div class="d-card c-hero"><span class="d-name">克特</span><span class="d-stat">防禦-3, 力量+1, 近距離攻擊+5, 近距離命中+5</span></div>
+      <div class="d-card c-hero"><span class="d-name">巴克休</span><span class="d-stat">傷害減免+3, 負重+1000, 防禦-4, 每64秒體力恢復35</span></div>
+      <div class="d-card c-hero"><span class="d-name">浮士德</span><span class="d-stat">傷害減免+3, 負重+1000, 防禦-4, 每64秒體力恢復35</span></div>
+      <div class="d-card c-hero"><span class="d-name">狂風的夏斯奇</span><span class="d-stat">防禦-3, 力量+1, 近距離攻擊+5, 近距離命中+5</span></div>
+      <div class="d-card c-hero"><span class="d-name">疾風的夏斯奇</span><span class="d-stat">防禦-3, 敏捷+1, 遠距離攻擊+5, 遠距離命中+5</span></div>
+      <div class="d-card c-hero"><span class="d-name">大腳瑪幽</span><span class="d-stat">防禦-3, 力量+1, 近距離攻擊+5, 近距離命中+5</span></div>
+      <div class="d-card c-hero"><span class="d-name">賽尼斯</span><span class="d-stat">智力+1, 魔攻+2, 防禦-3, 魔力上限+100, 每64秒魔力恢復30</span></div>
+      <div class="d-card c-hero"><span class="d-name">阿努比斯</span><span class="d-stat">防禦-3, 力量+1, 近距離攻擊+5, 近距離命中+5</span></div>
+      <div class="d-card c-hero"><span class="d-name">傑克吳燈籠</span><span class="d-stat">傷害減免+3, 負重+1000, 防禦-4, 每64秒體力恢復35</span></div>
+      <div class="d-card c-hero"><span class="d-name">艾依爾</span><span class="d-stat">防禦-3, 敏捷+1, 遠距離攻擊+5, 遠距離命中+5</span></div>
+      <div class="d-card c-hero"><span class="d-name">暗黑騎士團莉爾利</span><span class="d-stat">防禦-3, 力量+1, 近距離攻擊+5, 近距離命中+5</span></div>
+      <div class="d-card c-hero"><span class="d-name">伊詩蒂</span><span class="d-stat">智力+1, 魔攻+2, 防禦-3, 魔力上限+100, 每64秒魔力恢復30</span></div>
+      <div class="d-card c-hero"><span class="d-name">千年九尾狐</span><span class="d-stat">防禦-3, 敏捷+1, 遠距離攻擊+5, 遠距離命中+5</span></div>
+      <div class="d-card c-hero"><span class="d-name">淘氣龍</span><span class="d-stat">防禦-3, 敏捷+1, 遠距離攻擊+5, 遠距離命中+5</span></div>
+      <div class="d-card c-hero"><span class="d-name">天上騎士</span><span class="d-stat">防禦-3, 敏捷+1, 遠距離攻擊+5, 遠距離命中+5</span></div>
+      <div class="d-card c-hero"><span class="d-name">炎魔</span><span class="d-stat">防禦-3, 力量+1, 近距離攻擊+5, 近距離命中+5</span></div>
+      <div class="d-card c-hero"><span class="d-name">潔尼斯女王</span><span class="d-stat">智力+1, 魔攻+2, 防禦-3, 魔力上限+100, 每64秒魔力恢復30</span></div>
+      <div class="d-card c-hero"><span class="d-name">殭屍王</span><span class="d-stat">傷害減免+3, 負重+1000, 防禦-4, 每64秒體力恢復35</span></div>
+      <div class="d-card c-hero"><span class="d-name">黑豹</span><span class="d-stat">智力+1, 魔攻+2, 防禦-3, 魔力上限+100, 每64秒魔力恢復30</span></div>
+      <div class="d-card c-hero"><span class="d-name">烏格奴斯</span><span class="d-stat">防禦-3, 敏捷+1, 遠距離攻擊+5, 遠距離命中+5</span></div>
+      <div class="d-card c-hero"><span class="d-name">狸貓</span><span class="d-stat">防禦-3, 敏捷+1, 遠距離攻擊+5, 遠距離命中+5</span></div>
+      <div class="d-card c-hero"><span class="d-name">高崙守護者</span><span class="d-stat">傷害減免+3, 負重+1000, 防禦-4, 每64秒體力恢復35</span></div>
+      <div class="d-card c-hero"><span class="d-name">黑色曼波兔</span><span class="d-stat">近距離攻擊+1, 近距離命中+1</span></div>
+      <div class="d-card c-hero"><span class="d-name">覺醒孫悟空</span><span class="d-stat">傷害減免+3, 負重+1000, 防禦-4, 每64秒體力恢復35</span></div>
+    </div>
+
+    <h3 id="legend-doll" class="d-sec" style="background:rgba(142,36,170,.1);color:#ce93d8;border-left:4px solid #8e24aa">🟣 傳說娃娃 <span class="d-badge">19 隻</span></h3>
+    <div class="d-grid">
+      <div class="d-card c-legend"><span class="d-name">死亡騎士</span><span class="d-stat">防禦-5, 力量+3, 近距離攻擊+9, 近距離命中+9</span></div>
+      <div class="d-card c-legend"><span class="d-name">巴蘭卡</span><span class="d-stat">防禦-8, 負重+1000, 傷害減免+6, 每64秒體力恢復50</span></div>
+      <div class="d-card c-legend"><span class="d-name">墮落</span><span class="d-stat">防禦-5, 力量+3, 近距離攻擊+9, 近距離命中+9</span></div>
+      <div class="d-card c-legend"><span class="d-name">惡魔</span><span class="d-stat">防禦-5, 敏捷+3, 遠距離攻擊+9, 遠距離命中+9</span></div>
+      <div class="d-card c-legend"><span class="d-name">冰之女王</span><span class="d-stat">防禦-5, 智力+3, 魔攻+3, 魔力上限+150, 每64秒魔力恢復50</span></div>
+      <div class="d-card c-legend"><span class="d-name">獨角獸</span><span class="d-stat">防禦-5, 敏捷+3, 遠距離攻擊+9, 遠距離命中+9</span></div>
+      <div class="d-card c-legend"><span class="d-name">帕拉丁</span><span class="d-stat">防禦-8, 負重+1000, 傷害減免+6, 每64秒體力恢復50</span></div>
+      <div class="d-card c-legend"><span class="d-name">甘特</span><span class="d-stat">防禦-8, 負重+1000, 傷害減免+6, 每64秒體力恢復50</span></div>
+      <div class="d-card c-legend"><span class="d-name">歐吉王</span><span class="d-stat">防禦-8, 負重+1000, 傷害減免+6, 每64秒體力恢復50</span></div>
+      <div class="d-card c-legend"><span class="d-name">不死鳥</span><span class="d-stat">防禦-5, 敏捷+3, 遠距離攻擊+9, 遠距離命中+9</span></div>
+      <div class="d-card c-legend"><span class="d-name">黑暗長者</span><span class="d-stat">防禦-5, 智力+3, 魔攻+3, 魔力上限+150, 每64秒魔力恢復50</span></div>
+      <div class="d-card c-legend"><span class="d-name">黑暗之星宙斯</span><span class="d-stat">防禦-5, 智力+3, 魔攻+3, 魔力上限+150, 每64秒魔力恢復50</span></div>
+      <div class="d-card c-legend"><span class="d-name">鐮刀死神</span><span class="d-stat">防禦-5, 智力+3, 魔攻+3, 魔力上限+150, 每64秒魔力恢復50</span></div>
+      <div class="d-card c-legend"><span class="d-name">唐三藏</span><span class="d-stat">防禦-5, 力量+3, 近距離攻擊+9, 近距離命中+9</span></div>
+      <div class="d-card c-legend"><span class="d-name">屠龍者</span><span class="d-stat">防禦-5, 力量+3, 近距離攻擊+9, 近距離命中+9</span></div>
+      <div class="d-card c-legend"><span class="d-name">黑暗哈汀</span><span class="d-stat">防禦-5, 智力+3, 魔攻+3, 魔力上限+150, 每64秒魔力恢復50</span></div>
+      <div class="d-card c-legend"><span class="d-name">艾比諾不死鳥</span><span class="d-stat">防禦-5, 敏捷+3, 遠距離攻擊+9, 遠距離命中+9</span></div>
+      <div class="d-card c-legend"><span class="d-name">艾比諾惡魔</span><span class="d-stat">防禦-5, 力量+3, 近距離攻擊+9, 近距離命中+9</span></div>
+      <div class="d-card c-legend"><span class="d-name">艾比諾獨角獸</span><span class="d-stat">防禦-5, 敏捷+3, 遠距離攻擊+9, 遠距離命中+9</span></div>
+    </div>
+
+    <h3 id="myth-doll" class="d-sec" style="background:rgba(249,168,37,.1);color:var(--gold);border-left:4px solid #fdd835">👑 神話娃娃 <span class="d-badge">4 隻</span></h3>
+    <div class="d-grid">
+      <div class="d-card c-myth"><span class="d-name">安塔瑞斯</span><span class="d-stat">防禦-11、傷害減免+10、負重+2500、體力上限+400、每64秒體力恢復60</span></div>
+      <div class="d-card c-myth"><span class="d-name">巴拉卡斯</span><span class="d-stat">防禦-8、力量+5、近距離攻擊+12、近距離命中+12</span></div>
+      <div class="d-card c-myth"><span class="d-name">林德拜爾</span><span class="d-stat">防禦-8、敏捷+5、遠距離攻擊+12、遠距離命中+12</span></div>
+      <div class="d-card c-myth"><span class="d-name">法利昂</span><span class="d-stat">防禦-8、智力+5、魔攻+5、魔力上限+250、每64秒魔力恢復60</span></div>
+    </div>
+
+    <h3 class="d-sec" style="background:rgba(0,188,212,.1);color:#4dd0e1;border-left:4px solid #00bcd4">🌌 唯一娃娃</h3>
+    <div style="background:var(--bg2);border:1px dashed rgba(0,188,212,.3);border-radius:8px;padding:20px;text-align:center;color:#4dd0e1">
+      <strong>🚧 目前尚未開放，敬請期待！</strong>
+    </div>
+
+  </div><!-- end tab-atlas -->
+
+  <!-- ══ TAB 2: 收藏清單 ══ -->
+  <div id="tab-collection" class="tab-content">
+    <div style="overflow-x:auto;border:1px solid var(--border);border-radius:8px">
+      <table class="coll-table">
+        <thead><tr><th style="width:50%">所需娃娃卡</th><th style="width:25%">圖鑑名稱</th><th style="width:25%">獲得能力</th></tr></thead>
+        <tbody>
+          <tr><td>娃娃卡：石頭高崙(一般)<br>娃娃卡：野狼寶寶(一般)</td><td>我曾住過的故鄉是北島</td><td>近距離命中+1</td></tr>
+          <tr><td>娃娃卡：肥肥(一般)<br>娃娃卡：雪怪(一般)</td><td>圓圓的</td><td>體力上限+10</td></tr>
+          <tr><td>娃娃卡：木刻人偶(一般)<br>娃娃卡：奎斯坦修(一般)<br>娃娃卡：豬八戒(稀有)<br>娃娃卡：老虎(稀有)<br>娃娃卡：狸貓(英雄)<br>娃娃卡：黑色曼波兔(英雄)</td><td>不是吃的</td><td>魔力上限+5</td></tr>
+          <tr><td>娃娃卡：石頭高崙(一般)<br>娃娃卡：木刻人偶(一般)</td><td>頭上戴了什麼</td><td>遠距離命中+1</td></tr>
+          <tr><td>娃娃卡：蛇女(一般)<br>娃娃卡：希爾黛絲(一般)<br>娃娃卡：奎斯坦修(一般)</td><td>要一起游泳嗎</td><td>體力回復量+2</td></tr>
+          <tr><td>娃娃卡：肥肥(一般)<br>娃娃卡：雪怪(一般)</td><td>不需要減肥</td><td>近.遠距離攻擊力+1</td></tr>
+          <tr><td>娃娃卡：蛇女(一般)<br>娃娃卡：野狼寶寶(一般)<br>娃娃卡：木刻人偶(一般)<br>娃娃卡：阿魯巴(藍)(稀有)<br>娃娃卡：吉爾塔斯(唯一)</td><td>意外的敏捷啊</td><td>魔法防禦+1</td></tr>
+          <tr><td>娃娃卡：肥肥(一般)<br>娃娃卡：雪怪(一般)<br>娃娃卡：奎斯坦修(一般)</td><td>敢惹我就咬你</td><td>防禦+1</td></tr>
+          <tr><td>娃娃卡：雪怪(一般)<br>娃娃卡：雪人(高級)</td><td>歐瑞的吉祥物</td><td>體力上限+15</td></tr>
+          <tr><td>娃娃卡：蛇女(一般)<br>娃娃卡：美人魚(高級)</td><td>我們不太一樣了</td><td>魔力上限+10</td></tr>
+          <tr><td>娃娃卡：石頭高崙(一般)<br>娃娃卡：火焰娃娃(一般)<br>娃娃卡：橘炙娃娃(紅)(一般)<br>娃娃卡：橘炙娃娃(綠)(一般)<br>娃娃卡：橘炙娃娃(橘)(一般)<br>娃娃卡：橘炙娃娃(藍)(一般)<br>娃娃卡：熔岩高崙(高級)</td><td>哥是在熔岩裡出生的</td><td>傷害減免+1</td></tr>
+          <tr><td>娃娃卡：蛇女(一般)<br>娃娃卡：思克巴(高級)<br>娃娃卡：千年九尾狐(英雄)<br>娃娃卡：潔尼斯女王(英雄)</td><td>可怕的姐姐們</td><td>近距離爆擊率+1%</td></tr>
+          <tr><td>娃娃卡：雪人(高級)<br>娃娃卡：熔岩高崙(高級)</td><td>不行不要過來</td><td>體力上限+20</td></tr>
+          <tr><td>娃娃卡：長者(高級)<br>娃娃卡：思克巴(高級)</td><td>長老曾經很風光</td><td>魔力上限+15</td></tr>
+          <tr><td>娃娃卡：希爾黛絲(一般)<br>娃娃卡：奎斯坦修(一般)<br>娃娃卡：美人魚(高級)</td><td>我會在海音裡活下來的</td><td>遠距離迴避率+1</td></tr>
+          <tr><td>娃娃卡：思克巴(高級)<br>娃娃卡：史巴托(高級)<br>娃娃卡：亞力安(高級)</td><td>我們來自龍界</td><td>近距離迴避率+1</td></tr>
+          <tr><td>娃娃卡：雪人(高級)<br>娃娃卡：稻草人(高級)<br>娃娃卡：史巴托(高級)</td><td>一起玩吧</td><td>防禦+2</td></tr>
+          <tr><td>娃娃卡：肥肥(一般)<br>娃娃卡：食人妖精王(稀有)</td><td>胖子跟大胖子</td><td>體力上限+20</td></tr>
+          <tr><td>娃娃卡：思克巴(高級)<br>娃娃卡：思克巴女皇(稀有)</td><td>上鉤拳姊妹</td><td>遠距離攻擊力+1</td></tr>
+          <tr><td>娃娃卡：熔岩高崙(高級)<br>娃娃卡：鑽石高崙(稀有)</td><td>哥哥有比較貴一點</td><td>近距離迴避率+1</td></tr>
+          <tr><td>娃娃卡：阿魯巴(稀有)<br>娃娃卡：巨人(稀有)</td><td>優秀生長版持有者</td><td>經驗值獎勵+1%</td></tr>
+          <tr><td>娃娃卡：飛龍(稀有)<br>娃娃卡：思克巴女皇(稀有)</td><td>我有翅膀</td><td>防禦+2</td></tr>
+          <tr><td>娃娃卡：黑長者(稀有)<br>娃娃卡：飛龍(稀有)</td><td>龍谷BOSS是我</td><td>魔法防禦+3</td></tr>
+          <tr><td>娃娃卡：思克巴(高級)<br>娃娃卡：鑽石高崙(稀有)<br>娃娃卡：思克巴女皇(稀有)</td><td>想擁有鑽石</td><td>近.遠距離攻擊力+1</td></tr>
+          <tr><td>娃娃卡：石頭高崙(一般)<br>娃娃卡：熔岩高崙(高級)<br>娃娃卡：鑽石高崙(稀有)</td><td>去找媽媽吧</td><td>體力回復量+2</td></tr>
+          <tr><td>娃娃卡：石頭高崙(一般)<br>娃娃卡：稻草人(高級)<br>娃娃卡：食人妖精王(稀有)</td><td>Smile</td><td>體力上限+20</td></tr>
+          <tr><td>娃娃卡：亞力安(高級)<br>娃娃卡：黑長者(稀有)<br>娃娃卡：飛龍(稀有)</td><td>龍間入口由我來守護</td><td>近距離迴避率+1</td></tr>
+          <tr><td>娃娃卡：史巴托(高級)<br>娃娃卡：暗黑騎士(女)(高級)<br>娃娃卡：神聖劍士(男)(高級)<br>娃娃卡：秩序的死亡之劍(稀有)<br>娃娃卡：騎士范德(英雄)<br>娃娃卡：天上騎士(英雄)</td><td>揮劍吧</td><td>經驗值獎勵+3%</td></tr>
+          <tr><td>娃娃卡：亞力安(高級)<br>娃娃卡：獨眼巨人(英雄)</td><td>她們被稱為古代的怪物</td><td>傷害減免+1</td></tr>
+          <tr><td>娃娃卡：長者(高級)<br>娃娃卡：黑長者(稀有)<br>娃娃卡：巫妖(英雄)<br>娃娃卡：唐三藏(傳說)<br>娃娃卡：黑暗哈汀(傳說)</td><td>夢想成為大魔法師</td><td>魔法攻擊力+1</td></tr>
+          <tr><td>娃娃卡：阿魯巴(稀有)<br>娃娃卡：巨人(稀有)<br>娃娃卡：獨眼巨人(英雄)</td><td>看看誰比較高吧</td><td>體力上限+70</td></tr>
+          <tr><td>娃娃卡：阿魯巴(稀有)<br>娃娃卡：獨眼巨人(英雄)<br>娃娃卡：幻象眼魔(英雄)</td><td>視力至少2.0</td><td>敏捷+1</td></tr>
+          <tr><td>娃娃卡：騎士范德(英雄)<br>娃娃卡：幻象眼魔(英雄)<br>娃娃卡：巫妖(英雄)<br>娃娃卡：潔尼斯女王(英雄)<br>娃娃卡：殭屍王(英雄)<br>娃娃卡：鐮刀死神(傳說)</td><td>在傲慢之塔見吧</td><td>負重獎勵+100</td></tr>
+          <tr><td>娃娃卡：希爾黛絲(一般)<br>娃娃卡：飛龍(稀有)<br>娃娃卡：幻象眼魔(英雄)</td><td>需要的話就空中懸浮</td><td>精神+1</td></tr>
+          <tr><td>娃娃卡：飛龍(稀有)<br>娃娃卡：死亡騎士(傳說)</td><td>你是龍吧</td><td>力量+1</td></tr>
+          <tr><td>娃娃卡：騎士范德(英雄)<br>娃娃卡：死亡騎士(傳說)</td><td>誰的劍最強呢</td><td>近.距離攻擊力+1</td></tr>
+          <tr><td>娃娃卡：肥肥(一般)<br>娃娃卡：蛇女(一般)<br>娃娃卡：石頭高崙(一般)<br>娃娃卡：野狼寶寶(一般)<br>娃娃卡：希爾黛絲(一般)<br>娃娃卡：奎斯坦修(一般)<br>娃娃卡：紅色妖魔(高級)<br>娃娃卡：葛林(稀有)<br>娃娃卡：聖誕妖精(稀有)</td><td>烏合之眾</td><td>經驗值獎勵+1%</td></tr>
+          <tr><td>娃娃卡：雪人(高級)<br>娃娃卡：長者(高級)<br>娃娃卡：美人魚(高級)<br>娃娃卡：稻草人(高級)<br>娃娃卡：熔岩高崙(高級)<br>娃娃卡：思克巴(高級)<br>娃娃卡：史巴托(高級)<br>娃娃卡：亞力安(高級)</td><td>有備無患</td><td>經驗值獎勵+1%</td></tr>
+          <tr><td>娃娃卡：黑長者(稀有)<br>娃娃卡：食人妖精王(稀有)<br>娃娃卡：飛龍(稀有)<br>娃娃卡：阿魯巴(稀有)<br>娃娃卡：鑽石高崙(稀有)<br>娃娃卡：思克巴女皇(稀有)<br>娃娃卡：巨人(稀有)</td><td>瑩雪之功</td><td>經驗值獎勵+3%</td></tr>
+          <tr><td>娃娃卡：騎士范德(英雄)<br>娃娃卡：獨眼巨人(英雄)<br>娃娃卡：木乃伊王(英雄)<br>娃娃卡：幻象眼魔(英雄)</td><td>大器晚成</td><td>經驗值獎勵+5%</td></tr>
+          <tr><td>娃娃卡：肥肥(一般)<br>娃娃卡：雪怪(一般)<br>娃娃卡：阿魯巴(稀有)<br>娃娃卡：巨人(稀有)<br>娃娃卡：艾莉絲(英雄)</td><td>偶像粉絲團</td><td>近距離迴避率+1</td></tr>
+          <tr><td>娃娃卡：思克巴(高級)<br>娃娃卡：思克巴女皇(稀有)<br>娃娃卡：吸血鬼(英雄)</td><td>我血不夠</td><td>藥水恢復+1</td></tr>
+          <tr><td>娃娃卡：熔岩高崙(高級)<br>娃娃卡：阿魯巴(稀有)<br>娃娃卡：鑽石高崙(稀有)<br>娃娃卡：木乃伊王(英雄)</td><td>強壯的小孩</td><td>傷害減免+1</td></tr>
+          <tr><td>娃娃卡：少年帕克(高級)<br>娃娃卡：少女帕歐(高級)<br>娃娃卡：蕾雅(稀有)<br>娃娃卡：艾莉絲(英雄)<br>娃娃卡：吸血鬼(英雄)</td><td>美少女美少年</td><td>近距離爆擊率+1%</td></tr>
+          <tr><td>娃娃卡：木乃伊王(英雄)<br>娃娃卡：吸血鬼(英雄)</td><td>晚上很危險</td><td>遠距離爆擊率+1%</td></tr>
+          <tr><td>娃娃卡：木乃伊王(英雄)<br>娃娃卡：幻象眼魔(英雄)<br>娃娃卡：冰之女王(傳說)</td><td>燃盡之後只剩灰燼</td><td>遠距離命中+2</td></tr>
+          <tr><td>娃娃卡：惡魔(傳說)<br>娃娃卡：冰之女王(傳說)</td><td>冷酷與熱情</td><td>魔法防禦+5</td></tr>
+          <tr><td>娃娃卡：黑長者(稀有)<br>娃娃卡：巴蘭卡(傳說)</td><td>無法得知的表情</td><td>迴避率+2</td></tr>
+          <tr><td>娃娃卡：黑妖(男)(高級)<br>娃娃卡：黑妖(女)(高級)<br>娃娃卡：巴蘭卡(傳說)</td><td>拉斯塔巴德的戰士</td><td>近距離爆擊率+1%</td></tr>
+          <tr><td>娃娃卡：巴風特(英雄)<br>娃娃卡：惡魔(傳說)</td><td>有名的惡魔們</td><td>傷害減免+1</td></tr>
+          <tr><td>娃娃卡：拉拉(稀有)<br>娃娃卡：死亡騎士(傳說)</td><td>沒有盡頭的戰鬥</td><td>PVP傷害減免+1</td></tr>
+          <tr><td>娃娃卡：巴風特(英雄)<br>娃娃卡：巫妖(英雄)</td><td>一團貪婪</td><td>智力+1</td></tr>
+          <tr><td>娃娃卡：樹精(稀有)<br>娃娃卡：巴風特(英雄)</td><td>比誰都塊</td><td>魔法法爆擊率+1%</td></tr>
+          <tr><td>娃娃卡：妖精(女)(高級)<br>娃娃卡：拉拉(稀有)<br>娃娃卡：艾莉絲(英雄)</td><td>金髮美女</td><td>魔法攻擊力+1</td></tr>
+          <tr><td>娃娃卡：槍手(男)(高級)<br>娃娃卡：槍手(女)(高級)<br>娃娃卡：拉拉(稀有)<br>娃娃卡：榭莉(稀有)<br>娃娃卡：達伊諾思打者(稀有)<br>娃娃卡：巴克休(英雄)</td><td>我們終於來了</td><td>傷害減免+1</td></tr>
+          <tr><td>娃娃卡：拉拉(稀有)<br>娃娃卡：榭莉(稀有)<br>娃娃卡：達伊諾思打者(稀有)</td><td>吉祥物</td><td>近距離迴避+1</td></tr>
+          <tr><td>娃娃卡：榭莉(稀有)<br>娃娃卡：達伊諾思打者(稀有)<br>娃娃卡：淘氣龍(英雄)<br>娃娃卡：藍飛龍(英雄)</td><td>恐龍朋友們</td><td>體力回復量+2</td></tr>
+          <tr><td>娃娃卡：稻草人(高級)<br>娃娃卡：拉拉(稀有)</td><td>新手教學</td><td>體力上限+10 魔力上限+5</td></tr>
+          <tr><td>娃娃卡：石頭高崙(一般)<br>娃娃卡：雪人(高級)<br>娃娃卡：飛龍(稀有)</td><td>撿拾達人</td><td>負重獎勵+50</td></tr>
+          <tr><td>娃娃卡：王族(男)(高級)<br>娃娃卡：騎士(男)(高級)<br>娃娃卡：法師(男)(高級)<br>娃娃卡：妖精(男)(高級)<br>娃娃卡：黑妖(男)(高級)</td><td>我們是男子漢</td><td>體力上限+10</td></tr>
+          <tr><td>娃娃卡：王族(女)(高級)<br>娃娃卡：騎士(女)(高級)<br>娃娃卡：法師(女)(高級)<br>娃娃卡：妖精(女)(高級)<br>娃娃卡：黑妖(女)(高級)</td><td>美女折磨人</td><td>魔力上限+10</td></tr>
+          <tr><td>娃娃卡：妖精(男)(高級)<br>娃娃卡：妖精(女)(高級)<br>娃娃卡：黑妖(男)(高級)<br>娃娃卡：黑妖(女)(高級)</td><td>光明與黑暗</td><td>魔力上限+10</td></tr>
+          <tr><td>娃娃卡：雪怪(一般)<br>娃娃卡：雪人(高級)<br>娃娃卡：伊弗利特(英雄)</td><td>不要逃一起玩</td><td>魔法防禦+4</td></tr>
+          <tr><td>娃娃卡：拉拉(稀有)<br>娃娃卡：達伊諾思打者(稀有)<br>娃娃卡：獨眼巨人(英雄)</td><td>我和朋友們I</td><td>近距離命中+1</td></tr>
+          <tr><td>娃娃卡：暗黑騎士(男)(高級)<br>娃娃卡：榭莉(稀有)<br>娃娃卡：艾依爾(英雄)</td><td>我和朋友們II</td><td>遠距離命中+1</td></tr>
+          <tr><td>娃娃卡：王族(男)(高級)<br>娃娃卡：騎士(女)(高級)<br>娃娃卡：妖精(女)(高級)<br>娃娃卡：神聖劍士(高級)<br>娃娃卡：狂戰士(高級)</td><td>亞丁5人組</td><td>體力上限+10</td></tr>
+          <tr><td>娃娃卡：拉拉(稀有)<br>娃娃卡：艾莉絲(英雄)<br>娃娃卡：克特(英雄)</td><td>克特和艾莉絲</td><td>力量+1</td></tr>
+          <tr><td>娃娃卡：石頭高崙(一般)<br>娃娃卡：熔岩高崙(高級)<br>娃娃卡：鑽石高崙(稀有)<br>娃娃卡：安塔瑞斯(神話)</td><td>地之王登場</td><td>體力上限+50</td></tr>
+          <tr><td>娃娃卡：亞力安(高級)<br>娃娃卡：黑長者(稀有)<br>娃娃卡：飛龍(稀有)<br>娃娃卡：阿魯巴(稀有)<br>娃娃卡：安塔瑞斯(神話)</td><td>嗚哇大哥來龍谷了</td><td>PVP傷害減免+1</td></tr>
+          <tr><td>娃娃卡：巴風特(英雄)<br>娃娃卡：安塔瑞斯(神話)</td><td>恩巴風特你的魔杖呢</td><td>魔法攻擊力+3</td></tr>
+          <tr><td>娃娃卡：騎士范德(英雄)<br>娃娃卡：木乃伊王(英雄)<br>娃娃卡：吸血鬼(英雄)<br>娃娃卡：安塔瑞斯(神話)</td><td>不要一直待在塔裡出去玩</td><td>經驗值獎勵+1%</td></tr>
+          <tr><td>娃娃卡：惡魔(傳說)<br>娃娃卡：冰之女王(傳說)<br>娃娃卡：安塔瑞斯(神話)</td><td>說的恢復力不就是我們</td><td>魔力回復量+3</td></tr>
+          <tr><td>娃娃卡：巴克休(英雄)<br>娃娃卡：獨角獸(傳說)</td><td>獨角獸與巴克休</td><td>無視傷害減免+2</td></tr>
+          <tr><td>娃娃卡：熔岩高崙(高級)<br>娃娃卡：巴克休(英雄)<br>娃娃卡：獨角獸(傳說)</td><td>你怎麼變得這麼強壯</td><td>無視傷害減免+2</td></tr>
+          <tr><td>娃娃卡：伊弗利特(英雄)<br>娃娃卡：巴克休(英雄)</td><td>如果要來的話就來阿</td><td>近距離命中+2</td></tr>
+          <tr><td>娃娃卡：希爾黛絲(一般)<br>娃娃卡：奎斯坦修(一般)<br>娃娃卡：美人魚(高級)<br>娃娃卡：巴克休(英雄)</td><td>伊娃的祝福快點</td><td>遠距離命中+2</td></tr>
+          <tr><td>娃娃卡：丹迪(稀有)<br>娃娃卡：達伊諾思投手(稀有)<br>娃娃卡：榭莉(稀有)<br>娃娃卡：達伊諾思打者(稀有)</td><td>恐龍軍團的進擊</td><td>近距離命中+1</td></tr>
+          <tr><td>娃娃卡：丹迪(稀有)<br>娃娃卡：達伊諾思投手(稀有)</td><td>我的朋友們</td><td>遠距離命中+1</td></tr>
+          <tr><td>娃娃卡：騎士(男)(高級)<br>娃娃卡：騎士(女)(高級)<br>娃娃卡：暗黑騎士(男)(高級)<br>娃娃卡：神聖劍士(高級)<br>娃娃卡：狂戰士(高級)</td><td>要見面的人</td><td>體力上限+10</td></tr>
+          <tr><td>娃娃卡：不死鳥(傳說)<br>娃娃卡：黑暗長者(傳說)</td><td>不死鳥和暗黑長者</td><td>近.遠距離攻擊力+1</td></tr>
+          <tr><td>娃娃卡：思克巴(高級)<br>娃娃卡：飛龍(稀有)<br>娃娃卡：思克巴女皇(稀有)<br>娃娃卡：不死鳥(傳說)</td><td>飛起來吧</td><td>減免傷害+2</td></tr>
+          <tr><td>娃娃卡：長者(高級)<br>娃娃卡：黑長者(稀有)<br>娃娃卡：黑暗長者(傳說)</td><td>我們視長老團</td><td>魔法攻擊力+2</td></tr>
+          <tr><td>娃娃卡：騎士范德(英雄)<br>娃娃卡：黑暗長者(傳說)</td><td>想變得跟我一樣大你還早</td><td>近距離命中+1</td></tr>
+          <tr><td>娃娃卡：狂風的夏斯奇(英雄)<br>娃娃卡：疾風的夏斯奇(英雄)<br>娃娃卡：大腳瑪幽(英雄)</td><td>又淤青啦</td><td>近距離攻擊+1</td></tr>
+          <tr><td>娃娃卡：黑長者(稀有)<br>娃娃卡：渾沌的活鎧甲(稀有)<br>娃娃卡：浮士德(英雄)<br>娃娃卡：炎魔(英雄)</td><td>陰森森的港覺</td><td>無視傷害減免+1</td></tr>
+          <tr><td>娃娃卡：浮士德(英雄)<br>娃娃卡：大腳瑪幽(英雄)</td><td>浮士德和大腳的瑪幽</td><td>近距離命中+1</td></tr>
+          <tr><td>娃娃卡：樹精(稀有)<br>娃娃卡：浮士德(英雄)</td><td>中邪的樹</td><td>無視傷害減免+1</td></tr>
+          <tr><td>娃娃卡：騎士范德(英雄)<br>娃娃卡：狂風的夏斯奇(英雄)<br>娃娃卡：疾風的夏斯奇(英雄)</td><td>艾爾摩大將軍</td><td>遠距離命中+1</td></tr>
+          <tr><td>娃娃卡：騎士帕克(稀有)<br>娃娃卡：伊弗利特(英雄)<br>娃娃卡：狂風的夏斯奇(英雄)</td><td>染成紅色</td><td>PVP傷害+1</td></tr>
+          <tr><td>娃娃卡：騎士帕克(稀有)<br>娃娃卡：疾風的夏斯奇(英雄)</td><td>需要綠色</td><td>魔法防禦+2</td></tr>
+          <tr><td>娃娃卡：獨眼巨人(英雄)<br>娃娃卡：伊弗利特(英雄)</td><td>把湯姆交出來就能免除血光</td><td>負重獎勵+500</td></tr>
+          <tr><td>娃娃卡：巨大守護螞蟻(稀有)<br>娃娃卡：巴克休(英雄)</td><td>剷除螞蟻仇人</td><td>體力上限+20</td></tr>
+          <tr><td>娃娃卡：巨大守護螞蟻(稀有)<br>娃娃卡：樹精(稀有)<br>娃娃卡：巴克休(英雄)</td><td>你說有一個不是昆蟲</td><td>近距離命中+1</td></tr>
+          <tr><td>娃娃卡：樹精(稀有)<br>娃娃卡：力卡溫(稀有)</td><td>樹精和力卡溫</td><td>遠距離命中+1</td></tr>
+          <tr><td>娃娃卡：木刻人偶(一般)<br>娃娃卡：樹精(稀有)</td><td>出生的秘密</td><td>負重獎勵+200</td></tr>
+          <tr><td>娃娃卡：野狼寶寶(一般)<br>娃娃卡：力卡溫(稀有)</td><td>滿月很危險</td><td>體力上限+20</td></tr>
+          <tr><td>娃娃卡：哈維(藍)(稀有)<br>娃娃卡：獨眼巨人(英雄)</td><td>遺忘之島看守人</td><td>昏迷命中+1%</td></tr>
+          <tr><td>娃娃卡：飛龍(稀有)<br>娃娃卡：思克巴女皇(稀有)<br>娃娃卡：哈維(藍)(稀有)</td><td>旋風小子</td><td>近.遠距離命中+1</td></tr>
+          <tr><td>娃娃卡：長者(高級)<br>娃娃卡：黑長者(稀有)<br>娃娃卡：阿努比斯(英雄)</td><td>聽說最近我的雷電很夯</td><td>無視傷害減免+1</td></tr>
+          <tr><td>娃娃卡：曼波兔(稀有)<br>娃娃卡：巴克休(英雄)</td><td>曼波兔和青蛙</td><td>近距離命中+1</td></tr>
+          <tr><td>娃娃卡：狂風的夏斯奇(英雄)<br>娃娃卡：疾風的夏斯奇(英雄)</td><td>雙胞胎的困擾</td><td>遠距離命中+1</td></tr>
+          <tr><td>娃娃卡：雪怪(一般)<br>娃娃卡：雪人(高級)<br>娃娃卡：曼波兔(稀有)<br>娃娃卡：大腳瑪幽(英雄)<br>娃娃卡：艾比諾不死鳥(傳說)<br>娃娃卡：艾比諾惡魔(傳說)<br>娃娃卡：艾比諾獨角獸(傳說)</td><td>白中之白</td><td>魔力上限+10</td></tr>
+          <tr><td>娃娃卡：帕拉丁(傳說)<br>娃娃卡：甘特(傳說)<br>娃娃卡：歐吉王(傳說)</td><td>心臟變強壯</td><td>昏迷命中+1%</td></tr>
+          <tr><td>娃娃卡：阿勒尼亞(稀有)<br>娃娃卡：天上騎士(英雄)<br>娃娃卡：獨角獸(傳說)<br>娃娃卡：帕拉丁(傳說)</td><td>神聖的組合</td><td>近遠距離攻擊力+1</td></tr>
+          <tr><td>娃娃卡：黑長者(稀有)<br>娃娃卡：巴風特(英雄)<br>娃娃卡：帕拉丁(傳說)</td><td>退下吧魔鬼阿</td><td>無視傷害減免+1</td></tr>
+          <tr><td>娃娃卡：克特(英雄)<br>娃娃卡：甘特(傳說)</td><td>層級不符</td><td>近距離爆擊率+1%</td></tr>
+          <tr><td>娃娃卡：希爾黛絲(一般)<br>娃娃卡：史巴托(高級)<br>娃娃卡：樹精(稀有)<br>娃娃卡：艾莉絲(英雄)<br>娃娃卡：甘特(傳說)</td><td>一個一個來吧</td><td>無視傷害減免+1</td></tr>
+          <tr><td>娃娃卡：力卡溫(稀有)<br>娃娃卡：獨眼巨人(英雄)<br>娃娃卡：烏格奴斯(英雄)<br>娃娃卡：高崙守護者(英雄)<br>娃娃卡：歐吉王(傳說)</td><td>巨人的進擊</td><td>防禦+1</td></tr>
+          <tr><td>娃娃卡：賽尼斯(英雄)<br>娃娃卡：傑克吳燈籠(英雄)</td><td>魔女和南瓜</td><td>無視傷害減免+2</td></tr>
+          <tr><td>娃娃卡：吸血鬼(英雄)<br>娃娃卡：浮士德(英雄)<br>娃娃卡：傑克吳燈籠(英雄)</td><td>可怕的小子</td><td>近遠距離攻擊力+1</td></tr>
+          <tr><td>娃娃卡：達伊諾思投手(稀有)<br>娃娃卡：傑克吳燈籠(英雄)</td><td>打破南瓜</td><td>近遠距離命中+1</td></tr>
+          <tr><td>娃娃卡：巴風特(英雄)<br>娃娃卡：賽尼斯(英雄)</td><td>魔女與惡魔</td><td>無視傷害減免+1</td></tr>
+          <tr><td>娃娃卡：吸血鬼(英雄)<br>娃娃卡：賽尼斯(英雄)</td><td>黑暗的人們</td><td>體力上限+50</td></tr>
+          <tr><td>娃娃卡：思克巴(高級)<br>娃娃卡：思克巴女皇(稀有)<br>娃娃卡：賽尼斯(英雄)</td><td>魔女軍團</td><td>魔力回復量+1</td></tr>
+          <tr><td>娃娃卡：騎士(男)(高級)<br>娃娃卡：騎士(女)(高級)<br>娃娃卡：法師(男)(高級)<br>娃娃卡：法師(女)(高級)<br>娃娃卡：黃金騎士(稀有)</td><td>素養課程</td><td>體力上限+15</td></tr>
+          <tr><td>娃娃卡：阿魯巴(稀有)<br>娃娃卡：哈維(藍)(稀有)<br>娃娃卡：大腳瑪幽(英雄)</td><td>相同又不同的你</td><td>遠距離命中+1</td></tr>
+          <tr><td>娃娃卡：黃金安迪斯(稀有)<br>娃娃卡：獨眼巨人(英雄)<br>娃娃卡：克特(英雄)<br>娃娃卡：千年九尾狐(英雄)<br>娃娃卡：炎魔(英雄)<br>娃娃卡：黑豹(英雄)<br>娃娃卡：烏格奴斯(英雄)</td><td>金光幸運英雄娃娃</td><td>PVP傷害減免+1</td></tr>
+          <tr><td>娃娃卡：黃金安迪斯(稀有)<br>娃娃卡：不死鳥(傳說)<br>娃娃卡：鐮刀死神(傳說)<br>娃娃卡：唐三藏(傳說)<br>娃娃卡：屠龍者(傳說)<br>娃娃卡：黑暗哈汀(傳說)</td><td>金光幸運傳說娃娃</td><td>無視傷害減免+3</td></tr>
+          <tr><td>娃娃卡：墮落(傳說)<br>娃娃卡：黑暗長者(傳說)<br>娃娃卡：黑暗之星宙斯(傳說)</td><td>智慧的娃娃</td><td>魔法攻擊力+1</td></tr>
+          <tr><td>娃娃卡：甘特(傳說)<br>娃娃卡：黑暗之星宙斯(傳說)</td><td>歡迎光臨說話之島</td><td>魔法命中+1</td></tr>
+          <tr><td>娃娃卡：賽尼斯(英雄)<br>娃娃卡：黑暗之星宙斯(傳說)</td><td>黑魔法之上的黑魔法</td><td>魔法爆擊率率+1%</td></tr>
+          <tr><td>娃娃卡：艾依爾(英雄)<br>娃娃卡：暗黑騎士團莉爾利(英雄)<br>娃娃卡：伊詩蒂(英雄)</td><td>真正的女戰士</td><td>體質+1</td></tr>
+          <tr><td>娃娃卡：狂風的夏斯奇(英雄)<br>娃娃卡：疾風的夏斯奇(英雄)<br>娃娃卡：暗黑騎士團莉爾利(英雄)</td><td>莉爾莉和夏斯奇</td><td>PVP傷害減免+1</td></tr>
+          <tr><td>娃娃卡：賽尼斯(英雄)<br>娃娃卡：伊詩蒂(英雄)</td><td>孽緣和糾纏</td><td>魔法防禦+2</td></tr>
+          <tr><td>娃娃卡：哈維(藍)(稀有)<br>娃娃卡：哈維(稀有)<br>娃娃卡：艾依爾(英雄)</td><td>這世界上沒有壞哈維</td><td>體力上限+30</td></tr>
+          <tr><td>娃娃卡：暗黑騎士(男)(高級)<br>娃娃卡：暗黑騎士團莉爾利(英雄)</td><td>你為什麼從那裡出來</td><td>近距離命中+1</td></tr>
+          <tr><td>娃娃卡：王族(男)(高級)<br>娃娃卡：王族(女)(高級)<br>娃娃卡：騎士(男)(高級)<br>娃娃卡：騎士(女)(高級)<br>娃娃卡：黃金巡守(稀有)</td><td>通識課程第二堂課</td><td>魔力上限+15</td></tr>
+          <tr><td>娃娃卡：神聖劍士(高級)<br>娃娃卡：狂戰士(高級)<br>娃娃卡：暗黑騎士團莉爾利(英雄)<br>娃娃卡：帕拉丁(傳說)</td><td>強勢的小鬼們</td><td>體力上限+10</td></tr>
+          <tr><td>娃娃卡：屠龍者(傳說)<br>娃娃卡：安塔瑞斯(神話)<br>娃娃卡：巴拉卡斯(神話)<br>娃娃卡：林德拜爾(神話)<br>娃娃卡：法利昂(神話)</td><td>屠龍者的驕傲</td><td>PVP傷害.傷害減免+3</td></tr>
+          <tr><td>娃娃卡：獨角獸(傳說)<br>娃娃卡：甘特(傳說)<br>娃娃卡：安塔瑞斯(神話)<br>娃娃卡：法利昂(神話)</td><td>強而有力的娃娃</td><td>減免傷害+2</td></tr>
+          <tr><td>娃娃卡：龍騎士(男)(高級)<br>娃娃卡：龍騎士(女)(高級)<br>娃娃卡：黑長者(稀有)<br>娃娃卡：淘氣龍(英雄)<br>娃娃卡：藍飛龍(英雄)<br>娃娃卡：黑暗長者(傳說)<br>娃娃卡：安塔瑞斯(神話)<br>娃娃卡：法利昂(神話)</td><td>我要招喚龍了</td><td>減免傷害+2</td></tr>
+          <tr><td>娃娃卡：不死鳥(傳說)<br>娃娃卡：安塔瑞斯(神話)<br>娃娃卡：法利昂(神話)</td><td>你要我代替巴拉卡斯</td><td>昏迷耐性+1</td></tr>
+          <tr><td>娃娃卡：希爾黛絲(一般)<br>娃娃卡：伊弗利特(英雄)<br>娃娃卡：不死鳥(傳說)<br>娃娃卡：法利昂(神話)</td><td>赴湯蹈火的拍檔</td><td>PVP傷害+1</td></tr>
+          <tr><td>娃娃卡：巴蘭卡(傳說)<br>娃娃卡：巴拉卡斯(神話)<br>娃娃卡：法利昂(神話)</td><td>法利昂和巴蘭卡</td><td>PVP傷害減免+1</td></tr>
+          <tr><td>娃娃卡：希爾黛絲(一般)<br>娃娃卡：美人魚(高級)<br>娃娃卡：哈維(藍)(稀有)<br>娃娃卡：巴克休(英雄)<br>娃娃卡：法利昂(神話)</td><td>接受水之洗禮吧</td><td>無視傷害減免+2</td></tr>
+          <tr><td>娃娃卡：孫悟空(稀有)<br>娃娃卡：沙悟淨(稀有)<br>娃娃卡：豬八戒(稀有)<br>娃娃卡：唐三藏(傳說)</td><td>西天取經的隊伍</td><td>力量+1</td></tr>
+          <tr><td>娃娃卡：火焰娃娃(一般)<br>娃娃卡：橘炙娃娃(紅)(一般)<br>娃娃卡：橘炙娃娃(綠)(一般)<br>娃娃卡：橘炙娃娃(橘)(一般)<br>娃娃卡：橘炙娃娃(藍)(一般)</td><td>燃燒的五彩靈魂</td><td>HP+10</td></tr>
+          <tr><td>娃娃卡：吉爾塔斯(唯一)</td><td>來自異界的支配者</td><td>力敏智+1</td></tr>
+          <tr><td>娃娃卡：槍手(男)(高級)<br>娃娃卡：槍手(女)(高級)<br>娃娃卡：龍騎士(男)(高級)<br>娃娃卡：龍騎士(女)(高級)</td><td>槍手與龍騎士</td><td>近遠距離攻擊力+1</td></tr>
+          <tr><td>娃娃卡：阿魯巴(藍)(稀有)<br>娃娃卡：阿魯巴(紅)(英雄)</td><td>阿魯巴的雙重奏</td><td>防禦+1</td></tr>
+          <tr><td>娃娃卡：艾比諾不死鳥(傳說)<br>娃娃卡：艾比諾惡魔(傳說)<br>娃娃卡：艾比諾獨角獸(傳說)</td><td>艾比諾的守護者</td><td>傷害減免+2</td></tr>
+          <tr><td>娃娃卡：孫悟空(稀有)<br>娃娃卡：覺醒孫悟空(英雄)</td><td>傳說中的齊天大聖</td><td>HP+30</td></tr>
+          <tr><td>娃娃卡：老虎(稀有)<br>娃娃卡：黑豹(英雄)<br>娃娃卡：狸貓(英雄)<br>娃娃卡：黑色曼波兔(英雄)</td><td>淘氣的動物農場</td><td>敏捷+1</td></tr>
+          <tr><td>娃娃卡：天上騎士(英雄)<br>娃娃卡：炎魔(英雄)</td><td>神聖與墮落的邊界</td><td>遠距離攻擊力+1</td></tr>
+          <tr><td>娃娃卡：秩序的死亡之劍(稀有)<br>娃娃卡：渾沌的活鎧甲(稀有)</td><td>秩序與混沌的鎧甲</td><td>防禦+1</td></tr>
+          <tr><td>娃娃卡：少年帕克(高級)<br>娃娃卡：少女帕歐(高級)</td><td>雪壁上的孩子們</td><td>HP+15</td></tr>
+          <tr><td>娃娃卡：唐三藏(傳說)<br>娃娃卡：黑暗哈汀(傳說)</td><td>傳說級的大法師</td><td>SP+2</td></tr>
+          <tr><td>娃娃卡：千年九尾狐(英雄)</td><td>擁有千年的智慧</td><td>魔法命中+1</td></tr>
+          <tr><td>娃娃卡：淘氣龍(英雄)<br>娃娃卡：藍飛龍(英雄)<br>娃娃卡：屠龍者(傳說)</td><td>屠龍者與被屠者</td><td>近遠攻擊力+1</td></tr>
+          <tr><td>娃娃卡：紅色妖魔(高級)</td><td>紅色妖魔的進擊</td><td>HP+15</td></tr>
+          <tr><td>娃娃卡：葛林(稀有)<br>娃娃卡：聖誕妖精(稀有)</td><td>聖誕節的惡作劇</td><td>HP+25</td></tr>
+          <tr><td>娃娃卡：烏格奴斯(英雄)<br>娃娃卡：高崙守護者(英雄)</td><td>高崙與巨像</td><td>HP+30</td></tr>
+          <tr><td>娃娃卡：鐮刀死神(傳說)</td><td>鐮刀死神的收割</td><td>智力+1</td></tr>
+          <tr><td>娃娃卡：暗黑騎士(女)(高級)<br>娃娃卡：蕾雅(稀有)<br>娃娃卡：阿勒尼亞(稀有)</td><td>美麗的致命誘惑</td><td>PVP傷害減免+1</td></tr>
+          <tr><td>娃娃卡：孫悟空(稀有)<br>娃娃卡：覺醒孫悟空(英雄)</td><td>覺醒的猴王</td><td>PVP傷害+1</td></tr>
+        </tbody>
+      </table>
+    </div>
+  </div><!-- end tab-collection -->
+
+</div>
+
+<footer>
+  <div class="footer-inner">
+    <div>
+      <div class="footer-col-title">陀螺天堂</div>
+      <ul class="footer-links">
+        <li><a href="index.html">首頁</a></li>
+        <li><a href="events.html">活動介紹</a></li>
+        <li><a href="download.html">檔案下載</a></li>
+        <li><a href="rates.html">版本倍率</a></li>
+      </ul>
+    </div>
+    <div>
+      <div class="footer-col-title">遊戲資訊</div>
+      <ul class="footer-links">
+        <li><a href="features.html">遊戲特色</a></li>
+        <li><a href="boss.html">BOSS介紹</a></li>
+        <li><a href="maps.html">特殊地圖掉落</a></li>
+        <li><a href="items.html">道具介紹</a></li>
+      </ul>
+    </div>
+    <div>
+      <div class="footer-col-title">聯絡我們</div>
+      <ul class="footer-links">
+        <li><a href="#" onclick="document.getElementById('modal-line').classList.add('open');return false;">LINE 官方社群</a></li>
+        <li><a href="#" onclick="document.getElementById('modal-sponsor').classList.add('open');return false;">贊助方案</a></li>
+        <li><a href="#" onclick="document.getElementById('modal-gift').classList.add('open');return false;">申請新手禮包</a></li>
+        <li><a href="referral.html">推文系統</a></li>
+      </ul>
+    </div>
+  </div>
+  <div class="footer-copy">
+    © 2026 陀螺天堂 · 版權所有<br>
+  </div>
+</footer>
+<script src="main.js"></script>
+<script>
+function switchTab(name){
+  document.querySelectorAll('.page-tab').forEach((t,i)=>{
+    t.classList.toggle('active',(i===0&&name==='atlas')||(i===1&&name==='collection'));
+  });
+  document.getElementById('tab-atlas').classList.toggle('active',name==='atlas');
+  document.getElementById('tab-collection').classList.toggle('active',name==='collection');
+}
+</script>
+<button id="backToTop" title="回到頂部">&#8679;</button>
+</body></html>

@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0"><title>陀螺天堂 - 預約LINE禮包</title>  <link rel="preconnect" href="https://telegraph-image-1n0.pages.dev" crossorigin>
+  <link rel="dns-prefetch" href="https://telegraph-image-1n0.pages.dev">
+  <link rel="stylesheet" href="style.css">
+  <style>
+    body { background-image:url('https://telegraph-image-1n0.pages.dev/file/AgACAgUAAyEGAAS3SV8sAAIDl2oKsIrQ--LWATlPU2Lr4azsyw-mAAKhD2sbx8dQVB2-s2pJCrnTAQADAgADeQADOwQ.jpg');background-size:cover;background-position:center center;background-attachment:fixed; }
+    .section     { background:rgba(7,6,15,0.82)  !important; }
+    .section-alt { background:rgba(15,12,12,0.88) !important; }
+
+    .dingyuan-card {
+      width:720px; max-width:95%;
+      background:linear-gradient(135deg,#1a1a1a 0%,#050505 100%);
+      border:3px solid #d4af37; border-radius:10px; padding:25px;
+      box-shadow:0 0 30px rgba(212,175,55,.2),inset 0 0 20px rgba(0,0,0,.9);
+      position:relative; overflow:hidden; color:white; text-align:center;
+      margin:0 auto;
+    }
+    .header-crown { font-size:36px; margin-bottom:10px; filter:drop-shadow(0 0 8px #d4af37); }
+    .vip-title {
+      background:linear-gradient(to bottom,#fff 0%,#d4af37 50%,#8a6d3b 100%);
+      -webkit-background-clip:text; -webkit-text-fill-color:transparent;
+      font-size:26px; font-weight:900; margin:0; letter-spacing:3px;
+    }
+    .slogan-text { color:#d4af37; font-size:16px; font-weight:700; margin:5px 0 20px; letter-spacing:4px; opacity:.8; }
+    .columns-container { display:flex; gap:20px; margin-bottom:20px; }
+    .column { flex:1; display:flex; flex-direction:column; }
+    .item-name {
+      background:rgba(212,175,55,.1); color:#fff; font-size:18px; font-weight:700;
+      padding:8px 0; margin-bottom:15px;
+      border-top:1px solid rgba(212,175,55,.3); border-bottom:1px solid rgba(212,175,55,.3);
+      text-shadow:1px 1px 2px #000; white-space:nowrap;
+    }
+    .stat-list { list-style:none; padding:0; margin:0; flex-grow:1; }
+    .stat-item {
+      display:flex; justify-content:space-between; align-items:center;
+      padding:10px 12px; margin:6px 0;
+      background:rgba(255,255,255,.03); border-left:4px solid #8a6d3b;
+      font-size:16px; transition:.3s;
+    }
+    .stat-item:hover { background:rgba(212,175,55,.08); border-left-color:#d4af37; }
+    .stat-label { color:#b0b0b0; font-weight:500; }
+    .stat-value { color:#d4af37; font-weight:900; text-shadow:0 0 10px rgba(212,175,55,.5); }
+    .restrictions {
+      margin-top:10px; font-size:14px; background:#2a0000;
+      color:rgba(255,255,255,.8); padding:8px; font-weight:bold;
+      border:1px solid rgba(212,175,55,.3); letter-spacing:2px;
+    }
+    .dingyuan-card::after {
+      content:""; position:absolute; top:-100%; left:-100%; width:300%; height:300%;
+      background:linear-gradient(45deg,transparent,rgba(212,175,55,.05),transparent);
+      transform:rotate(45deg); animation:flow-wealth 6s linear infinite; pointer-events:none;
+    }
+    @keyframes flow-wealth {
+      0%   { transform:translate(-30%,-30%) rotate(45deg); }
+      100% { transform:translate(30%,30%) rotate(45deg); }
+    }
+    @media (max-width:650px) {
+      .columns-container { flex-direction:column; }
+      .dingyuan-card { width:360px; }
+    }
+  </style></head>
+<body>
+<nav class="topnav"><a class="topnav-logo" href="index.html">🌀 陀螺天堂</a><div class="topnav-sep"></div><div class="topnav-links" id="navLinks"><a class="topnav-link" href="index.html">首頁</a><a class="topnav-link" href="sponsor.html">贊助系統</a><a class="topnav-link" href="events-list.html">活動介紹</a><a class="topnav-link" href="features.html">遊戲特色</a><a class="topnav-link" href="items.html">裝備與道具</a><a class="topnav-link" href="boss.html">BOSS介紹</a><a class="topnav-link" href="maps.html">地圖特殊掉落</a><a class="topnav-link" href="download.html">檔案下載</a><a class="topnav-link" href="rates.html">版本倍率</a><a class="topnav-link" href="promote.html">推文與直播</a><div class="topnav-dropdown"><a class="topnav-link">遊戲規章 ▾</a><div class="dropdown-menu"><a href="rules.html">伺服器規章</a><a href="disclaimer.html">免責聲明</a><a href="anti-cheat.html">防作弊聲明</a></div></div><div class="topnav-dropdown"><a class="topnav-link">聯絡我們 ▾</a><div class="dropdown-menu"><a href="https://lin.ee/qUdjymV" target="_blank">LINE 官方社群</a><a href="sponsor.html">贊助方案</a><a href="#" onclick="document.getElementById('modal-gift').classList.add('open');return false;">申請新手禮包</a></div></div></div><div class="topnav-right"><a class="topnav-line-btn" href="https://lin.ee/qUdjymV" target="_blank">LINE 客服</a></div><div class="hamburger" onclick="document.getElementById('navLinks').classList.toggle('open')"><span></span><span></span><span></span></div></nav>
+<div class="float-sidebar"><button class="float-btn sponsor" data-modal="modal-sponsor"><span class="fb-icon">💰</span><span class="fb-label">贊助方案</span></button><button class="float-btn gift" data-modal="modal-gift"><span class="fb-icon">🎁</span><span class="fb-label">申請禮包</span></button><button class="float-btn line-btn" data-modal="modal-line"><span class="fb-icon"><img loading="lazy" src="https://upload.wikimedia.org/wikipedia/commons/4/41/LINE_logo.svg" alt="LINE"></span><span class="fb-label">LINE</span></button></div>
+<div class="float-modal" id="modal-sponsor"><div class="float-modal-box"><span class="modal-close">✕</span><div class="modal-title">💰 贊助方案</div><div class="modal-body"><p>▸ 贊助詳情請加入 LINE 社群詢問</p></div><a class="modal-btn" href="sponsor.html">查看贊助頁面</a></div></div>
+<div class="float-modal" id="modal-gift"><div class="float-modal-box"><span class="modal-close">✕</span><div class="modal-title">🎁 預約LINE禮包</div><div class="modal-body"><p>▸ 煉獄耳環<br>▸ 名譽貨幣【刻印】× 100<br>▸ 巧克力蛋糕【刻印】× 100<br>▸ 永久巧克力（永久三水）<br>▸ 永久名譽貨幣（永久三水）<br>▸ 象牙塔治癒藥水 × 10000<br><br><strong>加入 LINE 官方社群後私訊管理員即可領取。</strong></p></div><a class="modal-btn" href="event-line.html">查看禮包詳情</a></div></div>
+<div class="float-modal" id="modal-line"><div class="float-modal-box"><span class="modal-close">✕</span><div class="modal-title">💬 LINE 聯絡方式</div><div class="modal-body" style="text-align:center"><img loading="lazy" src="https://telegraph-image-1n0.pages.dev/file/AgACAgUAAyEGAAS3SV8sAAIDmGoKtRjS1aZ_pX1e1lD0BSHr0duBAAKmD2sbx8dQVFmjNE0p1cLBAQADAgADeAADOwQ.png" alt="LINE QR Code" style="width:150px;height:150px;margin:0 auto 12px;display:block;border-radius:8px;"></div><a class="modal-btn" href="https://line.me/ti/g2/FGmufEHakxKximWBYuLDBHET6-u8SLaGILTzCQ?utm_source=invitation&utm_medium=link_copy&utm_campaign=default" target="_blank">加入 LINE 官方社群</a></div></div>
+<div class="hero" style="height:220px"><div class="hero-bg" style="background:linear-gradient(135deg,#0a1820,#0a0818);"></div><div class="hero-content"><div class="hero-badge">LINE EVENT</div><h1 class="hero-title"><span style="font-size:2rem">預約LINE禮包</span></h1><p class="hero-tagline">加入社群，立即領取限定大禮</p></div></div>
+<div class="container" style="padding-top:56px;padding-bottom:80px">
+  <div class="dingyuan-card">
+    <div class="header-crown">⚜️</div>
+    <h2 class="vip-title"></h2>
+    <div class="slogan-text">永續經營</div>
+    <div class="columns-container">
+      <div class="column">
+        <div class="item-name">煉獄耳環</div>
+        <div class="stat-list">
+          <div class="stat-item"><span class="stat-label">體力上限</span><span class="stat-value">+100</span></div>
+          <div class="stat-item"><span class="stat-label">魔力上限</span><span class="stat-value">+25</span></div>
+          <div class="stat-item"><span class="stat-label">體力回復</span><span class="stat-value">+2</span></div>
+          <div class="stat-item"><span class="stat-label">魔力回復率</span><span class="stat-value">+1</span></div>
+        </div>
+      </div>
+      <div class="column">
+        <div class="item-name">預約肥厚豐滿LINE禮包</div>
+        <div class="stat-list">
+          <div class="stat-item"><span class="stat-label">名譽貨幣【刻印】</span><span class="stat-value">*100</span></div>
+          <div class="stat-item"><span class="stat-label">巧克力蛋糕【刻印】</span><span class="stat-value">*100</span></div>
+          <div class="stat-item"><span class="stat-label">永久巧克力 (永久三水)</span><span class="stat-value">永久</span></div>
+          <div class="stat-item"><span class="stat-label">永久名譽貨幣 (永久三水)</span><span class="stat-value">永久</span></div>
+          <div class="stat-item"><span class="stat-label">永久綠色藥水 (永久三水)</span><span class="stat-value">永久</span></div>
+          <div class="stat-item"><span class="stat-label">象牙塔治癒藥水</span><span class="stat-value">*10000</span></div>
+        </div>
+      </div>
+    </div>
+    <div class="restrictions">永續經營-長久服</div>
+  </div>
+  <div id="eventNav"></div>
+</div>
+<footer>
+  <div class="footer-inner">
+    <div>
+      <div class="footer-col-title">陀螺天堂</div>
+      <ul class="footer-links">
+        <li><a href="index.html">首頁</a></li>
+        <li><a href="events.html">活動介紹</a></li>
+        <li><a href="download.html">檔案下載</a></li>
+        <li><a href="rates.html">版本倍率</a></li>
+      </ul>
+    </div>
+    <div>
+      <div class="footer-col-title">遊戲資訊</div>
+      <ul class="footer-links">
+        <li><a href="features.html">遊戲特色</a></li>
+        <li><a href="boss.html">BOSS介紹</a></li>
+        <li><a href="maps.html">特殊地圖掉落</a></li>
+        <li><a href="items.html">道具介紹</a></li>
+      </ul>
+    </div>
+    <div>
+      <div class="footer-col-title">聯絡我們</div>
+      <ul class="footer-links">
+        <li><a href="#" onclick="document.getElementById('modal-line').classList.add('open');return false;">LINE 官方社群</a></li>
+        <li><a href="#" onclick="document.getElementById('modal-sponsor').classList.add('open');return false;">贊助方案</a></li>
+        <li><a href="#" onclick="document.getElementById('modal-gift').classList.add('open');return false;">申請新手禮包</a></li>
+        <li><a href="referral.html">推文系統</a></li>
+      </ul>
+    </div>
+  </div>
+  <div class="footer-copy">
+    © 2026 陀螺天堂 · 版權所有<br>
+  </div>
+</footer>
+<script src="main.js"></script>
+<script src="events-data.js"></script>
+<button id="backToTop" title="回到頂部">&#8679;</button>
+</body></html>

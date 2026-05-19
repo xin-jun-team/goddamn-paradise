@@ -1,0 +1,668 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0"><title>陀螺天堂 - 變身介紹</title>  <link rel="preconnect" href="https://telegraph-image-1n0.pages.dev" crossorigin>
+  <link rel="dns-prefetch" href="https://telegraph-image-1n0.pages.dev">
+  <link rel="stylesheet" href="style.css">
+  <style>
+    body { background-image:url('https://telegraph-image-1n0.pages.dev/file/AgACAgUAAyEGAAS3SV8sAAIDl2oKsIrQ--LWATlPU2Lr4azsyw-mAAKhD2sbx8dQVB2-s2pJCrnTAQADAgADeQADOwQ.jpg');background-size:cover;background-position:center center;background-attachment:fixed; }
+    .section     { background:rgba(7,6,15,0.82)  !important; }
+    .section-alt { background:rgba(15,12,12,0.88) !important; }
+  </style>
+<style>
+.t-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(130px,1fr));gap:8px;margin-bottom:30px}
+.t-item{padding:8px;border-radius:4px;font-size:13px;text-align:center;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.t-gen{background:rgba(158,158,158,.12);color:#bdbdbd;border:1px solid rgba(158,158,158,.2)}
+.t-adv{background:rgba(67,160,71,.12);color:#69f0ae;border:1px solid rgba(67,160,71,.2)}
+.t-rare{background:rgba(30,136,229,.12);color:#82b1ff;border:1px solid rgba(30,136,229,.2)}
+.t-hero{background:rgba(229,57,53,.12);color:#ff8a80;border:1px solid rgba(229,57,53,.2)}
+.t-sec{margin-top:30px;margin-bottom:15px;font-size:1.1em;display:flex;align-items:center;padding:8px 12px;border-radius:6px}
+.t-badge{font-size:.82em;margin-left:auto;padding:2px 10px;border-radius:20px;background:rgba(255,255,255,.08)}
+.t-table{width:100%;border-collapse:collapse;font-size:13px;margin-bottom:30px}
+.t-table th,.t-table td{border:1px solid var(--border);padding:8px;text-align:left}
+.t-table th{background:var(--bg3);color:var(--gold)}
+.t-table tr:nth-child(even) td{background:var(--bg2)}
+.t-table td{color:var(--text-muted)}
+.t-table td:first-child{color:var(--text);font-weight:bold}
+.coll-table{width:100%;border-collapse:collapse;font-size:13px;min-width:700px}
+.coll-table th{padding:12px 14px;background:rgba(0,229,255,.15);color:var(--accent);text-align:left;border-bottom:2px solid rgba(0,229,255,.2)}
+.coll-table td{padding:10px 14px;border-bottom:1px solid var(--border);color:var(--text-muted)}
+.coll-table tr:nth-child(even) td{background:var(--bg2)}
+.coll-table td:nth-child(2){font-weight:bold;color:var(--text)}
+.coll-table td:nth-child(3){color:#ff8a80;font-weight:bold}
+.t-anchor-nav{position:sticky;top:0;background:var(--bg);padding:10px 0;border-bottom:1px solid var(--border);margin-bottom:20px;z-index:10;display:flex;gap:8px;overflow-x:auto;white-space:nowrap;box-shadow:0 2px 8px rgba(0,0,0,.3)}
+.t-anchor-nav a{text-decoration:none;padding:5px 14px;border-radius:20px;font-size:13px;border:1px solid;flex-shrink:0}
+.page-tabs{display:flex;gap:8px;flex-wrap:wrap;margin-bottom:30px;position:sticky;top:56px;z-index:100;background:var(--bg);padding:10px 0}
+.page-tab{padding:9px 20px;cursor:pointer;color:var(--text-muted);border:1px solid var(--border);border-radius:6px;font-size:14px;background:var(--bg2);transition:color .2s,background .2s,border-color .2s;white-space:nowrap}
+.page-tab:hover{color:var(--text);border-color:var(--accent)}
+.page-tab.active{color:#fff;background:var(--accent);border-color:var(--accent);font-weight:bold}
+.tab-content{display:none}.tab-content.active{display:block}
+</style>
+</head>
+<body>
+<nav class="topnav"><a class="topnav-logo" href="index.html">🌀 陀螺天堂</a><div class="topnav-sep"></div><div class="topnav-links" id="navLinks"><a class="topnav-link" href="index.html">首頁</a><a class="topnav-link" href="sponsor.html">贊助系統</a><a class="topnav-link" href="events-list.html">活動介紹</a><a class="topnav-link" href="features.html">遊戲特色</a><a class="topnav-link" href="items.html">裝備與道具</a><a class="topnav-link" href="boss.html">BOSS介紹</a><a class="topnav-link" href="maps.html">地圖特殊掉落</a><a class="topnav-link" href="download.html">檔案下載</a><a class="topnav-link" href="rates.html">版本倍率</a><a class="topnav-link" href="promote.html">推文與直播</a><div class="topnav-dropdown"><a class="topnav-link">遊戲規章 ▾</a><div class="dropdown-menu"><a href="rules.html">伺服器規章</a><a href="disclaimer.html">免責聲明</a><a href="anti-cheat.html">防作弊聲明</a></div></div><div class="topnav-dropdown"><a class="topnav-link">聯絡我們 ▾</a><div class="dropdown-menu"><a href="https://lin.ee/qUdjymV" target="_blank">LINE 官方社群</a><a href="sponsor.html">贊助方案</a><a href="#" onclick="document.getElementById('modal-gift').classList.add('open');return false;">申請新手禮包</a></div></div></div><div class="topnav-right"><a class="topnav-line-btn" href="https://lin.ee/qUdjymV" target="_blank">LINE 客服</a></div><div class="hamburger" onclick="document.getElementById('navLinks').classList.toggle('open')"><span></span><span></span><span></span></div></nav>
+<div class="float-sidebar"><button class="float-btn sponsor" data-modal="modal-sponsor"><span class="fb-icon">💰</span><span class="fb-label">贊助方案</span></button><button class="float-btn gift" data-modal="modal-gift"><span class="fb-icon">🎁</span><span class="fb-label">申請禮包</span></button><button class="float-btn line-btn" data-modal="modal-line"><span class="fb-icon"><img loading="lazy" src="https://upload.wikimedia.org/wikipedia/commons/4/41/LINE_logo.svg" alt="LINE"></span><span class="fb-label">LINE</span></button></div>
+<div class="float-modal" id="modal-sponsor"><div class="float-modal-box"><span class="modal-close">✕</span><div class="modal-title">💰 贊助方案</div><div class="modal-body"><p>▸ 贊助詳情請加入 LINE 社群詢問</p></div><a class="modal-btn" href="sponsor.html">查看贊助頁面</a></div></div>
+<div class="float-modal" id="modal-gift"><div class="float-modal-box"><span class="modal-close">✕</span><div class="modal-title">🎁 預約LINE禮包</div><div class="modal-body"><p>▸ 煉獄耳環<br>▸ 名譽貨幣【刻印】× 100<br>▸ 巧克力蛋糕【刻印】× 100<br>▸ 永久巧克力（永久三水）<br>▸ 永久名譽貨幣（永久三水）<br>▸ 象牙塔治癒藥水 × 10000<br><br><strong>加入 LINE 官方社群後私訊管理員即可領取。</strong></p></div><a class="modal-btn" href="event-line.html">查看禮包詳情</a></div></div>
+<div class="float-modal" id="modal-line"><div class="float-modal-box"><span class="modal-close">✕</span><div class="modal-title">💬 LINE 聯絡方式</div><div class="modal-body" style="text-align:center"><img loading="lazy" src="https://telegraph-image-1n0.pages.dev/file/AgACAgUAAyEGAAS3SV8sAAIDmGoKtRjS1aZ_pX1e1lD0BSHr0duBAAKmD2sbx8dQVFmjNE0p1cLBAQADAgADeAADOwQ.png" alt="LINE QR Code" style="width:150px;height:150px;margin:0 auto 12px;display:block;border-radius:8px;"></div><a class="modal-btn" href="https://line.me/ti/g2/FGmufEHakxKximWBYuLDBHET6-u8SLaGILTzCQ?utm_source=invitation&utm_medium=link_copy&utm_campaign=default" target="_blank">加入 LINE 官方社群</a></div></div>
+
+<div class="hero" style="height:240px"><div class="hero-bg" style="background:linear-gradient(135deg,#0a1020,#180818);"></div><div class="hero-content"><div class="hero-badge">TRANSFORMATION</div><h1 class="hero-title"><span style="font-size:2rem">變身介紹</span></h1><p class="hero-tagline">強化你的戰鬥能力，掌握每一種變身</p></div></div>
+
+<div class="container" style="padding-top:40px;padding-bottom:80px">
+
+  <div class="page-tabs">
+    <button class="page-tab active" onclick="switchTab('atlas')">📖 圖鑑大全</button>
+    <button class="page-tab" onclick="switchTab('collection')">🏆 收藏系統</button>
+  </div>
+
+  <!-- ══ TAB 1: 圖鑑大全 ══ -->
+  <div id="tab-atlas" class="tab-content active">
+
+    <div style="background:var(--bg2);border:1px solid rgba(249,168,37,.2);border-radius:10px;padding:18px;margin-bottom:24px">
+      <h3 style="margin-top:0;color:var(--gold);font-size:1em;border-left:3px solid var(--gold);padding-left:10px">💡 系統提示</h3>
+      <ul style="margin:8px 0 0 0;padding-left:20px;color:var(--text-muted);line-height:1.9">
+        <li><strong style="color:var(--text)">變身消耗：</strong>所有變身皆須使用 <span style="color:#ff6b6b;font-weight:bold">"變形石"</span>（主城 NPC 購買）。</li>
+        <li><strong style="color:var(--text)">自動功能：</strong>自動變身請使用 <span style="color:var(--accent);font-weight:bold">"LH輔助區"</span> 設定（輔助 › 變身 › 其他變身道具 › 輸入「自動變形卷軸」）。</li>
+        <li><strong style="color:var(--text)">屬性加成：</strong>僅有 <span style="color:#ce93d8;font-weight:bold">傳說以上</span> 變身擁有額外的屬性加成能力。</li>
+        <li><strong style="color:var(--text)">武器限制：</strong>名稱後方標有 <strong style="color:#ffb74d">🏹</strong> 的變身，代表可裝備弓箭武器。</li>
+      </ul>
+    </div>
+
+    <div class="t-anchor-nav">
+      <a href="#gen" style="background:rgba(158,158,158,.15);color:#bdbdbd;border-color:rgba(158,158,158,.3)">⚪ 一般</a>
+      <a href="#adv" style="background:rgba(67,160,71,.12);color:#69f0ae;border-color:rgba(67,160,71,.25)">🟢 高級</a>
+      <a href="#rare" style="background:rgba(30,136,229,.12);color:#82b1ff;border-color:rgba(30,136,229,.25)">🔵 稀有</a>
+      <a href="#hero" style="background:rgba(229,57,53,.12);color:#ff8a80;border-color:rgba(229,57,53,.25)">🔴 英雄</a>
+      <a href="#legend" style="background:rgba(142,36,170,.12);color:#ce93d8;border-color:rgba(142,36,170,.25)">🟣 傳說</a>
+      <a href="#myth" style="background:rgba(249,168,37,.12);color:var(--gold);border-color:rgba(249,168,37,.25)">👑 神話</a>
+    </div>
+
+    <h3 id="gen" class="t-sec" style="background:rgba(158,158,158,.1);color:#bdbdbd;border-left:4px solid #9e9e9e">⚪ 一般變身 <span class="t-badge">攻速/施法 24%</span></h3>
+    <div class="t-grid">
+      <div class="t-item t-gen">強盜弓箭手</div><div class="t-item t-gen">狼人 / 萊肯</div><div class="t-item t-gen">小小鬼(粉紅)</div>
+      <div class="t-item t-gen">奇異鸚鵡</div><div class="t-item t-gen">食人妖精</div><div class="t-item t-gen">思克巴</div>
+      <div class="t-item t-gen">紙人</div><div class="t-item t-gen">骷髏槍兵</div><div class="t-item t-gen">妖魔</div>
+      <div class="t-item t-gen">浣熊</div><div class="t-item t-gen">骷髏弓箭手</div><div class="t-item t-gen">哥布林</div>
+      <div class="t-item t-gen">長者</div><div class="t-item t-gen">歐姆民兵</div><div class="t-item t-gen">妖魔巡守</div>
+      <div class="t-item t-gen">食人妖精王</div><div class="t-item t-gen">妖魔弓箭手</div><div class="t-item t-gen">黑暗妖精法師</div>
+      <div class="t-item t-gen">骷髏</div><div class="t-item t-gen">曼波兔</div><div class="t-item t-gen">雪人</div>
+      <div class="t-item t-gen">果凍怪</div><div class="t-item t-gen">橘子</div><div class="t-item t-gen">安普長老</div>
+      <div class="t-item t-gen">巨蟻</div><div class="t-item t-gen">都達瑪拉妖魔</div><div class="t-item t-gen">妖魔鬥士</div>
+      <div class="t-item t-gen">追蹤者卡爾</div><div class="t-item t-gen">海盜獵人雷歐</div><div class="t-item t-gen">獵人戴伊</div>
+      <div class="t-item t-gen">魔幻士兵</div><div class="t-item t-gen">巨大兵蟻</div><div class="t-item t-gen">地獄之花</div>
+      <div class="t-item t-gen">安特</div><div class="t-item t-gen">紅狼蛛</div><div class="t-item t-gen">飛蛾人</div>
+      <div class="t-item t-gen">飛蛾女王</div><div class="t-item t-gen">瘋狗</div><div class="t-item t-gen">樹精鹿</div>
+      <div class="t-item t-gen">樹精戰士</div><div class="t-item t-gen">錘鈴</div><div class="t-item t-gen">鐵門騎士</div>
+    </div>
+
+    <h3 id="adv" class="t-sec" style="background:rgba(67,160,71,.1);color:#69f0ae;border-left:4px solid #43a047">🟢 高級變身 <span class="t-badge">攻速/施法 27%</span></h3>
+    <div class="t-grid">
+      <div class="t-item t-adv">狂暴槍騎</div><div class="t-item t-adv">狂暴將軍</div><div class="t-item t-adv">桓夢</div>
+      <div class="t-item t-adv">墮落的賽尼斯</div><div class="t-item t-adv">德雷克</div><div class="t-item t-adv">達伊諾思打者</div>
+      <div class="t-item t-adv">侏儒</div><div class="t-item t-adv">火焰弓箭手</div><div class="t-item t-adv">黑騎士</div>
+      <div class="t-item t-adv">刺客首領</div><div class="t-item t-adv">賞金獵人</div><div class="t-item t-adv">魔法師</div>
+      <div class="t-item t-adv">達伊諾思投手</div><div class="t-item t-adv">海洋哈維</div><div class="t-item t-adv">死亡騎士</div>
+      <div class="t-item t-adv">奧爾汀</div><div class="t-item t-adv">優卡</div><div class="t-item t-adv">黑暗妖精</div>
+      <div class="t-item t-adv">布雷哲</div><div class="t-item t-adv">強盜頭目</div><div class="t-item t-adv">沙蟲士兵 🏹</div>
+      <div class="t-item t-adv">巨蟻女皇士兵 🏹</div><div class="t-item t-adv">大黃蜂殺手</div><div class="t-item t-adv">石頭高崙</div>
+      <div class="t-item t-adv">海馬守衛</div><div class="t-item t-adv">強盜矮人</div><div class="t-item t-adv">深海獵人</div>
+      <div class="t-item t-adv">袋鼠拳擊手</div><div class="t-item t-adv">超級螳螂</div><div class="t-item t-adv">黑貓</div>
+      <div class="t-item t-adv">溫迪</div><div class="t-item t-adv">貓咪法師</div><div class="t-item t-adv">貓咪戰士</div>
+      <div class="t-item t-adv">貓咪騎士</div><div class="t-item t-adv">薩提爾士兵</div><div class="t-item t-adv">薩提爾戰士</div>
+      <div class="t-item t-adv">薩蒂羅斯_魔術師</div><div class="t-item t-adv">鼴鼠坦克</div><div class="t-item t-adv">鼴鼠戰士</div>
+      <div class="t-item t-adv">變色龍大師</div><div class="t-item t-adv">鬣狗獵人</div>
+    </div>
+
+    <h3 id="rare" class="t-sec" style="background:rgba(30,136,229,.1);color:#82b1ff;border-left:4px solid #1e88e5">🔵 稀有變身 <span class="t-badge">攻速/施法 30%</span></h3>
+    <div class="t-grid">
+      <div class="t-item t-rare">惡魔</div><div class="t-item t-rare">炎魔</div><div class="t-item t-rare">歐吉王</div>
+      <div class="t-item t-rare">夜巡</div><div class="t-item t-rare">黑暗騎士</div><div class="t-item t-rare">黑暗法師</div>
+      <div class="t-item t-rare">黑暗巡守</div><div class="t-item t-rare">黑暗刺客</div><div class="t-item t-rare">黑暗火槍手</div>
+      <div class="t-item t-rare">黑暗龍騎士</div><div class="t-item t-rare">銀光騎士</div><div class="t-item t-rare">銀光法師</div>
+      <div class="t-item t-rare">銀光巡守</div><div class="t-item t-rare">銀光刺客</div><div class="t-item t-rare">銀光火槍手</div>
+      <div class="t-item t-rare">銀光龍騎士</div><div class="t-item t-rare">黃金騎士</div><div class="t-item t-rare">黃金法師</div>
+      <div class="t-item t-rare">黃金刺客</div><div class="t-item t-rare">黃金巡守</div><div class="t-item t-rare">黃金火槍手</div>
+      <div class="t-item t-rare">黃金龍騎士</div><div class="t-item t-rare">白金騎士</div><div class="t-item t-rare">白金法師</div>
+      <div class="t-item t-rare">白金巡守</div><div class="t-item t-rare">白金刺客</div><div class="t-item t-rare">白金火槍手</div>
+      <div class="t-item t-rare">白金龍騎士</div><div class="t-item t-rare">真死亡騎士</div><div class="t-item t-rare">真黑暗妖精</div>
+      <div class="t-item t-rare">巨大牛人</div><div class="t-item t-rare">力卡溫</div><div class="t-item t-rare">少女賽尼斯</div>
+      <div class="t-item t-rare">黑法師</div><div class="t-item t-rare">紅色妖魔</div><div class="t-item t-rare">哈維</div>
+      <div class="t-item t-rare">海音警衛</div><div class="t-item t-rare">老虎</div><div class="t-item t-rare">白色幼犬</div>
+      <div class="t-item t-rare">暗殺軍王史雷佛</div><div class="t-item t-rare">冥法軍王海露拜</div><div class="t-item t-rare">魔獸軍王巴蘭卡</div>
+      <div class="t-item t-rare">法令軍王蕾雅</div><div class="t-item t-rare">長老凱伊納</div><div class="t-item t-rare">長老拉米阿斯</div>
+      <div class="t-item t-rare">長老伊戴亞</div><div class="t-item t-rare">長老提亞麥斯</div><div class="t-item t-rare">長老巴洛麥斯</div>
+      <div class="t-item t-rare">長老安迪斯</div><div class="t-item t-rare">長老比亞塔斯</div><div class="t-item t-rare">黃金安迪斯</div>
+      <div class="t-item t-rare">黃金史雷佛</div><div class="t-item t-rare">黑暗妖精警衛</div><div class="t-item t-rare">黑暗妖精盜賊</div>
+      <div class="t-item t-rare">武獅</div><div class="t-item t-rare">追蹤者凱伊</div><div class="t-item t-rare">曼玻兔(紅蘿菠)</div>
+      <div class="t-item t-rare">海盜獵人珍</div><div class="t-item t-rare">獵人里德</div><div class="t-item t-rare">菁英魔幻士兵</div>
+      <div class="t-item t-rare">波若斯妖魔鬥士</div><div class="t-item t-rare">波若斯妖魔法師</div><div class="t-item t-rare">波若斯妖魔弓箭手</div>
+      <div class="t-item t-rare">艾爾摩將軍</div><div class="t-item t-rare">艾爾摩士兵</div><div class="t-item t-rare">艾爾魔法師</div>
+      <div class="t-item t-rare">聖地侏儒斧頭兵</div><div class="t-item t-rare">聖地侏儒弓手</div><div class="t-item t-rare">聖地侏儒槍兵</div>
+      <div class="t-item t-rare">聖地侏儒劍士</div><div class="t-item t-rare">巨蟻女皇隊長 🏹</div><div class="t-item t-rare">沙蟲隊長 🏹</div>
+      <div class="t-item t-rare">釣魚少年保羅</div><div class="t-item t-rare">黑暗狂暴槍兵</div><div class="t-item t-rare">銀光狂暴槍騎</div>
+      <div class="t-item t-rare">黃金狂暴槍騎</div><div class="t-item t-rare">白金狂暴槍騎</div><div class="t-item t-rare">黑暗死神</div>
+      <div class="t-item t-rare">銀光死神</div><div class="t-item t-rare">黃金死神</div><div class="t-item t-rare">白金死神</div>
+      <div class="t-item t-rare">巴爾塔扎爾</div><div class="t-item t-rare">梅奎爾</div><div class="t-item t-rare">卡斯帕</div>
+      <div class="t-item t-rare">塞瑪</div><div class="t-item t-rare">亞丁騎士</div><div class="t-item t-rare">亞丁狂暴槍騎</div>
+      <div class="t-item t-rare">亞丁菁英騎士</div><div class="t-item t-rare">海音騎士</div><div class="t-item t-rare">海音狂暴槍騎</div>
+      <div class="t-item t-rare">海音弓手</div><div class="t-item t-rare">妖魔士兵</div><div class="t-item t-rare">妖魔弓手</div>
+      <div class="t-item t-rare">妖魔斧兵</div><div class="t-item t-rare">妖魔騎兵</div><div class="t-item t-rare">墓穴守護者騎士</div>
+      <div class="t-item t-rare">墓穴守護者法師</div><div class="t-item t-rare">墓穴守護者</div><div class="t-item t-rare">韓服少年</div>
+      <div class="t-item t-rare">韓服少女</div><div class="t-item t-rare">歐瑞靈魂</div><div class="t-item t-rare">歐瑞十字弓</div>
+      <div class="t-item t-rare">方</div><div class="t-item t-rare">火焰通</div><div class="t-item t-rare">生日慶祝妖精</div>
+      <div class="t-item t-rare">冰原狼人</div><div class="t-item t-rare">邪惡蛋糕怪</div><div class="t-item t-rare">邪惡麋鹿</div>
+      <div class="t-item t-rare">佩利克</div><div class="t-item t-rare">拉班</div><div class="t-item t-rare">青蛙孟克</div>
+      <div class="t-item t-rare">南瓜 🏹</div><div class="t-item t-rare">紅魔法師 🏹</div><div class="t-item t-rare">背叛的聖物</div>
+      <div class="t-item t-rare">狼騎士</div><div class="t-item t-rare">鬼靈 🏹</div><div class="t-item t-rare">惡夢的稻草人 🏹</div>
+      <div class="t-item t-rare">惡霸鯊魚</div><div class="t-item t-rare">菲爾菲爾</div><div class="t-item t-rare">愛爾芬(乞丐)</div>
+      <div class="t-item t-rare">神聖魔法師 🏹</div><div class="t-item t-rare">瑪依奴</div><div class="t-item t-rare">舞獅(金)</div>
+      <div class="t-item t-rare">墮落的修道士</div><div class="t-item t-rare">稻草人(藍) 🏹</div><div class="t-item t-rare">犧牲的聖職者</div>
+      <div class="t-item t-rare">鐵門騎士團長</div><div class="t-item t-rare">魔女 🏹</div><div class="t-item t-rare">懺悔的修女</div>
+    </div>
+
+    <h3 id="hero" class="t-sec" style="background:rgba(229,57,53,.1);color:#ff8a80;border-left:4px solid #e53935">🔴 英雄變身 <span class="t-badge">攻速/施法 33%</span></h3>
+    <div class="t-grid">
+      <div class="t-item t-hero">巴列斯</div><div class="t-item t-hero">反王肯恩</div><div class="t-item t-hero">賽尼斯</div>
+      <div class="t-item t-hero">依詩蒂</div><div class="t-item t-hero">海露拜</div><div class="t-item t-hero">絲莉安</div>
+      <div class="t-item t-hero">甘特</div><div class="t-item t-hero">特羅斯</div><div class="t-item t-hero">死亡騎士(黃金)</div>
+      <div class="t-item t-hero">覺醒炎魔</div><div class="t-item t-hero">死亡騎士(焚焰)</div><div class="t-item t-hero">天上騎士 🏹</div>
+      <div class="t-item t-hero">克特</div><div class="t-item t-hero">巴風特</div><div class="t-item t-hero">宙斯</div>
+      <div class="t-item t-hero">警衛(弓)</div><div class="t-item t-hero">警衛(矛)</div><div class="t-item t-hero">警衛(綠)(弓)</div>
+      <div class="t-item t-hero">警衛(綠)(矛)</div><div class="t-item t-hero">警衛(紅)(弓)</div><div class="t-item t-hero">警衛(紅)(矛)</div>
+      <div class="t-item t-hero">歐瑞(藍)</div><div class="t-item t-hero">歐瑞(綠)</div><div class="t-item t-hero">塞巴斯蒂安</div>
+      <div class="t-item t-hero">格鬥家男 🏹</div><div class="t-item t-hero">格鬥家女 🏹</div><div class="t-item t-hero">布魯迪卡</div>
+      <div class="t-item t-hero">丹特斯</div><div class="t-item t-hero">真死亡騎士(紅)</div><div class="t-item t-hero">真死亡騎士(藍)</div>
+      <div class="t-item t-hero">荊棘公主艾薇</div><div class="t-item t-hero">阿斯態爾</div><div class="t-item t-hero">格立特(弓)</div>
+      <div class="t-item t-hero">死神</div><div class="t-item t-hero">依詩蒂(槍)</div><div class="t-item t-hero">潘朵拉 🏹</div>
+      <div class="t-item t-hero">暗黑騎士莉爾利</div><div class="t-item t-hero">艾依爾</div><div class="t-item t-hero">狂暴將軍(紅)</div>
+      <div class="t-item t-hero">狂暴將軍(藍)</div><div class="t-item t-hero">刺客首領(紅)</div><div class="t-item t-hero">黃金布雷哲</div>
+      <div class="t-item t-hero">素還真 🏹</div><div class="t-item t-hero">莉茲 🏹</div><div class="t-item t-hero">伯爵安托里歐 🏹</div>
+      <div class="t-item t-hero">師團長哈波 🏹</div><div class="t-item t-hero">兔子少女 🏹</div><div class="t-item t-hero">傑克吳燈籠(紅)</div>
+      <div class="t-item t-hero">葉小釵 🏹</div><div class="t-item t-hero">棄天帝 🏹</div><div class="t-item t-hero">優秀騎士</div>
+      <div class="t-item t-hero">優秀巡守</div><div class="t-item t-hero">優秀法師</div><div class="t-item t-hero">優秀狂暴槍騎</div>
+      <div class="t-item t-hero">暗夜聖殿(金)</div><div class="t-item t-hero">暗夜聖殿(紅)</div><div class="t-item t-hero">暗夜聖殿(紫)</div>
+      <div class="t-item t-hero">暗夜聖殿(藍)</div><div class="t-item t-hero">巴士瑟</div><div class="t-item t-hero">卡士伯</div>
+      <div class="t-item t-hero">西瑪</div><div class="t-item t-hero">馬庫爾</div><div class="t-item t-hero">格鬥家(紅)</div>
+      <div class="t-item t-hero">格鬥家(黃)</div><div class="t-item t-hero">格鬥家(藍)</div><div class="t-item t-hero">格鬥家(女)(藍)</div>
+      <div class="t-item t-hero">秩序煉金術師</div><div class="t-item t-hero">混沌煉金術師</div><div class="t-item t-hero">伊娃守護者 🏹</div>
+      <div class="t-item t-hero">沙哈守護者</div><div class="t-item t-hero">帕格里奧守護者</div><div class="t-item t-hero">馬普勒守護者</div>
+      <div class="t-item t-hero">Doguri 🏹</div><div class="t-item t-hero">女僕安娜 🏹</div><div class="t-item t-hero">天上守護騎士 🏹</div>
+      <div class="t-item t-hero">世拉</div><div class="t-item t-hero">古代企鵝</div><div class="t-item t-hero">巨大墓穴守護者</div>
+      <div class="t-item t-hero">地獄傑克吳燈籠 🏹</div><div class="t-item t-hero">查曼卡</div><div class="t-item t-hero">姬武者</div>
+      <div class="t-item t-hero">家門守護者菲莉亞</div><div class="t-item t-hero">挪威海怪 🏹</div><div class="t-item t-hero">豹人</div>
+      <div class="t-item t-hero">雪之蜥蜴人</div><div class="t-item t-hero">凱普莉夏</div><div class="t-item t-hero">惡夢傑克吳燈籠</div>
+      <div class="t-item t-hero">暗黑死亡騎士</div><div class="t-item t-hero">潘</div><div class="t-item t-hero">覺醒 肯勞厄爾</div>
+      <div class="t-item t-hero">覺醒 愛爾芬</div><div class="t-item t-hero">黑兔少女</div><div class="t-item t-hero">蘿絲瑪莉</div>
+      <div class="t-item t-hero">通緝犯庫傑</div>
+    </div>
+
+    <h3 id="legend" class="t-sec" style="background:rgba(142,36,170,.1);color:#ce93d8;border-left:4px solid #8e24aa">🟣 傳說變身 <span class="t-badge">額外能力加成</span></h3>
+    <div style="overflow-x:auto;border:1px solid rgba(142,36,170,.2);border-radius:8px;margin-bottom:30px">
+      <table class="t-table">
+        <thead><tr><th style="width:30%">變身名稱</th><th>額外能力</th></tr></thead>
+        <tbody>
+          <tr><td>黑暗之星宙斯</td><td>魔攻+1, 回魔+3, 昏迷耐性+4%</td></tr>
+          <tr><td>月之絲莉安</td><td>遠攻+3, 遠爆+3%, 昏迷耐性+4</td></tr>
+          <tr><td>鋼鐵阿頓</td><td>近攻+3, 昏迷耐性+4, 藥水+3%</td></tr>
+          <tr><td>屠龍者 🏹</td><td>近/遠攻+2, 減傷+1</td></tr>
+          <tr><td>暗夜殺戮者</td><td>近攻+3, 昏迷耐性+4</td></tr>
+          <tr><td>黑暗殺手</td><td>遠攻+3, 遠命+1, 昏迷耐性+4</td></tr>
+          <tr><td>地獄死亡騎士</td><td>減傷+2, PVP 減傷+2</td></tr>
+          <tr><td>幻影騎士</td><td>藥水+3%, 減傷+1, 暈命+3, 暈抗+4</td></tr>
+          <tr><td>黑暗哈汀</td><td>防禦+2, 近攻+3</td></tr>
+          <tr><td>憎恨的死亡騎士</td><td>近攻+3, 近命+2, 暈命+3</td></tr>
+          <tr><td>警衛(矛)隊長</td><td>近攻+2, 減傷+1, 暈抗+4</td></tr>
+          <tr><td>警衛(弓)隊長</td><td>藥水+2%, 遠攻+2, 暈抗+4</td></tr>
+          <tr><td>帕拉丁</td><td>近攻+2, PVP 傷+1, 減傷+1</td></tr>
+          <tr><td>天鵝的勞安格林 🏹</td><td>近攻+3, 防禦+1, 暈命+3</td></tr>
+          <tr><td>哈汀之魂</td><td>魔攻+2, MP+125, 暈抗+4</td></tr>
+          <tr><td>漆黑的死亡騎士</td><td>近攻+3, 暈命+3%, 藥水+3</td></tr>
+          <tr><td>公爵馬庫斯 🏹</td><td>近攻+3, 暈命+3%, 暈抗+3</td></tr>
+          <tr><td>軍團長艾克斯特 🏹</td><td>遠攻+3, 暈抗+4, 無視減傷+2</td></tr>
+          <tr><td>不敗的甘特</td><td>暈抗+3, 暈命+3%, 減傷+1</td></tr>
+          <tr><td>赫發斯特斯</td><td>暈抗+3, 暈命+3%, 無視減傷+1</td></tr>
+          <tr><td>第1代多魯嘉</td><td>近傷+3, 暈命+3%, 近爆+1%</td></tr>
+          <tr><td>吉倫</td><td>暈抗+4, 魔攻+2, 魔命+1</td></tr>
+          <tr><td>貝里斯</td><td>近傷+3, 暈抗+4%, PVP 減傷+1</td></tr>
+          <tr><td>暗黑龍宙斯</td><td>魔攻+3, 魔命+3</td></tr>
+          <tr><td>暗黑龍阿頓</td><td>近攻+3, 暈命+6%, 無視減傷+3</td></tr>
+          <tr><td>暗黑龍絲莉安</td><td>遠攻+3, 暈命+6%, 無視減傷+3</td></tr>
+          <tr><td>Mr斯摩格 🏹</td><td>遠攻+3, 暈抗+4%, 支撐+3%, PVP傷+3</td></tr>
+          <tr><td>昔日的騎士范德 🏹</td><td>暈抗+3%, 恐怖抗+3%, 暈命+4%</td></tr>
+          <tr><td>席琳的守衛 🏹</td><td>遠攻+3, 暈命+3%, 暈抗+4%</td></tr>
+          <tr><td>格蘭肯的逆麟 🏹</td><td>近攻+3, 暈命+3%, 暈抗+4%</td></tr>
+          <tr><td>殷海薩的影子 🏹</td><td>魔攻+3, 暈抗+4%, 支撐+2%</td></tr>
+          <tr><td>烈焰死亡騎士</td><td>近傷+3, 暈命+3%, PVP傷+2</td></tr>
+          <tr><td>國王 艾歐丁</td><td>暈命+3%, 暈抗+4%, 無視減傷+1</td></tr>
+          <tr><td>勞待碼依</td><td>暈命+3%, 暈抗+4%, 無視減傷+1</td></tr>
+          <tr><td>暗殺的雅莉亞精靈</td><td>暈抗+4%, 恐怖抗+3%, 無視減傷+3</td></tr>
+          <tr><td>齊天大聖 🏹</td><td>減傷+2, 近/遠傷+2, 魔攻+1</td></tr>
+          <tr><td>龍鬥士</td><td>近攻+3, 暈命+3%, 暈抗+4%, 恐抗+3%, 無視閃避+1</td></tr>
+          <tr><td>禪</td><td>近傷+3, 暈命+3%, 暈抗+4%, 恐抗+3%, 無視近閃+1</td></tr>
+        </tbody>
+      </table>
+    </div>
+
+    <h3 id="myth" class="t-sec" style="background:rgba(249,168,37,.1);color:var(--gold);border-left:4px solid #fdd835">👑 神話變身 <span class="t-badge">詳情能力</span></h3>
+    <div style="background:rgba(255,152,0,.08);border-left:3px solid #ff9800;padding:10px 16px;margin-bottom:14px;border-radius:4px;font-size:13px;color:#ffb74d">
+      <strong>⚠️ 提醒：</strong>遊戲內因字數過多會造成閃退，詳細能力請至官網查詢。
+    </div>
+    <div style="overflow-x:auto;border:1px solid rgba(249,168,37,.2);border-radius:8px;margin-bottom:30px">
+      <table class="t-table">
+        <thead><tr><th style="width:30%">變身名稱</th><th>完整能力屬性內容</th></tr></thead>
+        <tbody>
+          <tr><td>變身卡：白金死亡騎士(神話)</td><td>昏迷耐性+5、PVP傷害減免+2、近距離攻擊力+6、近戰爆擊發動率+3、魔攻+3、攻擊時一定機率發動地獄火傷害</td></tr>
+          <tr><td>變身卡：白金巴風特(神話)</td><td>昏迷耐性+8%、SP+10、PVP傷害減免+5、近距離攻擊力+3、近距離命中+10、魔法爆擊發動率+5</td></tr>
+          <tr><td>變身卡：神聖劍士(神話)</td><td>近距離攻擊力+8、昏迷命中+8%、昏迷耐性+5、近遠命中+3、PVP傷害減免+2</td></tr>
+          <tr><td>變身卡：龍騎士(神話)</td><td>近距離攻擊力+5、近距離命中+3、魔攻+5、魔法命中+3、昏迷命中+8%、昏迷耐性+5、支撐耐性+4、PVP傷害、PVP減免+3、藥水恢復量+50</td></tr>
+          <tr><td>變身卡：黑暗騎士(神話)</td><td>近距離攻擊力+8、昏迷命中+8%、昏迷耐性+5、近遠命中+3、PVP傷害減免+2</td></tr>
+          <tr><td>變身卡：死神(神話)</td><td>近距離攻擊力+5、近距離命中+10、昏迷命中+8%、昏迷耐性+8、恐懼耐性+4、PVP傷害減免+2、吸取MP固定值+10、魔攻+12、魔法爆擊發動率+5</td></tr>
+          <tr><td>變身卡：變形怪(神話) 🏹</td><td>昏迷耐性+5、恐懼耐性+4%、PVP傷害減免+2、PVP傷害+3、三重矢攻擊力+6、近距離攻擊力+5、遠距離攻擊力+5、魔攻+3</td></tr>
+          <tr><td>變身卡：王族(神話)</td><td>近距離攻擊力+5、遠距離攻擊力+5、近距離命中+3、遠距離命中+3、魔攻+5、魔法命中+3、三重矢傷害+5、昏迷命中+8%、昏迷耐性+5、支撐耐性+4、PVP傷害+2、PVP減免+2</td></tr>
+          <tr><td>變身卡：騎士(神話)</td><td>近距離攻擊力+5、遠距離攻擊力+5、近距離命中+3、遠距離命中+3、魔攻+5、魔法命中+3、三重矢傷害+5、昏迷命中+8%、昏迷耐性+5、支撐耐性+4、PVP傷害+2、PVP減免+2</td></tr>
+          <tr><td>變身卡：妖精(神話) 🏹</td><td>近距離攻擊力+5、遠距離攻擊力+5、近距離命中+3、遠距離命中+3、魔攻+5、魔法命中+3、三重矢傷害+5、昏迷命中+8%、昏迷耐性+5、支撐耐性+4、PVP傷害+2、PVP減免+2</td></tr>
+          <tr><td>變身卡：法師(神話)</td><td>近距離攻擊力+5、遠距離攻擊力+5、近距離命中+3、遠距離命中+3、魔攻+5、魔法命中+3、三重矢傷害+5、昏迷命中+8%、昏迷耐性+5、支撐耐性+4、PVP傷害+2、PVP減免+2</td></tr>
+          <tr><td>變身卡：黑妖(神話)</td><td>近距離攻擊力+5、遠距離攻擊力+5、近距離命中+3、遠距離命中+3、魔攻+5、魔法命中+3、三重矢傷害+5、昏迷命中+8%、昏迷耐性+5、支撐耐性+4、PVP傷害+2、PVP減免+2</td></tr>
+          <tr><td>變身卡：槍手(神話) 🏹</td><td>遠距離攻擊力+7、遠距離命中+5、昏迷耐性+5、支撐耐性+4、三重矢傷害+7</td></tr>
+          <tr><td>變身卡：狂戰士(神話) 🏹</td><td>近距離攻擊力+4、遠距離攻擊力+4、近距離命中+3、遠距離命中+3、魔攻+8、魔法命中+3、三重矢傷害+5、昏迷命中+8%、昏迷耐性+5、支撐耐性+4、PVP傷害+2、PVP減免+10</td></tr>
+          <tr><td>變身卡：雷神(神話) 🏹</td><td>近距離攻擊力+5、遠距離攻擊力+5、近距離命中+3、遠距離命中+3、魔攻+8、魔法命中+3、三重矢傷害+5、昏迷命中+8%、昏迷耐性+5、支撐耐性+4、PVP傷害+2、PVP減免+2</td></tr>
+          <tr><td>變身卡：海王波賽頓(神話) 🏹</td><td>近距離攻擊力+3、遠距離攻擊力+8、遠距離命中+5、昏迷命中+8%、昏迷耐性+5、恐懼耐性+4、PVP傷害減免+2、魔攻+8</td></tr>
+        </tbody>
+      </table>
+    </div>
+
+    <h3 class="t-sec" style="background:rgba(194,24,91,.1);color:#f48fb1;border-left:4px solid #e91e63">💎 唯一變身</h3>
+    <div style="background:var(--bg2);border:1px dashed rgba(233,30,99,.3);border-radius:8px;padding:20px;text-align:center;color:#f48fb1">
+      <strong>🚧 目前尚未開放，敬請期待！</strong>
+    </div>
+
+  </div><!-- end tab-atlas -->
+
+  <!-- ══ TAB 2: 收藏清單 ══ -->
+  <div id="tab-collection" class="tab-content">
+    <div style="overflow-x:auto;border:1px solid var(--border);border-radius:8px">
+      <table class="coll-table">
+        <thead><tr><th style="width:50%">所需變身卡</th><th style="width:25%">圖鑑名稱</th><th style="width:25%">獲得能力</th></tr></thead>
+        <tbody>
+          <tr><td>變身卡：食人妖精(一般)<br>變身卡：食人妖精王(一般)<br>變身卡：南瓜(稀有)<br>變身卡：地獄的傑克吳燈籠(英雄)<br>變身卡：惡夢的傑克吳燈籠(英雄)</td><td>圓圓兄弟</td><td>魔力上限+5</td></tr>
+          <tr><td>變身卡：紙人(一般)<br>變身卡：雪人(一般)<br>變身卡：黑貓(高級)<br>變身卡：溫迪(高級)<br>變身卡：貓咪法師(高級)<br>變身卡：貓咪戰士(高級)<br>變身卡：貓咪騎士(高級)</td><td>曾想當人類</td><td>防禦+1</td></tr>
+          <tr><td>變身卡：浣熊(一般)<br>變身卡：曼波兔(一般)<br>變身卡：黑兔少女(英雄)</td><td>兔子和狸貓</td><td>近遠距離攻擊力+1</td></tr>
+          <tr><td>變身卡：果凍怪(一般)<br>變身卡：橘子(一般)</td><td>四角型和圓型</td><td>魔法攻擊力+1</td></tr>
+          <tr><td>變身卡：骷髏槍兵(一般)<br>變身卡：骷髏弓箭手(一般)<br>變身卡：骷髏(一般)</td><td>結果是骨頭組合</td><td>體力上限+10</td></tr>
+          <tr><td>變身卡：骷髏弓箭手(一般)<br>變身卡：妖魔巡守(一般)<br>變身卡：妖魔弓箭手(一般)<br>變身卡：強盜頭目(高級)</td><td>拙劣的弓箭手團</td><td>魔法防禦+1</td></tr>
+          <tr><td>變身卡：哥布林(一般)<br>變身卡：歐姆民兵(一般)<br>變身卡：安普長老(一般)<br>變身卡：強盜矮人(高級)</td><td>矮小的小鬼</td><td>閃避率+1</td></tr>
+          <tr><td>變身卡：思克巴(一般)<br>變身卡：長者(一般)<br>變身卡：黑暗妖精法師(一般)</td><td>學會了光箭</td><td>體力上限+15</td></tr>
+          <tr><td>變身卡：妖魔巡守(一般)<br>變身卡：妖魔弓箭手(一般)<br>變身卡：都達瑪拉妖魔(一般)<br>變身卡：妖魔鬥士(一般)</td><td>將來的希望是辛巴</td><td>魔力上限+10</td></tr>
+          <tr><td>變身卡：達伊諾思打者(高級)<br>變身卡：達伊諾思投手(高級)</td><td>NC達伊諾思</td><td>傷害減免+1</td></tr>
+          <tr><td>變身卡：德雷克(高級)<br>變身卡：刺客首領(高級)<br>變身卡：布雷哲(高級)</td><td>雙手各拿一把劍</td><td>魔法防禦+2</td></tr>
+          <tr><td>變身卡：骷髏槍兵(一般)<br>變身卡：都達瑪拉妖魔(一般)<br>變身卡：狂暴槍騎(高級)<br>變身卡：狂暴將軍(高級)<br>變身卡：黑騎士(高級)</td><td>第一次拿的槍</td><td>防禦+1</td></tr>
+          <tr><td>變身卡：黑暗妖精法師(一般)<br>變身卡：墮落的賽尼斯(高級)<br>變身卡：魔法師(高級)<br>變身卡：奧爾汀(高級)</td><td>魔力的重要性</td><td>體力上限+10</td></tr>
+          <tr><td>變身卡：奇異鸚鵡(一般)<br>變身卡：桓夢(高級)<br>變身卡：海洋哈維(高級)<br>變身卡：優卡(高級)<br>變身卡：海馬守衛(高級)<br>變身卡：深海獵人(高級)<br>變身卡：袋鼠拳擊手(高級)<br>變身卡：變色龍大師(高級)<br>變身卡：佩利克(稀有)<br>變身卡：拉班(稀有)<br>變身卡：青蛙孟克(稀有)<br>變身卡：惡霸鯊魚(稀有)<br>變身卡：菲爾菲爾(稀有)<br>變身卡：瑪依奴(稀有)<br>變身卡：Doguri(英雄)<br>變身卡：古代企鵝(英雄)<br>變身卡：挪威海怪(英雄)<br>變身卡：齊天大聖(傳說)</td><td>未知的動物</td><td>魔力恢復量+1</td></tr>
+          <tr><td>變身卡：德雷克(高級)<br>變身卡：魔法師(高級)<br>變身卡：奧爾汀(高級)<br>變身卡：布雷哲(高級)</td><td>我曾經也是首領</td><td>遠距離命中+1</td></tr>
+          <tr><td>變身卡：死亡騎士(高級)<br>變身卡：黑暗妖精(高級)</td><td>變身界的兩大支柱</td><td>魔力恢復量+1</td></tr>
+          <tr><td>變身卡：哥布林(一般)<br>變身卡：侏儒(高級)</td><td>最好的蠟燭</td><td>傷害減免+1</td></tr>
+          <tr><td>變身卡：長者(一般)<br>變身卡：魔法師(高級)</td><td>鴛鴦戒指的傳說</td><td>體力上限+30</td></tr>
+          <tr><td>變身卡：強盜弓箭手(一般)<br>變身卡：骷髏弓箭手(一般)<br>變身卡：妖魔弓箭手(一般)<br>變身卡：火焰弓箭手(高級)</td><td>弓箭手們的聚會</td><td>魔力上限+20</td></tr>
+          <tr><td>變身卡：黑暗法師(稀有)<br>變身卡：黑法師(稀有)</td><td>黑魔法師們</td><td>體力上限+30</td></tr>
+          <tr><td>變身卡：妖魔(一般)<br>變身卡：紅色妖魔(稀有)</td><td>我們是同一個種族</td><td>PVP減傷+1</td></tr>
+          <tr><td>變身卡：惡魔(稀有)<br>變身卡：炎魔(稀有)</td><td>魔族領袖們</td><td>體力恢復量+1</td></tr>
+          <tr><td>變身卡：賞金獵人(高級)<br>變身卡：海音警衛(稀有)<br>變身卡：亞丁騎士(稀有)<br>變身卡：亞丁狂暴槍騎(稀有)<br>變身卡：亞丁菁英騎士(稀有)<br>變身卡：海音騎士(稀有)<br>變身卡：海音狂暴槍騎(稀有)<br>變身卡：海音弓手(稀有)</td><td>亞丁守護者</td><td>防禦+1</td></tr>
+          <tr><td>變身卡：歐吉王(稀有)<br>變身卡：巨大牛人(稀有)</td><td>遺忘之島在哪裡</td><td>近距離攻擊力+1</td></tr>
+          <tr><td>變身卡：狼人(一般)<br>變身卡：萊肯(一般)<br>變身卡：力卡溫(稀有)</td><td>鬢毛飛揚</td><td>近距離命中+1</td></tr>
+          <tr><td>變身卡：奇異鸚鵡(一般)<br>變身卡：海洋哈維(高級)<br>變身卡：哈維(稀有)</td><td>種類</td><td>遠距離命中+1</td></tr>
+          <tr><td>變身卡：紙人(一般)<br>變身卡：奧爾汀(高級)<br>變身卡：惡魔(稀有)<br>變身卡：巴爾塔扎爾(稀有)<br>變身卡：梅奎爾(稀有)<br>變身卡：卡斯帕(稀有)<br>變身卡：塞瑪(稀有)<br>變身卡：方(稀有)<br>變身卡：火焰通(稀有)<br>變身卡：秩序的煉金術師(英雄)<br>變身卡：混沌的煉金術師(英雄)</td><td>象牙塔居民</td><td>魔法命中+1</td></tr>
+          <tr><td>變身卡：黑暗騎士(稀有)<br>變身卡：銀光騎士(稀有)<br>變身卡：黃金騎士(稀有)<br>變身卡：白金騎士(稀有)</td><td>劍的達人們</td><td>體力上限+20</td></tr>
+          <tr><td>變身卡：黑暗刺客(稀有)<br>變身卡：銀光刺客(稀有)<br>變身卡：黃金刺客(稀有)<br>變身卡：白金刺客(稀有)</td><td>雙手的達人們</td><td>體力上限+20</td></tr>
+          <tr><td>變身卡：黑暗巡守(稀有)<br>變身卡：銀光巡守(稀有)<br>變身卡：黃金巡守(稀有)<br>變身卡：白金巡守(稀有)</td><td>弓箭手的達人們</td><td>體力上限+20</td></tr>
+          <tr><td>變身卡：黑暗法師(稀有)<br>變身卡：銀光法師(稀有)<br>變身卡：黃金法師(稀有)<br>變身卡：白金法師(稀有)<br>變身卡：紅魔法師(稀有)<br>變身卡：背叛的祭司(稀有)<br>變身卡：神聖魔法師(稀有)<br>變身卡：墮落的修道士(稀有)<br>變身卡：犧牲的聖職者(稀有)<br>變身卡：魔女(稀有)<br>變身卡：懺悔的修女(稀有)<br>變身卡：查曼卡(英雄)</td><td>魔法的達人們</td><td>體力上限+20</td></tr>
+          <tr><td>變身卡：黑暗騎士(稀有)<br>變身卡：黑暗法師(稀有)<br>變身卡：黑暗巡守(稀有)<br>變身卡：黑暗刺客(稀有)<br>變身卡：黑暗狂暴槍兵(稀有)<br>變身卡：黑暗死神(稀有)</td><td>黑暗聚會</td><td>負重獎勵+1000</td></tr>
+          <tr><td>變身卡：銀光騎士(稀有)<br>變身卡：銀光法師(稀有)<br>變身卡：銀光巡守(稀有)<br>變身卡：銀光刺客(稀有)<br>變身卡：銀光狂暴槍騎(稀有)<br>變身卡：銀光死神(稀有)</td><td>銀光聚會</td><td>魔法防禦+1</td></tr>
+          <tr><td>變身卡：黃金騎士(稀有)<br>變身卡：黃金法師(稀有)<br>變身卡：黃金刺客(稀有)<br>變身卡：黃金巡守(稀有)<br>變身卡：黃金狂暴槍騎(稀有)<br>變身卡：黃金死神(稀有)</td><td>黃金聚會</td><td>魔力恢復量+2</td></tr>
+          <tr><td>變身卡：白金騎士(稀有)<br>變身卡：白金法師(稀有)<br>變身卡：白金巡守(稀有)<br>變身卡：白金刺客(稀有)<br>變身卡：白金狂暴槍騎(稀有)<br>變身卡：白金死神(稀有)</td><td>白金聚會</td><td>力量+1</td></tr>
+          <tr><td>變身卡：炎魔(稀有)<br>變身卡：歐吉王(稀有)<br>變身卡：巨大牛人(稀有)<br>變身卡：力卡溫(稀有)</td><td>巨人族</td><td>防禦+2</td></tr>
+          <tr><td>變身卡：奇異鸚鵡(一般)<br>變身卡：侏儒(高級)<br>變身卡：海洋哈維(高級)<br>變身卡：黑法師(稀有)<br>變身卡：哈維(稀有)</td><td>賽跑的運動員們</td><td>敏捷+1</td></tr>
+          <tr><td>變身卡：賽尼斯(英雄)<br>變身卡：塞巴斯蒂安(英雄)</td><td>賽尼斯的過去與現在</td><td>近遠距離攻擊力+1</td></tr>
+          <tr><td>變身卡：警衛(矛)(英雄)<br>變身卡：塞巴斯蒂安(英雄)</td><td>槍的達人</td><td>魔力上限+50</td></tr>
+          <tr><td>變身卡：覺醒炎魔(英雄)<br>變身卡：死亡騎士(焚焰)(英雄)<br>變身卡：雷神(神話)</td><td>擁有燃燒之得人</td><td>PVP減傷+1</td></tr>
+          <tr><td>變身卡：海露拜(英雄)<br>變身卡：警衛(弓)(英雄)</td><td>遠距離的達人</td><td>魔攻+1</td></tr>
+          <tr><td>變身卡：甘特(英雄)<br>變身卡：宙斯(英雄)</td><td>說話之島的英雄們</td><td>精神+1</td></tr>
+          <tr><td>變身卡：反王肯恩(英雄)<br>變身卡：賽尼斯(英雄)</td><td>最佳情侶</td><td>魅力+1</td></tr>
+          <tr><td>變身卡：白金騎士(稀有)<br>變身卡：死亡騎士(黃金)(英雄)</td><td>擁有金光之劍的人</td><td>近距離爆擊率+1%</td></tr>
+          <tr><td>變身卡：賽尼斯(英雄)<br>變身卡：宙斯(英雄)</td><td>魔法界的對手</td><td>近距離攻擊力+1</td></tr>
+          <tr><td>變身卡：薩提爾士兵(高級)<br>變身卡：薩提爾戰士(高級)<br>變身卡：薩蒂羅斯_魔術師(高級)<br>變身卡：巴列斯(英雄)<br>變身卡：巴風特(英雄)</td><td>有堅硬的角的人</td><td>力量+1</td></tr>
+          <tr><td>變身卡：炎魔(稀有)<br>變身卡：覺醒炎魔(英雄)</td><td>魔族的名子</td><td>敏捷+1</td></tr>
+          <tr><td>變身卡：黑騎士(高級)<br>變身卡：克特(英雄)</td><td>天生的追蹤者</td><td>PVP傷害+2</td></tr>
+          <tr><td>變身卡：力卡溫(稀有)<br>變身卡：克特(英雄)<br>變身卡：巴風特(英雄)</td><td>話島的主人們</td><td>體力上限+70</td></tr>
+          <tr><td>變身卡：死亡騎士(高級)<br>變身卡：死亡騎士(黃金)(英雄)<br>變身卡：死亡騎士(焚焰)(英雄)<br>變身卡：暗黑死亡騎士(英雄)<br>變身卡：烈焰死亡騎士(傳說)</td><td>死亡騎士的收集者</td><td>防禦+3</td></tr>
+          <tr><td>變身卡：海音警衛(稀有)<br>變身卡：警衛(弓)(英雄)<br>變身卡：警衛(矛)(英雄)</td><td>警衛的威力</td><td>體質+1</td></tr>
+          <tr><td>變身卡：狂暴槍騎(高級)<br>變身卡：狂暴將軍(高級)<br>變身卡：警衛(矛)(英雄)</td><td>等待龍騎士的人們</td><td>魔法防禦+3</td></tr>
+          <tr><td>變身卡：甘特(英雄)<br>變身卡：宙斯(英雄)<br>變身卡：塞巴斯蒂安(英雄)</td><td>為了特羅斯大人</td><td>遠距離攻擊力+1</td></tr>
+          <tr><td>變身卡：桓夢(高級)<br>變身卡：優卡(高級)<br>變身卡：天上騎士(英雄)<br>變身卡：天上的守護騎士(英雄)</td><td>天上騎士與孩子們</td><td>傷害減免+1</td></tr>
+          <tr><td>變身卡：反王肯恩(英雄)<br>變身卡：賽尼斯(英雄)<br>變身卡：甘特(英雄)<br>變身卡：宙斯(英雄)</td><td>紅騎士團和黑騎士團</td><td>傷害減免+1</td></tr>
+          <tr><td>變身卡：海洋哈維(高級)<br>變身卡：哈維(稀有)<br>變身卡：覺醒炎魔(英雄)<br>變身卡：天上騎士(英雄)</td><td>華麗的翅膀與持有者們</td><td>近遠距離攻擊力+1</td></tr>
+          <tr><td>變身卡：刺客首領(高級)<br>變身卡：布雷哲(高級)<br>變身卡：黑法師(稀有)<br>變身卡：海露拜(英雄)</td><td>首先登場的黑暗妖精</td><td>防禦+3</td></tr>
+          <tr><td>變身卡：惡魔(稀有)<br>變身卡：反王肯恩(英雄)<br>變身卡：克特(英雄)</td><td>套裝的主人們</td><td>藥水恢復+1</td></tr>
+          <tr><td>變身卡：甘特(英雄)<br>變身卡：屠龍者(傳說)</td><td>以傳說之名</td><td>藥水恢復+1</td></tr>
+          <tr><td>變身卡：死亡騎士(黃金)(英雄)<br>變身卡：死亡騎士(焚焰)(英雄)<br>變身卡：屠龍者(傳說)</td><td>擊倒龍的主人</td><td>藥水恢復+3</td></tr>
+          <tr><td>變身卡：白金騎士(稀有)<br>變身卡：克特(英雄)<br>變身卡：屠龍者(傳說)</td><td>金光的盔甲</td><td>藥水恢復+10</td></tr>
+          <tr><td>變身卡：強盜弓箭手(一般)<br>變身卡：狼人(一般)<br>變身卡：萊肯(一般)<br>變身卡：小小鬼(粉紅)(一般)<br>變身卡：奇異鸚鵡(一般)<br>變身卡：食人妖精(一般)<br>變身卡：思克巴(一般)<br>變身卡：紙人(一般)<br>變身卡：骷髏槍兵(一般)<br>變身卡：妖魔(一般)<br>變身卡：浣熊(一般)<br>變身卡：骷髏弓箭手(一般)<br>變身卡：哥布林(一般)<br>變身卡：長者(一般)<br>變身卡：歐姆民兵(一般)<br>變身卡：妖魔巡守(一般)<br>變身卡：食人妖精王(一般)<br>變身卡：妖魔弓箭手(一般)<br>變身卡：黑暗妖精法師(一般)<br>變身卡：骷髏(一般)<br>變身卡：曼波兔(一般)<br>變身卡：雪人(一般)<br>變身卡：果凍怪(一般)<br>變身卡：橘子(一般)<br>變身卡：安普長老(一般)<br>變身卡：巨蟻(一般)<br>變身卡：都達瑪拉妖魔(一般)<br>變身卡：妖魔鬥士(一般)</td><td>烏合之眾</td><td>防禦+2</td></tr>
+          <tr><td>變身卡：侏儒(高級)<br>變身卡：火焰弓箭手(高級)<br>變身卡：黑騎士(高級)<br>變身卡：刺客首領(高級)<br>變身卡：賞金獵人(高級)<br>變身卡：達伊諾思投手(高級)<br>變身卡：海洋哈維(高級)<br>變身卡：死亡騎士(高級)<br>變身卡：優卡(高級)<br>變身卡：黑暗妖精(高級)<br>變身卡：布雷哲(高級)</td><td>有備無患</td><td>智力+1</td></tr>
+          <tr><td>變身卡：惡魔(稀有)<br>變身卡：炎魔(稀有)<br>變身卡：歐吉王(稀有)<br>變身卡：黑暗騎士(稀有)<br>變身卡：黑暗法師(稀有)<br>變身卡：黑暗巡守(稀有)<br>變身卡：黑暗刺客(稀有)<br>變身卡：銀光騎士(稀有)<br>變身卡：銀光法師(稀有)<br>變身卡：銀光巡守(稀有)<br>變身卡：銀光刺客(稀有)<br>變身卡：黃金騎士(稀有)<br>變身卡：黃金法師(稀有)<br>變身卡：黃金刺客(稀有)<br>變身卡：黃金巡守(稀有)<br>變身卡：白金騎士(稀有)<br>變身卡：白金法師(稀有)<br>變身卡：白金巡守(稀有)<br>變身卡：巨大牛人(稀有)<br>變身卡：力卡溫(稀有)<br>變身卡：黑法師(稀有)<br>變身卡：紅色妖魔(稀有)<br>變身卡：哈維(稀有)<br>變身卡：海音警衛(稀有)</td><td>瑩雪之功</td><td>力量+1</td></tr>
+          <tr><td>變身卡：巴列斯(英雄)<br>變身卡：反王肯恩(英雄)<br>變身卡：賽尼斯(英雄)<br>變身卡：海露拜(英雄)<br>變身卡：甘特(英雄)<br>變身卡：死亡騎士(黃金)(英雄)<br>變身卡：覺醒炎魔(英雄)<br>變身卡：死亡騎士(焚焰)(英雄)<br>變身卡：天上騎士(英雄)<br>變身卡：克特(英雄)<br>變身卡：巴風特(英雄)<br>變身卡：宙斯(英雄)<br>變身卡：警衛(弓)(英雄)<br>變身卡：警衛(矛)(英雄)<br>變身卡：塞巴斯蒂安(英雄)</td><td>大器晚成</td><td>敏捷+1</td></tr>
+          <tr><td>變身卡：真死亡騎士(稀有)<br>變身卡：真黑暗妖精(稀有)<br>變身卡：少女賽尼斯(稀有)</td><td>變得更強回歸得她們</td><td>體質+1</td></tr>
+          <tr><td>變身卡：黑暗法師(稀有)<br>變身卡：銀光法師(稀有)<br>變身卡：黃金法師(稀有)<br>變身卡：白金法師(稀有)<br>變身卡：少女賽尼斯(稀有)</td><td>少女賽尼斯的詭計</td><td>閃避率+1</td></tr>
+          <tr><td>變身卡：黑暗騎士(稀有)<br>變身卡：銀光騎士(稀有)<br>變身卡：黃金騎士(稀有)<br>變身卡：白金騎士(稀有)<br>變身卡：真死亡騎士(稀有)</td><td>真死亡騎士的威嚴</td><td>迴避率+1</td></tr>
+          <tr><td>變身卡：黑暗巡守(稀有)<br>變身卡：銀光巡守(稀有)<br>變身卡：黃金巡守(稀有)<br>變身卡：白金巡守(稀有)<br>變身卡：真黑暗妖精(稀有)</td><td>真黑暗妖精的判斷力</td><td>魔攻+1</td></tr>
+          <tr><td>變身卡：夜巡(稀有)<br>變身卡：黑暗刺客(稀有)<br>變身卡：銀光刺客(稀有)<br>變身卡：黃金刺客(稀有)<br>變身卡：白金刺客(稀有)<br>變身卡：暗夜聖殿騎士(金色)(英雄)<br>變身卡：暗夜聖殿騎士(紅色)(英雄)<br>變身卡：暗夜聖殿騎士(紫色)(英雄)<br>變身卡：暗夜聖殿騎士(藍色)(英雄)</td><td>夜巡的勇猛</td><td>魔法防禦+1</td></tr>
+          <tr><td>變身卡：死亡騎士(高級)<br>變身卡：真死亡騎士(稀有)</td><td>小死神的畢業</td><td>近距離命中+1</td></tr>
+          <tr><td>變身卡：黑暗妖精(高級)<br>變身卡：真黑暗妖精(稀有)</td><td>更華麗的魔法團</td><td>遠距離命中+1</td></tr>
+          <tr><td>變身卡：墮落的賽尼斯(高級)<br>變身卡：少女賽尼斯(稀有)</td><td>接收我的魔法吧</td><td>遠距離命中+1</td></tr>
+          <tr><td>變身卡：狂暴槍騎(高級)<br>變身卡：夜巡(稀有)</td><td>矛的隱藏魅力</td><td>近距離命中+1</td></tr>
+          <tr><td>變身卡：妖魔鬥士(一般)<br>變身卡：布雷哲(高級)<br>變身卡：真死亡騎士(稀有)</td><td>快刀斬亂麻</td><td>近距離攻擊力+1</td></tr>
+          <tr><td>變身卡：妖魔弓箭手(一般)<br>變身卡：優卡(高級)<br>變身卡：真黑暗妖精(稀有)</td><td>速弓之才</td><td>遠距離攻擊力+1</td></tr>
+          <tr><td>變身卡：黑暗妖精法師(一般)<br>變身卡：魔法師(高級)<br>變身卡：少女賽尼斯(稀有)</td><td>夢幻之斧</td><td>魔法攻擊力+1</td></tr>
+          <tr><td>變身卡：都達瑪拉妖魔(一般)<br>變身卡：黑騎士(高級)<br>變身卡：夜巡(稀有)</td><td>槍林彈雨</td><td>PVP減傷+1</td></tr>
+          <tr><td>變身卡：達伊諾思打者(高級)<br>變身卡：達伊諾思投手(高級)<br>變身卡：真死亡騎士(稀有)</td><td>達伊諾思的劍應援團</td><td>防禦+3</td></tr>
+          <tr><td>變身卡：達伊諾思打者(高級)<br>變身卡：達伊諾思投手(高級)<br>變身卡：真黑暗妖精(稀有)</td><td>達伊諾思的弓應援團</td><td>近距離攻擊力+1</td></tr>
+          <tr><td>變身卡：達伊諾思打者(高級)<br>變身卡：達伊諾思投手(高級)<br>變身卡：少女賽尼斯(稀有)</td><td>達伊諾思的魔法應援團</td><td>遠距離攻擊力+1</td></tr>
+          <tr><td>變身卡：達伊諾思打者(高級)<br>變身卡：達伊諾思投手(高級)<br>變身卡：夜巡(稀有)</td><td>達伊諾思的矛應援團</td><td>藥水恢復+5</td></tr>
+          <tr><td>變身卡：依詩蒂(英雄)<br>變身卡：絲莉安(英雄)<br>變身卡：特羅斯(英雄)<br>變身卡：歐瑞(綠)(英雄)</td><td>英雄在此處降臨</td><td>魔法防禦+5</td></tr>
+          <tr><td>變身卡：甘特(英雄)<br>變身卡：特羅斯(英雄)<br>變身卡：宙斯(英雄)<br>變身卡：塞巴斯蒂安(英雄)<br>變身卡：暗黑龍宙斯(傳說)<br>變身卡：暗黑龍阿頓(傳說)<br>變身卡：暗黑龍絲莉安(傳說)</td><td>傳說的開始</td><td>魔法防禦+3</td></tr>
+          <tr><td>變身卡：海露拜(英雄)<br>變身卡：絲莉安(英雄)<br>變身卡：天上騎士(英雄)<br>變身卡：警衛(弓)(英雄)</td><td>極強的弓弦</td><td>藥水恢復+3</td></tr>
+          <tr><td>變身卡：巴列斯(英雄)<br>變身卡：依詩蒂(英雄)<br>變身卡：克特(英雄)<br>變身卡：巴風特(英雄)<br>變身卡：國王 艾歐丁(傳說)</td><td>君主之名的勇氣</td><td>防禦+2</td></tr>
+          <tr><td>變身卡：賽尼斯(英雄)<br>變身卡：覺醒炎魔(英雄)<br>變身卡：宙斯(英雄)<br>變身卡：歐瑞(綠)(英雄)</td><td>魔法是對妖精行不通的</td><td>PVP傷害+2</td></tr>
+          <tr><td>變身卡：橘子(一般)<br>變身卡：紅色妖魔(稀有)<br>變身卡：格鬥家男(英雄)</td><td>武術達人</td><td>PVP減傷+2</td></tr>
+          <tr><td>變身卡：橘子(一般)<br>變身卡：紅色妖魔(稀有)<br>變身卡：格鬥家女(英雄)</td><td>意外的面貌</td><td>魔法防禦+5</td></tr>
+          <tr><td>變身卡：格鬥家男(英雄)<br>變身卡：格鬥家女(英雄)<br>變身卡：格鬥家(紅)(英雄)<br>變身卡：格鬥家(黃)(英雄)<br>變身卡：格鬥家(藍)(英雄)<br>變身卡：格鬥家(女)(藍)(英雄)<br>變身卡：禪(傳說)</td><td>格鬥之霸</td><td>近距離攻擊力+2 遠距離攻擊力+2</td></tr>
+          <tr><td>變身卡：反王肯恩(英雄)<br>變身卡：海露拜(英雄)<br>變身卡：丹特斯(英雄)</td><td>為了解放魔族的力量</td><td>近.遠攻+1</td></tr>
+          <tr><td>變身卡：依詩蒂(英雄)<br>變身卡：特羅斯(英雄)<br>變身卡：布魯迪卡(英雄)</td><td>死手狄亞得要塞吧</td><td>迴避率+1</td></tr>
+          <tr><td>變身卡：布魯迪卡(英雄)<br>變身卡：丹特斯(英雄)</td><td>欲醉之人欲檔之人</td><td>迴避率+1</td></tr>
+          <tr><td>變身卡：黃金安迪斯(稀有)<br>變身卡：黃金史雷佛(稀有)<br>變身卡：布魯迪卡(英雄)<br>變身卡：丹特斯(英雄)</td><td>悲劇的對立</td><td>魔力上限+50</td></tr>
+          <tr><td>變身卡：黃金安迪斯(稀有)<br>變身卡：黃金史雷佛(稀有)</td><td>威脅亞丁的破壞者</td><td>體力上限+50</td></tr>
+          <tr><td>變身卡：黑暗刺客(稀有)<br>變身卡：銀光刺客(稀有)<br>變身卡：黃金刺客(稀有)<br>變身卡：白金刺客(稀有)<br>變身卡：黃金史雷佛(稀有)</td><td>迴避是最好的防禦</td><td>近.遠命中+1</td></tr>
+          <tr><td>變身卡：黑暗巡守(稀有)<br>變身卡：銀光巡守(稀有)<br>變身卡：黃金巡守(稀有)<br>變身卡：白金巡守(稀有)<br>變身卡：黃金安迪斯(稀有)</td><td>那只是隔殘像</td><td>體力上限+150</td></tr>
+          <tr><td>變身卡：長者(一般)<br>變身卡：墮落的賽尼斯(高級)<br>變身卡：少女賽尼斯(稀有)<br>變身卡：黑法師(稀有)<br>變身卡：老虎(稀有)</td><td>給我食物就給你魔力</td><td>魔法爆擊率+1%</td></tr>
+          <tr><td>變身卡：奇異鸚鵡(一般)<br>變身卡：浣熊(一般)<br>變身卡：曼波兔(一般)<br>變身卡：紅狼蛛(一般)<br>變身卡：飛蛾人(一般)<br>變身卡：飛蛾女王(一般)<br>變身卡：大黃蜂殺手(高級)<br>變身卡：超級螳螂(高級)<br>變身卡：鼴鼠坦克(高級)<br>變身卡：鼴鼠戰士(高級)<br>變身卡：鬣狗獵人(高級)<br>變身卡：老虎(稀有)<br>變身卡：豹人(英雄)<br>變身卡：雪之蜥蜴人(英雄)</td><td>野生的致命生存力</td><td>體力上限+150</td></tr>
+          <tr><td>變身卡：桓夢(高級)<br>變身卡：老虎(稀有)<br>變身卡：潘(英雄)</td><td>才不是小龐跟詹姆士咧</td><td>昏迷耐性+7%</td></tr>
+          <tr><td>變身卡：鐵門騎士(一般)<br>變身卡：石頭高崙(高級)<br>變身卡：鐵門騎士團長(稀有)<br>變身卡：甘特(英雄)<br>變身卡：特羅斯(英雄)<br>變身卡：塞巴斯蒂安(英雄)<br>變身卡：鋼鐵阿頓(傳說)</td><td>鐵甕城</td><td>PVP傷害+3</td></tr>
+          <tr><td>變身卡：墮落的賽尼斯(高級)<br>變身卡：黑法師(稀有)<br>變身卡：賽尼斯(英雄)<br>變身卡：黑暗之星宙斯(傳說)</td><td>漆黑的魔力</td><td>PVP傷害+3</td></tr>
+          <tr><td>變身卡：依詩蒂(英雄)<br>變身卡：絲莉安(英雄)<br>變身卡：歐瑞(綠)(英雄)<br>變身卡：月之絲莉安(傳說)</td><td>月光</td><td>力量+1</td></tr>
+          <tr><td>變身卡：墓穴守護者騎士(稀有)<br>變身卡：墓穴守護者法師(稀有)<br>變身卡：墓穴守護者(稀有)<br>變身卡：依詩蒂(英雄)<br>變身卡：絲莉安(英雄)<br>變身卡：宙斯(英雄)<br>變身卡：巨大的墓穴守護者(英雄)<br>變身卡：鋼鐵阿頓(傳說)<br>變身卡：屠龍者(傳說)</td><td>守護城遇到屠龍者</td><td>敏捷+1</td></tr>
+          <tr><td>變身卡：特羅斯(英雄)<br>變身卡：鋼鐵阿頓(傳說)</td><td>巴生的后羿</td><td>體質+1</td></tr>
+          <tr><td>變身卡：地獄之花(一般)<br>變身卡：安特(一般)<br>變身卡：樹精鹿(一般)<br>變身卡：樹精戰士(一般)<br>變身卡：錘鈴(一般)<br>變身卡：歐瑞(綠)(英雄)<br>變身卡：月之絲莉安(傳說)</td><td>精靈的記憶</td><td>智力+1</td></tr>
+          <tr><td>變身卡：夜巡(稀有)<br>變身卡：警衛(紅)(矛)(英雄)</td><td>買+9貝卡合金</td><td>昏迷命中+1%</td></tr>
+          <tr><td>變身卡：黃金安迪斯(稀有)<br>變身卡：警衛(紅)(弓)(英雄)</td><td>還剩一步</td><td>防禦+2</td></tr>
+          <tr><td>變身卡：骷髏槍兵(一般)<br>變身卡：骷髏弓箭手(一般)<br>變身卡：骷髏(一般)<br>變身卡：真死亡騎士(稀有)<br>變身卡：真死亡騎士(紅)(英雄)</td><td>不死族的生存力</td><td>近距離攻擊力+1</td></tr>
+          <tr><td>變身卡：少女賽尼斯(稀有)<br>變身卡：黑法師(稀有)<br>變身卡：真死亡騎士(紅)(英雄)</td><td>使用治癒術狩獵死神的法師</td><td>近距離命中+1</td></tr>
+          <tr><td>變身卡：死亡騎士(焚焰)(英雄)<br>變身卡：真死亡騎士(紅)(英雄)</td><td>紅騎士</td><td>精神+1</td></tr>
+          <tr><td>變身卡：海音警衛(稀有)<br>變身卡：暗殺軍王史雷佛(稀有)<br>變身卡：冥法軍王海露拜(稀有)<br>變身卡：警衛(紅)(弓)(英雄)<br>變身卡：警衛(紅)(矛)(英雄)</td><td>尋找未守規矩的人</td><td>魔攻+1</td></tr>
+          <tr><td>變身卡：暗殺軍王史雷佛(稀有)<br>變身卡：黃金安迪斯(稀有)<br>變身卡：黃金史雷佛(稀有)</td><td>拉斯塔巴德的暗殺者</td><td>魔法防禦+5</td></tr>
+          <tr><td>變身卡：黃金刺客(稀有)<br>變身卡：白金刺客(稀有)<br>變身卡：魔獸軍王巴蘭卡(稀有)</td><td>血痕的鋼爪</td><td>力量+1</td></tr>
+          <tr><td>變身卡：黑暗妖精法師(一般)<br>變身卡：黑法師(稀有)<br>變身卡：冥法軍王海露拜(稀有)</td><td>職務室內架魔法結界</td><td>敏捷+1</td></tr>
+          <tr><td>變身卡：白金法師(稀有)<br>變身卡：少女賽尼斯(稀有)<br>變身卡：法令軍王蕾雅(稀有)</td><td>乎出的魔法力量</td><td>智力+1</td></tr>
+          <tr><td>變身卡：暗殺軍王史雷佛(稀有)<br>變身卡：冥法軍王海露拜(稀有)<br>變身卡：魔獸軍王巴蘭卡(稀有)<br>變身卡：法令軍王蕾雅(稀有)</td><td>君王集結</td><td>魔攻+1</td></tr>
+          <tr><td>變身卡：魔獸軍王巴蘭卡(稀有)<br>變身卡：長老拉米阿斯(稀有)<br>變身卡：提亞麥斯(稀有)<br>變身卡：巴洛麥斯(稀有)<br>變身卡：比亞塔斯(稀有)</td><td>強悍的象徵</td><td>遠距離攻擊力+1</td></tr>
+          <tr><td>變身卡：白金巡守(稀有)<br>變身卡：冥法軍王海露拜(稀有)<br>變身卡：長老安迪斯(稀有)<br>變身卡：黃金安迪斯(稀有)</td><td>敏捷的象徵</td><td>遠距離爆擊+1%</td></tr>
+          <tr><td>變身卡：少女賽尼斯(稀有)<br>變身卡：長老凱伊納(稀有)<br>變身卡：長老伊戴亞(稀有)</td><td>明智的象徵</td><td>藥水恢復+3</td></tr>
+          <tr><td>變身卡：法令軍王蕾雅(稀有)<br>變身卡：長老凱伊納(稀有)<br>變身卡：長老伊戴亞(稀有)<br>變身卡：宙斯(英雄)</td><td>什麼是賢者</td><td>體力上限+50</td></tr>
+          <tr><td>變身卡：長老安迪斯(稀有)<br>變身卡：黃金安迪斯(稀有)</td><td>安迪斯的雙擊</td><td>精神+1</td></tr>
+          <tr><td>變身卡：冥法軍王海露拜(稀有)<br>變身卡：長老安迪斯(稀有)<br>變身卡：警衛(紅)(弓)(英雄)</td><td>弱點攻擊</td><td>近距離攻擊力+1</td></tr>
+          <tr><td>變身卡：長老凱伊納(稀有)<br>變身卡：長老拉米阿斯(稀有)<br>變身卡：長老伊戴亞(稀有)<br>變身卡：提亞麥斯(稀有)<br>變身卡：巴洛麥斯(稀有)<br>變身卡：長老安迪斯(稀有)<br>變身卡：比亞塔斯(稀有)</td><td>此刻開始募集長老</td><td>近距離命中+1</td></tr>
+          <tr><td>變身卡：長老提亞麥斯(稀有)<br>變身卡：長老巴洛麥斯(稀有)<br>變身卡：長老安迪斯(稀有)</td><td>我們是兄弟嗎</td><td>魔力回復量+2</td></tr>
+          <tr><td>變身卡：奧爾汀(高級)<br>變身卡：長老伊戴亞(稀有)<br>變身卡：賽尼斯(英雄)</td><td>智慧的象徵</td><td>遠距離命中+1</td></tr>
+          <tr><td>變身卡：魔獸軍王巴蘭卡(稀有)<br>變身卡：長老提亞麥斯(稀有)</td><td>魔獸軍王的指導</td><td>迴避率+1</td></tr>
+          <tr><td>變身卡：布雷哲(高級)<br>變身卡：暗殺軍王史雷佛(稀有)</td><td>暗殺者相見</td><td>PVP減傷+1</td></tr>
+          <tr><td>變身卡：墮落的賽尼斯(高級)<br>變身卡：法令軍王蕾雅(稀有)</td><td>法令軍王的指導</td><td>魔防防禦+2</td></tr>
+          <tr><td>變身卡：火焰弓箭手(高級)<br>變身卡：黑暗妖精(高級)<br>變身卡：冥法軍王海露拜(稀有)</td><td>神弓的相見</td><td>負重獎勵+50</td></tr>
+          <tr><td>變身卡：白金巡守(稀有)<br>變身卡：冥法軍王海露拜(稀有)<br>變身卡：警衛(紅)(弓)(英雄)</td><td>迴避投射體的爽感</td><td>遠距離命中+1</td></tr>
+          <tr><td>變身卡：歐姆民兵(一般)<br>變身卡：魔獸軍王巴蘭卡(稀有)</td><td>魔獸軍王的職務室緣分</td><td>體力上限+30</td></tr>
+          <tr><td>變身卡：黑暗妖精法師(一般)<br>變身卡：法令軍王蕾雅(稀有)</td><td>法令軍王的職務室緣分</td><td>遠距離攻擊力+1</td></tr>
+          <tr><td>變身卡：海盜獵人雷歐(一般)<br>變身卡：火焰弓箭手(高級)<br>變身卡：刺客首領(高級)</td><td>同業者</td><td>魔法命中+1</td></tr>
+          <tr><td>變身卡：桓夢(高級)<br>變身卡：老虎(稀有)<br>變身卡：海盜獵人珍(稀有)<br>變身卡：狼騎士(稀有)</td><td>獵人與朋友們</td><td>魔法防禦+2</td></tr>
+          <tr><td>變身卡：海盜獵人雷歐(一般)<br>變身卡：長老安迪斯(稀有)<br>變身卡：黃金安迪斯(稀有)<br>變身卡：海盜獵人珍(稀有)</td><td>不會錯過</td><td>迴避率+1</td></tr>
+          <tr><td>變身卡：依詩蒂(英雄)<br>變身卡：依詩蒂(槍)(英雄)</td><td>武器大師</td><td>遠距離爆擊+1%</td></tr>
+          <tr><td>變身卡：絲莉安(英雄)<br>變身卡：宙斯(英雄)<br>變身卡：依詩蒂(槍)(英雄)</td><td>魔力彈</td><td>近距離爆擊率+1%</td></tr>
+          <tr><td>變身卡：覺醒炎魔(英雄)<br>變身卡：歐瑞(綠)(英雄)<br>變身卡：塞巴斯蒂安(英雄)<br>變身卡：依詩蒂(槍)(英雄)</td><td>降魔儀式</td><td>近距離攻擊力+1</td></tr>
+          <tr><td>變身卡：黃金安迪斯(稀有)<br>變身卡：海盜獵人珍(稀有)<br>變身卡：依詩蒂(槍)(英雄)</td><td>敏捷的象徵II</td><td>負重獎勵+20</td></tr>
+          <tr><td>變身卡：布魯迪卡(英雄)<br>變身卡：月之絲莉安(傳說)<br>變身卡：黑暗殺手(傳說)</td><td>既遠又近</td><td>魔力上限+10</td></tr>
+          <tr><td>變身卡：冥法軍王海露拜(稀有)<br>變身卡：魔獸軍王巴蘭卡(稀有)<br>變身卡：覺醒炎魔(英雄)</td><td>重量級聚會</td><td>迴避率+1</td></tr>
+          <tr><td>變身卡：屠龍者(傳說)<br>變身卡：黑暗殺手(傳說)</td><td>雙胞屠龍者</td><td>遠距離攻擊力+1</td></tr>
+          <tr><td>變身卡：海盜獵人雷歐(一般)<br>變身卡：銀光火槍手(稀有)</td><td>彈藥手</td><td>遠距離攻擊力+2</td></tr>
+          <tr><td>變身卡：黑暗妖精(高級)<br>變身卡：黑暗火槍手(稀有)<br>變身卡：海盜獵人珍(稀有)</td><td>暗黑沙手</td><td>遠距離命中+2</td></tr>
+          <tr><td>變身卡：黑暗火槍手(稀有)<br>變身卡：銀光火槍手(稀有)<br>變身卡：黃金火槍手(稀有)</td><td>雙重子彈</td><td>體力上限+30</td></tr>
+          <tr><td>變身卡：黑暗火槍手(稀有)<br>變身卡：銀光火槍手(稀有)<br>變身卡：黃金火槍手(稀有)<br>變身卡：白金火槍手(稀有)<br>變身卡：槍手(男)(神話)<br>變身卡：槍手(女)(神話)</td><td>槍手部隊</td><td>近距離命中+1</td></tr>
+          <tr><td>變身卡：黑暗火槍手(稀有)<br>變身卡：銀光火槍手(稀有)<br>變身卡：黃金火槍手(稀有)<br>變身卡：白金火槍手(稀有)<br>變身卡：依詩蒂(槍)(英雄)</td><td>射擊隊</td><td>體力回復量+3</td></tr>
+          <tr><td>變身卡：黃金巡守(稀有)<br>變身卡：白金巡守(稀有)<br>變身卡：黃金火槍手(稀有)<br>變身卡：白金火槍手(稀有)<br>變身卡：歐瑞(綠)(英雄)</td><td>新舊聯合</td><td>遠距離命中+1</td></tr>
+          <tr><td>變身卡：曼波兔(一般)<br>變身卡：曼玻兔(紅蘿菠)(稀有)</td><td>紅蘿蔔紅蘿蔔</td><td>敏捷+1</td></tr>
+          <tr><td>變身卡：真死亡騎士(紅)(英雄)<br>變身卡：真死亡騎士(藍)(英雄)</td><td>支配死亡騎士</td><td>PVP減傷+1</td></tr>
+          <tr><td>變身卡：浣熊(一般)<br>變身卡：果凍怪(一般)<br>變身卡：橘子(一般)<br>變身卡：曼玻兔(紅蘿菠)(稀有)<br>變身卡：巴風特(英雄)</td><td>有毅力的草食動物</td><td>近距離攻擊力+1</td></tr>
+          <tr><td>變身卡：警衛(紅)(弓)(英雄)<br>變身卡：警衛(紅)(矛)(英雄)<br>變身卡：歐瑞(綠)(英雄)<br>變身卡：真死亡騎士(藍)(英雄)</td><td>colorful</td><td>近距離命中+1</td></tr>
+          <tr><td>變身卡：絲莉安(英雄)<br>變身卡：警衛(弓)(英雄)<br>變身卡：警衛(紅)(弓)(英雄)<br>變身卡：歐瑞(綠)(英雄)<br>變身卡：格立特(弓)(英雄)</td><td>有自信就進來</td><td>PVP傷害+3</td></tr>
+          <tr><td>變身卡：依詩蒂(英雄)<br>變身卡：絲莉安(英雄)<br>變身卡：特羅斯(英雄)<br>變身卡：格立特(弓)(英雄)</td><td>沒看到阿頓耶</td><td>PVP傷害+3</td></tr>
+          <tr><td>變身卡：反王肯恩(英雄)<br>變身卡：阿斯態爾(英雄)<br>變身卡：覺醒肯勞厄爾(英雄)</td><td>反王的資格</td><td>魔法爆擊率+3%</td></tr>
+          <tr><td>變身卡：賽尼斯(英雄)<br>變身卡：阿斯態爾(英雄)</td><td>無法到手的男人</td><td>PVP減傷+3</td></tr>
+          <tr><td>變身卡：鋼鐵阿頓(傳說)<br>變身卡：職業變身(神話)</td><td>神話阿頓</td><td>近距離命中+3</td></tr>
+          <tr><td>變身卡：月之絲莉安(傳說)<br>變身卡：職業變身(神話)</td><td>神話絲莉安</td><td>傷害減免+3</td></tr>
+          <tr><td>變身卡：黑暗之星宙斯(傳說)<br>變身卡：職業變身(神話)</td><td>神話宙斯</td><td>體力上限+150</td></tr>
+          <tr><td>變身卡：屠龍者(傳說)<br>變身卡：職業變身(神話)</td><td>神話屠龍者</td><td>PVP傷害+1</td></tr>
+          <tr><td>變身卡：鋼鐵阿頓(傳說)<br>變身卡：屠龍者(傳說)<br>變身卡：職業變身(神話)</td><td>神話戰場之劍</td><td>近距離命中+2</td></tr>
+          <tr><td>變身卡：黑暗之星宙斯(傳說)<br>變身卡：月之絲莉安(傳說)<br>變身卡：鋼鐵阿頓(傳說)<br>變身卡：屠龍者(傳說)<br>變身卡：黑暗殺手(傳說)<br>變身卡：席琳的守衛(傳說)<br>變身卡：格蘭肯的逆麟(傳說)<br>變身卡：殷海薩的影子(傳說)<br>變身卡：職業變身(神話)</td><td>神話歷史的開始</td><td>體力回復量+2</td></tr>
+          <tr><td>變身卡：克特(英雄)<br>變身卡：真死亡騎士(紅)(英雄)<br>變身卡：荊棘公主艾薇(英雄)<br>變身卡：暗夜殺戮者(傳說)</td><td>我是騎士</td><td>負重獎勵+500</td></tr>
+          <tr><td>變身卡：追蹤者凱伊(稀有)<br>變身卡：屠龍者(傳說)</td><td>與龍有關的人們</td><td>近距離攻擊力+1</td></tr>
+          <tr><td>變身卡：狂暴槍騎(高級)<br>變身卡：夜巡(稀有)<br>變身卡：追蹤者凱伊(稀有)</td><td>2格攻擊的達人</td><td>體力上限+10</td></tr>
+          <tr><td>變身卡：銀光龍騎士(稀有)<br>變身卡：黃金龍騎士(稀有)<br>變身卡：白金龍騎士(稀有)</td><td>鎖鏈劍的達人們</td><td>PVP減傷+1</td></tr>
+          <tr><td>變身卡：達伊諾思打者(高級)<br>變身卡：達伊諾思投手(高級)<br>變身卡：追蹤者凱伊(稀有)</td><td>達伊諾思的鎖鏈劍應援團</td><td>魔力上限+35</td></tr>
+          <tr><td>變身卡：黑暗龍騎士(稀有)<br>變身卡：銀光龍騎士(稀有)<br>變身卡：白金龍騎士(稀有)<br>變身卡：龍鬥士(傳說)<br>變身卡：龍騎士(男)(神話)<br>變身卡：龍騎士(女)(神話)</td><td>龍鬥士集結</td><td>近距離命中+1</td></tr>
+          <tr><td>變身卡：骷髏槍兵(一般)<br>變身卡：都達瑪拉妖魔(一般)<br>變身卡：追蹤者卡爾(一般)</td><td>我們是2格攻擊</td><td>遠距離命中+1</td></tr>
+          <tr><td>變身卡：賽尼斯(英雄)<br>變身卡：依詩蒂(英雄)<br>變身卡：荊棘公主艾薇(英雄)<br>變身卡：依詩蒂(槍)(英雄)<br>變身卡：姬武者(英雄)<br>變身卡：家門守護者菲莉亞(英雄)</td><td>女英雄聚會</td><td>遠距離命中+1</td></tr>
+          <tr><td>變身卡：真黑暗妖精(稀有)<br>變身卡：法令軍王蕾雅(稀有)<br>變身卡：長老凱伊納(稀有)</td><td>Girl Crush</td><td>遠距離攻擊力+1</td></tr>
+          <tr><td>變身卡：老虎(稀有)<br>變身卡：武獅(稀有)<br>變身卡：格鬥家男(英雄)<br>變身卡：死神(英雄)</td><td>為了充滿活力的新年</td><td>體力上限+80</td></tr>
+          <tr><td>變身卡：老虎(稀有)<br>變身卡：武獅(稀有)<br>變身卡：死神(英雄)<br>變身卡：屠龍者(傳說)</td><td>新年的主角就是我</td><td>魔力上限+15</td></tr>
+          <tr><td>變身卡：歐瑞靈魂(稀有)<br>變身卡：歐瑞十字弓(稀有)<br>變身卡：冰原狼人(稀有)<br>變身卡：歐瑞(藍)(英雄)<br>變身卡：歐瑞(綠)(英雄)</td><td>高貴的誕生歐瑞</td><td>負重獎勵+100</td></tr>
+          <tr><td>變身卡：海露拜(英雄)<br>變身卡：絲莉安(英雄)<br>變身卡：警衛(紅)(弓)(英雄)<br>變身卡：歐瑞(藍)(英雄)<br>變身卡：歐瑞(綠)(英雄)</td><td>精誠所至</td><td>近距離攻擊力+1</td></tr>
+          <tr><td>變身卡：賽尼斯(英雄)<br>變身卡：依詩蒂(英雄)<br>變身卡：荊棘公主艾薇(英雄)<br>變身卡：依詩蒂(槍)(英雄)<br>變身卡：潘朵拉(英雄)<br>變身卡：世拉(英雄)<br>變身卡：蘿絲瑪莉(英雄)</td><td>亞丁大陸的絕世美女</td><td>近距離命中+1</td></tr>
+          <tr><td>變身卡：長者(一般)<br>變身卡：惡魔(稀有)<br>變身卡：潘朵拉(英雄)</td><td>不賣藥水給卡歐</td><td>遠距離命中+1</td></tr>
+          <tr><td>變身卡：食人妖精(一般)<br>變身卡：侏儒(高級)<br>變身卡：惡夢的稻草人(稀有)<br>變身卡：稻草人(藍)(稀有)<br>變身卡：潘朵拉(英雄)</td><td>食人妖精去解開稻草人</td><td>近距離攻擊力+2 近距離命中+2</td></tr>
+          <tr><td>變身卡：黑暗騎士(稀有)<br>變身卡：銀光騎士(稀有)<br>變身卡：黃金騎士(稀有)<br>變身卡：白金騎士(稀有)<br>變身卡：潘朵拉(英雄)</td><td>又擋住碼頭的路了</td><td>PVP傷害+2</td></tr>
+          <tr><td>變身卡：墮落的賽尼斯(高級)<br>變身卡：黑騎士(高級)<br>變身卡：黑暗妖精警衛(稀有)<br>變身卡：伊娃守護者(英雄)<br>變身卡：沙哈守護者(英雄)<br>變身卡：帕格里奧守護者(英雄)<br>變身卡：馬普勒守護者(英雄)</td><td>守護賽尼斯</td><td>藥水恢復+1</td></tr>
+          <tr><td>變身卡：骷髏弓箭手(一般)<br>變身卡：妖魔巡守(一般)<br>變身卡：妖魔弓箭手(一般)<br>變身卡：黑暗妖精盜賊(稀有)</td><td>要我教你單手射箭的方法</td><td>傷害減免+2</td></tr>
+          <tr><td>變身卡：真死亡騎士(紅)(英雄)<br>變身卡：真死亡騎士(藍)(英雄)<br>變身卡：地獄死亡騎士(傳說)</td><td>死亡騎士地獄降臨</td><td>藥水恢復+5</td></tr>
+          <tr><td>變身卡：鋼鐵阿頓(傳說)<br>變身卡：屠龍者(傳說)<br>變身卡：地獄死亡騎士(傳說)</td><td>你說現在誰最強</td><td>藥水恢復+3</td></tr>
+          <tr><td>變身卡：浣熊(一般)<br>變身卡：曼波兔(一般)<br>變身卡：黑暗妖精警衛(稀有)<br>變身卡：黑暗妖精盜賊(稀有)</td><td>黑暗妖精的興趣是狩獵</td><td>PVP傷害+2</td></tr>
+          <tr><td>變身卡：幻影騎士(傳說)<br>變身卡：職業變身(神話)</td><td>神話戰場的先鋒大將</td><td>近距離命中+2</td></tr>
+          <tr><td>變身卡：反王肯恩(英雄)<br>變身卡：特羅斯(英雄)<br>變身卡：暗夜殺戮者(傳說)<br>變身卡：幻影騎士(傳說)</td><td>不畏懼死亡的英雄</td><td>近距離命中+1</td></tr>
+          <tr><td>變身卡：獵人里德(稀有)<br>變身卡：甘特(英雄)<br>變身卡：暗黑騎士莉爾利(英雄)<br>變身卡：幻影騎士(傳說)</td><td>不退縮的英雄</td><td>近距離命中+2</td></tr>
+          <tr><td>變身卡：真死亡騎士(稀有)<br>變身卡：獵人里德(稀有)<br>變身卡：海露拜(英雄)<br>變身卡：暗黑騎士莉爾利(英雄)<br>變身卡：死神(神話)</td><td>召喚死亡之人</td><td>遠距離命中+2</td></tr>
+          <tr><td>變身卡：黑暗刺客(稀有)<br>變身卡：暗殺軍王史雷佛(稀有)<br>變身卡：黃金史雷佛(稀有)</td><td>暗黑之影</td><td>魔法防禦+2</td></tr>
+          <tr><td>變身卡：海盜獵人雷歐(一般)<br>變身卡：獵人戴伊(一般)<br>變身卡：獵人里德(稀有)</td><td>傑出的獵人</td><td>PVP傷害+1</td></tr>
+          <tr><td>變身卡：黑暗騎士(稀有)<br>變身卡：銀光騎士(稀有)<br>變身卡：甘特(英雄)<br>變身卡：黑暗哈汀(傳說)</td><td>黑暗哈汀的英雄們I</td><td>PVP傷害+1</td></tr>
+          <tr><td>變身卡：黑暗巡守(稀有)<br>變身卡：銀光巡守(稀有)<br>變身卡：海露拜(英雄)<br>變身卡：黑暗哈汀(傳說)</td><td>黑暗哈汀的英雄們II</td><td>近距離攻擊力+1</td></tr>
+          <tr><td>變身卡：黑暗刺客(稀有)<br>變身卡：克特(英雄)<br>變身卡：黑暗哈汀(傳說)</td><td>黑魔法的奇蹟</td><td>遠距離攻擊力+1</td></tr>
+          <tr><td>變身卡：銀光刺客(稀有)<br>變身卡：警衛(弓)(英雄)<br>變身卡：黑暗哈汀(傳說)<br>變身卡：黑暗騎士(男)(神話)<br>變身卡：黑暗騎士(女)(神話)</td><td>以暗黑騎士之名I</td><td>防禦+1</td></tr>
+          <tr><td>變身卡：黃金巡守(稀有)<br>變身卡：警衛(弓)(英雄)<br>變身卡：黑暗哈汀(傳說)</td><td>以暗黑騎士之名II</td><td>體力上限+80</td></tr>
+          <tr><td>變身卡：黃金騎士(稀有)<br>變身卡：特羅斯(英雄)<br>變身卡：黑暗哈汀(傳說)</td><td>哈汀的呼喚</td><td>魔法防禦+1</td></tr>
+          <tr><td>變身卡：白金巡守(稀有)<br>變身卡：巴風特(英雄)<br>變身卡：黑暗哈汀(傳說)</td><td>哈汀的記憶</td><td>遠距離命中+1</td></tr>
+          <tr><td>變身卡：警衛(弓)(英雄)<br>變身卡：警衛(綠)(弓)(英雄)<br>變身卡：警衛(紅)(弓)(英雄)</td><td>警衛I</td><td>近距離命中+1</td></tr>
+          <tr><td>變身卡：警衛(弓)(英雄)<br>變身卡：警衛(綠)(矛)(英雄)<br>變身卡：警衛(紅)(矛)(英雄)</td><td>警衛II</td><td>近距離命中+1</td></tr>
+          <tr><td>變身卡：黃金法師(稀有)<br>變身卡：海音警衛(稀有)<br>變身卡：警衛(綠)(矛)(英雄)</td><td>英雄篇章</td><td>智力+1</td></tr>
+          <tr><td>變身卡：警衛(綠)(弓)(英雄)<br>變身卡：警衛(紅)(弓)(英雄)</td><td>弓 警備</td><td>遠距離命中+1</td></tr>
+          <tr><td>變身卡：警衛(綠)(矛)(英雄)<br>變身卡：警衛(紅)(矛)(英雄)</td><td>矛 警備</td><td>傷害減免+1</td></tr>
+          <tr><td>變身卡：真死亡騎士(稀有)<br>變身卡：追蹤者凱伊(稀有)<br>變身卡：波若斯妖魔鬥士(稀有)</td><td>波若斯妖魔鬥士和朋友們</td><td>防禦+1</td></tr>
+          <tr><td>變身卡：夜巡(稀有)<br>變身卡：少女賽尼斯(稀有)<br>變身卡：波若斯妖魔法師(稀有)</td><td>波若斯妖魔法師和朋友們</td><td>昏迷命中+2%</td></tr>
+          <tr><td>變身卡：真黑暗妖精(稀有)<br>變身卡：黑暗妖精盜賊(稀有)<br>變身卡：波若斯妖魔弓箭手(稀有)</td><td>波若斯妖魔弓箭手和朋友們</td><td>PVP傷害+2</td></tr>
+          <tr><td>變身卡：波若斯妖魔鬥士(稀有)<br>變身卡：波若斯妖魔法師(稀有)<br>變身卡：波若斯妖魔弓箭手(稀有)<br>變身卡：妖魔士兵(稀有)<br>變身卡：妖魔弓手(稀有)<br>變身卡：妖魔斧兵(稀有)<br>變身卡：妖魔騎兵(稀有)</td><td>波若斯妖魔朋友們</td><td>體力上限+30</td></tr>
+          <tr><td>變身卡：狂暴將軍(高級)<br>變身卡：桓夢(高級)<br>變身卡：武獅(稀有)<br>變身卡：韓服少年(稀有)<br>變身卡：韓服少女(稀有)<br>變身卡：舞獅(金)(稀有)</td><td>迎接新春</td><td>閃避率+2</td></tr>
+          <tr><td>變身卡：死亡騎士(高級)<br>變身卡：死亡騎士(黃金)(英雄)<br>變身卡：死亡騎士(焚焰)(英雄)<br>變身卡：地獄死亡騎士(傳說)<br>變身卡：憎恨的死亡騎士(傳說)</td><td>死亡騎士愛好家</td><td>迴避率+1</td></tr>
+          <tr><td>變身卡：狂暴將軍(紅)(英雄)<br>變身卡：狂暴將軍(藍)(英雄)<br>變身卡：幻影騎士(傳說)<br>變身卡：憎恨的死亡騎士(傳說)<br>變身卡：昔日的騎士范德(傳說)<br>變身卡：勞待碼依(傳說)</td><td>傳說的對手</td><td>近距離命中+1 近距離攻擊力+1</td></tr>
+          <tr><td>變身卡：真死亡騎士(稀有)<br>變身卡：丹特斯(英雄)<br>變身卡：憎恨的死亡騎士(傳說)</td><td>危險的英雄們</td><td>遠距離命中+1 遠距離攻擊力+1</td></tr>
+          <tr><td>變身卡：警衛(綠)(矛)(英雄)<br>變身卡：警衛(紅)(矛)(英雄)<br>變身卡：警衛(矛)隊長(傳說)</td><td>隊長對你們很失望</td><td>近距離攻擊力+1</td></tr>
+          <tr><td>變身卡：警衛(弓)(英雄)<br>變身卡：警衛(綠)(弓)(英雄)<br>變身卡：警衛(紅)(弓)(英雄)<br>變身卡：警衛(弓)隊長(傳說)</td><td>隊長對你們也很失望</td><td>PVP減傷+1</td></tr>
+          <tr><td>變身卡：黑暗妖精警衛(稀有)<br>變身卡：狂暴將軍(紅)(英雄)<br>變身卡：狂暴將軍(藍)(英雄)<br>變身卡：警衛(矛)隊長(傳說)</td><td>這樣使用矛就行了</td><td>魔力上限+50</td></tr>
+          <tr><td>變身卡：火焰弓箭手(高級)<br>變身卡：白金巡守(稀有)<br>變身卡：歐瑞(藍)(英雄)<br>變身卡：警衛(弓)隊長(傳說)</td><td>這樣射箭就行了</td><td>近距離爆擊率+1%</td></tr>
+          <tr><td>變身卡：憎恨的死亡騎士(傳說)<br>變身卡：帕拉丁(傳說)</td><td>這是龍的問題</td><td>近距離命中+1</td></tr>
+          <tr><td>變身卡：歐瑞(藍)(英雄)<br>變身卡：暗黑騎士莉爾利(英雄)<br>變身卡：帕拉丁(傳說)</td><td>十字軍和英雄們</td><td>藥水恢復+3</td></tr>
+          <tr><td>變身卡：魔幻士兵(一般)<br>變身卡：菁英魔幻士兵(稀有)<br>變身卡：艾依爾(英雄)<br>變身卡：帕拉丁(傳說)<br>變身卡：神聖劍士(男)(神話)<br>變身卡：神聖劍士(女)(神話)</td><td>以神聖劍士團的名義</td><td>無視傷害減免+2</td></tr>
+          <tr><td>變身卡：真死亡騎士(紅)(英雄)<br>變身卡：狂暴將軍(紅)(英雄)<br>變身卡：刺客首領(紅)(英雄)<br>變身卡：狂戰士(神話)</td><td>紅色饗宴</td><td>魔攻+1</td></tr>
+          <tr><td>變身卡：刺客首領(高級)<br>變身卡：白金刺客(稀有)<br>變身卡：鬼靈(稀有)<br>變身卡：刺客首領(紅)(英雄)<br>變身卡：Mr斯摩格(傳說)<br>變身卡：暗殺的雅莉亞精靈(傳說)</td><td>黑暗中的影子</td><td>魔力上限+35</td></tr>
+          <tr><td>變身卡：黃金火槍手(稀有)<br>變身卡：黃金龍騎士(稀有)<br>變身卡：狂暴將軍(紅)(英雄)</td><td>跟隨大師</td><td>體力回復量+1</td></tr>
+          <tr><td>變身卡：暗殺軍王史雷佛(稀有)<br>變身卡：布魯迪卡(英雄)<br>變身卡：黃金布雷哲(英雄)</td><td>暗殺軍團3隊長</td><td>魔力回復量+1</td></tr>
+          <tr><td>變身卡：死亡騎士(焚焰)(英雄)<br>變身卡：警衛(綠)(弓)(英雄)<br>變身卡：黃金布雷哲(英雄)</td><td>4人4色</td><td>負重獎勵+200</td></tr>
+          <tr><td>變身卡：妖魔巡守(一般)<br>變身卡：艾依爾(英雄)</td><td>在其他世界見過的感覺</td><td>防禦+1</td></tr>
+          <tr><td>變身卡：黑騎士(高級)<br>變身卡：黑暗妖精警衛(稀有)<br>變身卡：狂暴將軍(紅)(英雄)</td><td>需要盾牌嗎</td><td>閃避率+1</td></tr>
+          <tr><td>變身卡：獵人戴伊(一般)<br>變身卡：黑暗妖精(高級)<br>變身卡：銀光法師(稀有)<br>變身卡：刺客首領(紅)(英雄)</td><td>組合不錯</td><td>體力上限+15</td></tr>
+          <tr><td>變身卡：墮落的賽尼斯(高級)<br>變身卡：惡魔(稀有)<br>變身卡：天上騎士(英雄)<br>變身卡：荊棘公主艾薇(英雄)<br>變身卡：艾依爾(英雄)</td><td>只有我沒翅膀</td><td>體力上限+30</td></tr>
+          <tr><td>變身卡：魔獸軍王巴蘭卡(稀有)<br>變身卡：艾依爾(英雄)</td><td>金髮太過分</td><td>體力上限+20</td></tr>
+          <tr><td>變身卡：白金騎士(稀有)<br>變身卡：白金龍騎士(稀有)<br>變身卡：菁英魔幻士兵(稀有)</td><td>別人的劍看起來很好</td><td>PVP減傷+1</td></tr>
+          <tr><td>變身卡：魔幻士兵(一般)<br>變身卡：菁英魔幻士兵(稀有)</td><td>射手與副射手</td><td>遠/近距離迴避率+1</td></tr>
+          <tr><td>變身卡：惡魔(稀有)<br>變身卡：素還真(英雄)</td><td>征服邪惡的青香白蓮</td><td>魔法爆擊率+1%</td></tr>
+          <tr><td>變身卡：狂暴槍騎(高級)<br>變身卡：狂暴將軍(高級)<br>變身卡：素還真(英雄)</td><td>半神半聖亦半仙</td><td>防禦+1</td></tr>
+          <tr><td>變身卡：傑克吳燈籠(紅)(英雄)<br>變身卡：棄天帝(英雄)</td><td>傑克吳的組合</td><td>魔法防禦+1</td></tr>
+          <tr><td>變身卡：生日慶祝妖精(稀有)<br>變身卡：邪惡蛋糕怪(稀有)<br>變身卡：邪惡麋鹿(稀有)<br>變身卡：素還真(英雄)<br>變身卡：傑克吳燈籠(紅)(英雄)<br>變身卡：葉小釵(英雄)</td><td>佛心活動</td><td>魔攻+1 魔力上限+15</td></tr>
+          <tr><td>變身卡：傑克吳燈籠(紅)(英雄)<br>變身卡：黑暗之星宙斯(傳說)</td><td>我們長的有一點像</td><td>近距離攻擊+2 遠距離攻擊+2</td></tr>
+          <tr><td>變身卡：艾爾摩將軍(稀有)<br>變身卡：艾爾摩士兵(稀有)<br>變身卡：艾爾魔法師(稀有)</td><td>戰場中的士兵們</td><td>近.遠攻+1</td></tr>
+          <tr><td>變身卡：巨大牛人(稀有)<br>變身卡：黑暗妖精警衛(稀有)<br>變身卡：艾爾摩士兵(稀有)</td><td>消滅怪獸的士兵們</td><td>PVP傷害+1</td></tr>
+          <tr><td>變身卡：炎魔(稀有)<br>變身卡：少女賽尼斯(稀有)<br>變身卡：艾爾魔法師(稀有)</td><td>使用黑暗力量的人</td><td>魔力回復量+5</td></tr>
+          <tr><td>變身卡：追蹤者凱伊(稀有)<br>變身卡：獵人里德(稀有)<br>變身卡：艾爾摩將軍(稀有)</td><td>把逃兵一個不漏的抓起來</td><td>遠距離命中+1</td></tr>
+          <tr><td>變身卡：天鵝的勞安格林(傳說)<br>變身卡：哈汀之魂(傳說)<br>變身卡：漆黑的死亡騎士(傳說)</td><td>有紫色的感覺</td><td>魔攻+2</td></tr>
+          <tr><td>變身卡：依詩蒂(英雄)<br>變身卡：天鵝的勞安格林(傳說)</td><td>我給人的感覺煥然一新</td><td>近距離攻擊力+1</td></tr>
+          <tr><td>變身卡：宙斯(英雄)<br>變身卡：歐瑞(藍)(英雄)<br>變身卡：格立特(弓)(英雄)<br>變身卡：鋼鐵阿頓(傳說)<br>變身卡：天鵝的勞安格林(傳說)</td><td>之前好像不是這名成員</td><td>無視傷害減免+1</td></tr>
+          <tr><td>變身卡：黑暗哈汀(傳說)<br>變身卡：哈汀之魂(傳說)</td><td>我內在的另一個我</td><td>近距離命中+1</td></tr>
+          <tr><td>變身卡：魔法師(高級)<br>變身卡：黃金法師(稀有)<br>變身卡：賽尼斯(英雄)<br>變身卡：黑暗之星宙斯(傳說)<br>變身卡：黑暗哈汀(傳說)</td><td>你再找魔法師麼</td><td>PVP傷害+2</td></tr>
+          <tr><td>變身卡：地獄死亡騎士(傳說)<br>變身卡：憎恨的死亡騎士(傳說)<br>變身卡：漆黑的死亡騎士(傳說)</td><td>傳說的3兄弟</td><td>遠距離迴避率+1</td></tr>
+          <tr><td>變身卡：兔子少女(英雄)<br>變身卡：地獄死亡騎士(傳說)<br>變身卡：憎恨的死亡騎士(傳說)<br>變身卡：漆黑的死亡騎士(傳說)</td><td>死亡騎士相鬥兔子遭殃</td><td>支撐耐性+1</td></tr>
+          <tr><td>變身卡：黑法師(稀有)<br>變身卡：黑暗妖精盜賊(稀有)<br>變身卡：巴列斯(英雄)<br>變身卡：漆黑的死亡騎士(傳說)</td><td>你們是黑暗的爪牙嗎</td><td>體質+1</td></tr>
+          <tr><td>變身卡：死亡騎士(高級)<br>變身卡：真死亡騎士(紅)(英雄)<br>變身卡：真死亡騎士(藍)(英雄)<br>變身卡：漆黑的死亡騎士(傳說)</td><td>死亡騎士收集家</td><td>閃避率+1</td></tr>
+          <tr><td>變身卡：伯爵安托里歐(英雄)<br>變身卡：師團長哈波(英雄)<br>變身卡：公爵馬庫斯(傳說)<br>變身卡：軍團長艾克斯特(傳說)</td><td>星星10個</td><td>遠距離命中+2</td></tr>
+          <tr><td>變身卡：巨蟻女皇士兵(高級)<br>變身卡：巨蟻女皇隊長(稀有)<br>變身卡：伯爵安托里歐(英雄)<br>變身卡：公爵馬庫斯(傳說)</td><td>你忘上我往下集合I</td><td>遠距離攻擊力+1</td></tr>
+          <tr><td>變身卡：沙蟲士兵(高級)<br>變身卡：沙蟲隊長(稀有)<br>變身卡：師團長哈波(英雄)<br>變身卡：軍團長艾克斯特(傳說)</td><td>你忘上我往下集合II</td><td>近距離命中+1</td></tr>
+          <tr><td>變身卡：巨蟻(一般)<br>變身卡：巨大兵蟻(一般)<br>變身卡：公爵馬庫斯(傳說)</td><td>螞蟻的時代來臨了</td><td>體力上限+30</td></tr>
+          <tr><td>變身卡：黑騎士(高級)<br>變身卡：波若斯妖魔鬥士(稀有)<br>變身卡：巴風特(英雄)<br>變身卡：軍團長艾克斯特(傳說)</td><td>哈爾巴斯的蹤跡</td><td>無視傷害減免+1</td></tr>
+          <tr><td>變身卡：巨蟻女皇隊長(傳說)<br>變身卡：沙蟲隊長(傳說)<br>變身卡：警衛(矛)隊長(傳說)<br>變身卡：警衛(弓)隊長(傳說)</td><td>我也是隊長</td><td>遠距離命中+1</td></tr>
+          <tr><td>變身卡：莉茲(英雄)<br>變身卡：伯爵安托里歐(英雄)<br>變身卡：師團長哈波(英雄)<br>變身卡：巴士瑟(英雄)<br>變身卡：卡士伯(英雄)<br>變身卡：西瑪(英雄)<br>變身卡：馬庫爾(英雄)</td><td>共同販售區</td><td>PVP傷害+1</td></tr>
+          <tr><td>變身卡：紅色妖魔(稀有)<br>變身卡：兔子少女(英雄)</td><td>謎樣的存在</td><td>近距離命中+1</td></tr>
+          <tr><td>變身卡：小小鬼(粉紅)(一般)<br>變身卡：墮落的賽尼斯(高級)<br>變身卡：兔子少女(英雄)</td><td>少女的進化</td><td>遠距離攻擊力+1</td></tr>
+          <tr><td>變身卡：潘朵拉(英雄)<br>變身卡：莉茲(英雄)</td><td>不是天天可見的商店</td><td>近.遠攻+1</td></tr>
+          <tr><td>變身卡：死亡騎士(高級)<br>變身卡：惡魔(稀有)<br>變身卡：甘特(英雄)<br>變身卡：莉茲(英雄)</td><td>你我的全盛時期</td><td>近距離命中+1</td></tr>
+          <tr><td>變身卡：黃金史雷佛(稀有)<br>變身卡：布魯迪卡(英雄)<br>變身卡：伯爵安托里歐(英雄)<br>變身卡：女僕安娜(英雄)</td><td>在沙漠的風沙中I</td><td>遠距離命中+1</td></tr>
+          <tr><td>變身卡：布雷哲(高級)<br>變身卡：冥法軍王海露拜(稀有)<br>變身卡：師團長哈波(英雄)<br>變身卡：凱普莉夏(英雄)</td><td>在沙漠的風沙中II</td><td>魔法防禦+1</td></tr>
+          <tr><td>變身卡：聖地的侏儒斧頭兵(稀有)<br>變身卡：聖地的侏儒弓手(稀有)<br>變身卡：聖地的侏儒槍兵(稀有)<br>變身卡：聖地的侏儒劍士(稀有)</td><td>朝聖時刻到來</td><td>遠距離命中+1</td></tr>
+          <tr><td>變身卡：妖魔(一般)<br>變身卡：狂暴槍騎(高級)<br>變身卡：聖地的侏儒斧頭兵(稀有)<br>變身卡：聖地的侏儒槍兵(稀有)</td><td>合併至亦部隊</td><td>體力上限+20</td></tr>
+          <tr><td>變身卡：妖魔弓箭手(一般)<br>變身卡：德雷克(高級)<br>變身卡：聖地的侏儒槍兵(稀有)<br>變身卡：聖地的侏儒劍士(稀有)</td><td>忠於基本的組合</td><td>體力上限+10</td></tr>
+          <tr><td>變身卡：狂暴將軍(高級)<br>變身卡：聖地的侏儒槍兵(稀有)</td><td>在槍面前我們互毆一下</td><td>魔力上限+10</td></tr>
+          <tr><td>變身卡：黑暗妖精盜賊(稀有)<br>變身卡：聖地的侏儒弓手(稀有)</td><td>你絕對躲不了</td><td>近.遠攻+1</td></tr>
+          <tr><td>變身卡：巨蟻女皇隊長(稀有)<br>變身卡：沙蟲隊長(稀有)</td><td>中階管理職的痛苦</td><td>體力上限+30</td></tr>
+          <tr><td>變身卡：強盜弓箭手(一般)<br>變身卡：強盜頭目(高級)<br>變身卡：通緝犯庫傑(英雄)</td><td>威頓村莊的威脅者</td><td>無視傷害減免+3</td></tr>
+          <tr><td>變身卡：沙蟲士兵(高級)<br>變身卡：巨蟻女皇士兵(高級)</td><td>沒有惡意</td><td>無視傷害減免+2</td></tr>
+          <tr><td>變身卡：釣魚少年保羅(稀有)<br>變身卡：天上騎士(英雄)</td><td>奇異國度的保羅</td><td>無視傷害減免+2</td></tr>
+          <tr><td>變身卡：少女賽尼斯(稀有)<br>變身卡：白色幼犬(稀有)<br>變身卡：釣魚少年保羅(稀有)</td><td>陣雨</td><td>無視傷害減免+2</td></tr>
+          <tr><td>變身卡：變形怪(神話)<br>變身卡：職業變身(神話)</td><td>變形怪-光與影子</td><td>PVP減傷+2</td></tr>
+          <tr><td>變身卡：憎恨的死亡騎士(傳說)<br>變身卡：帕拉丁(傳說)<br>變身卡：變形怪(神話)</td><td>變形怪-祝福與詛咒</td><td>近距離命中+1</td></tr>
+          <tr><td>變身卡：月之絲莉安(傳說)<br>變身卡：警衛(弓)隊長(傳說)<br>變身卡：變形怪(神話)</td><td>變形怪-神弓</td><td>遠距離命中+1</td></tr>
+          <tr><td>變身卡：黑暗之星宙斯(傳說)<br>變身卡：帕拉丁(傳說)<br>變身卡：變形怪(神話)</td><td>變形怪-神聖與黑暗</td><td>體力上限+100</td></tr>
+          <tr><td>變身卡：屠龍者(傳說)<br>變身卡：警衛(矛)隊長(傳說)<br>變身卡：變形怪(神話)</td><td>變形怪-開始與結束</td><td>PVP傷害+1</td></tr>
+          <tr><td>變身卡：地獄死亡騎士(傳說)<br>變身卡：幻影騎士(傳說)<br>變身卡：變形怪(神話)</td><td>變形怪-血與深淵</td><td>體質+1</td></tr>
+          <tr><td>變身卡：黑暗殺手(傳說)<br>變身卡：變形怪(神話)</td><td>變形怪-黑暗中的目標</td><td>支撐耐性+1</td></tr>
+          <tr><td>變身卡：暗夜殺戮者(傳說)<br>變身卡：黑暗哈汀(傳說)<br>變身卡：變形怪(神話)</td><td>變形怪-黑暗中的英雄</td><td>無視傷害減免+1</td></tr>
+          <tr><td>變身卡：警衛(綠)(弓)(英雄)<br>變身卡：警衛(綠)(矛)(英雄)<br>變身卡：鋼鐵阿頓(傳說)</td><td>集合啦奇岩村莊</td><td>魔法防禦+1</td></tr>
+          <tr><td>變身卡：艾依爾(英雄)<br>變身卡：伯爵安托里歐(英雄)<br>變身卡：葉小釵(英雄)</td><td>盔甲不過是個累贅</td><td>魔力回復量+1</td></tr>
+          <tr><td>變身卡：炎魔(稀有)<br>變身卡：覺醒炎魔(稀有)<br>變身卡：覺醒炎魔(英雄)<br>變身卡：棄天帝(英雄)<br>變身卡：覺醒愛爾芬(英雄)<br>變身卡：貝里斯(傳說)</td><td>覺醒本身</td><td>負重獎勵+100</td></tr>
+          <tr><td>變身卡：愛爾芬(乞丐)(稀有)<br>變身卡：莉茲(英雄)<br>變身卡：棄天帝(英雄)<br>變身卡：貝里斯(傳說)</td><td>乞丐與瘋子</td><td>防禦+1</td></tr>
+          <tr><td>變身卡：瘋狗(一般)<br>變身卡：白色幼犬(稀有)<br>變身卡：貝里斯(傳說)</td><td>犬競技場的回憶</td><td>魔法防禦+1</td></tr>
+          <tr><td>變身卡：紙人(一般)<br>變身卡：果凍怪(一般)<br>變身卡：橘子(一般)<br>變身卡：曼玻兔(紅蘿菠)(稀有)<br>變身卡：莉茲(英雄)</td><td>有發瘋的原因</td><td>近距離命中+1</td></tr>
+          <tr><td>變身卡：老虎(稀有)<br>變身卡：暗殺軍王史雷佛(稀有)<br>變身卡：黑暗妖精盜賊(稀有)<br>變身卡：賽尼斯(英雄)</td><td>感謝勇士的金幣支援</td><td>體力上限+80</td></tr>
+          <tr><td>變身卡：絲莉安(英雄)<br>變身卡：月之絲莉安(傳說)<br>變身卡：赫發斯特斯(傳說)</td><td>我的小妖精</td><td>PVP傷害+1</td></tr>
+          <tr><td>變身卡：歐吉王(稀有)<br>變身卡：哈維(稀有)<br>變身卡：老虎(稀有)<br>變身卡：白色幼犬(稀有)</td><td>一二三四啊</td><td>無視傷害減免+2</td></tr>
+          <tr><td>變身卡：菁英魔幻士兵(稀有)<br>變身卡：艾爾摩將軍(稀有)<br>變身卡：聖地的侏儒劍士(稀有)<br>變身卡：巨蟻女皇隊長(稀有)<br>變身卡：沙蟲隊長(稀有)</td><td>進退兩難</td><td>遠.近距離傷害+1</td></tr>
+          <tr><td>變身卡：黑暗龍騎士(稀有)<br>變身卡：銀光龍騎士(稀有)<br>變身卡：白金龍騎士(稀有)<br>變身卡：貝里斯(傳說)</td><td>尷尬的關係</td><td>近距離爆擊率+1%</td></tr>
+          <tr><td>變身卡：荊棘公主艾薇(英雄)<br>變身卡：艾依爾(英雄)<br>變身卡：貝里斯(傳說)</td><td>我們是拿著劍的少女們</td><td>藥水恢復+1</td></tr>
+          <tr><td>變身卡：憎恨的死亡騎士(傳說)<br>變身卡：漆黑的死亡騎士(傳說)<br>變身卡：第1代多魯嘉(傳說)</td><td>家門的詛咒</td><td>PVP傷害+1</td></tr>
+          <tr><td>變身卡：屠龍者(傳說)<br>變身卡：第1代多魯嘉(傳說)</td><td>原祖中的原祖</td><td>PVP傷害+1</td></tr>
+          <tr><td>變身卡：第1代多魯嘉(傳說)<br>變身卡：職業變身(神話)</td><td>神話:戰場的勇猛</td><td>PVP傷害+1</td></tr>
+          <tr><td>變身卡：優秀騎士(英雄)<br>變身卡：優秀巡守(英雄)<br>變身卡：優秀法師(英雄)<br>變身卡：優秀狂暴槍騎(英雄)</td><td>獨特的軍團</td><td>近距離命中+1</td></tr>
+          <tr><td>變身卡：白金騎士(稀有)<br>變身卡：優秀騎士(英雄)<br>變身卡：幻影騎士(傳說)<br>變身卡：貝里斯(傳說)</td><td>刀的匠人們</td><td>近距離傷害+1</td></tr>
+          <tr><td>變身卡：白金巡守(稀有)<br>變身卡：格立特(弓)(英雄)<br>變身卡：師團長哈波(英雄)<br>變身卡：優秀巡守(英雄)</td><td>弓的匠人們</td><td>遠距離傷害+1</td></tr>
+          <tr><td>變身卡：白金法師(稀有)<br>變身卡：賽尼斯(英雄)<br>變身卡：宙斯(英雄)<br>變身卡：優秀法師(英雄)</td><td>魔法的匠人們</td><td>無視傷害減免+1</td></tr>
+          <tr><td>變身卡：狂暴將軍(藍)(英雄)<br>變身卡：優秀狂暴槍騎(英雄)<br>變身卡：貝里斯(傳說)</td><td>矛的匠人們</td><td>昏迷命中+1%</td></tr>
+          <tr><td>變身卡：警衛(綠)(矛)(英雄)<br>變身卡：警衛(紅)(矛)(英雄)<br>變身卡：優秀狂暴槍騎(英雄)</td><td>警衛募集作戰I</td><td>近距離命中+1</td></tr>
+          <tr><td>變身卡：警衛(綠)(弓)(英雄)<br>變身卡：警衛(紅)(弓)(英雄)<br>變身卡：優秀巡守(英雄)</td><td>警衛募集作戰II</td><td>昏迷耐性+1%</td></tr>
+          <tr><td>變身卡：哈汀之魂(傳說)<br>變身卡：不敗的甘特(傳說)<br>變身卡：吉倫(傳說)</td><td>跟隨老師</td><td>迴避率+1</td></tr>
+          <tr><td>變身卡：不敗的甘特(傳說)<br>變身卡：赫發斯特斯(傳說)<br>變身卡：吉倫(傳說)</td><td>孩子就托您照顧了</td><td>敏捷+1</td></tr>
+          <tr><td>變身卡：甘特(英雄)<br>變身卡：不敗的甘特(傳說)</td><td>甘特的進化</td><td>體質+1</td></tr>
+          <tr><td>變身卡：特羅斯(英雄)<br>變身卡：不敗的甘特(傳說)<br>變身卡：吉倫(傳說)</td><td>新的希望</td><td>智力+1</td></tr>
+          <tr><td>變身卡：月之絲莉安(傳說)<br>變身卡：黑暗殺手(傳說)<br>變身卡：警衛(弓)隊長(傳說)<br>變身卡：軍團長艾克斯特(傳說)<br>變身卡：赫發斯特斯(傳說)</td><td>挑著用的樂趣</td><td>魔力上限+30</td></tr>
+          <tr><td>變身卡：反王肯恩(英雄)<br>變身卡：特羅斯(英雄)<br>變身卡：赫發斯特斯(傳說)</td><td>摩登家族</td><td>減免傷害+3</td></tr>
+          <tr><td>變身卡：阿斯態爾(英雄)<br>變身卡：赫發斯特斯(傳說)</td><td>老公的過去被我發現了</td><td>昏迷命中+5%</td></tr>
+          <tr><td>變身卡：黑暗之星宙斯(傳說)<br>變身卡：哈汀之魂(傳說)<br>變身卡：吉倫(傳說)</td><td>魔法師3隊長</td><td>PVP傷害+2</td></tr>
+          <tr><td>變身卡：宙斯(英雄)<br>變身卡：吉倫(傳說)</td><td>青出於藍</td><td>PVP傷害+2</td></tr>
+          <tr><td>變身卡：變形怪(神話)<br>變身卡：職業變身(神話)<br>變身卡：白金死亡騎士(神話)</td><td>白金死亡騎士:神話般的存在</td><td>PVP傷害+2</td></tr>
+          <tr><td>變身卡：地獄死亡騎士(傳說)<br>變身卡：憎恨的死亡騎士(傳說)<br>變身卡：漆黑死亡騎士(傳說)<br>變身卡：白金死亡騎士(神話)</td><td>白金死亡騎士:詛咒的枷鎖</td><td>無視傷害減免+2</td></tr>
+          <tr><td>變身卡：屠龍者(傳說)<br>變身卡：第1代多魯嘉(傳說)<br>變身卡：白金死亡騎士(神話)</td><td>白金死亡騎士:從過去中解脫</td><td>支撐耐性+2</td></tr>
+          <tr><td>變身卡：警衛(弓)隊長(傳說)<br>變身卡：赫發斯特斯(傳說)<br>變身卡：白金死亡騎士(神話)</td><td>白金死亡騎士:亞丁國王之劍</td><td>PVP減傷+2</td></tr>
+          <tr><td>變身卡：哈汀之魂(傳說)<br>變身卡：吉倫(傳說)<br>變身卡：白金死亡騎士(神話)</td><td>白金死亡騎士:知識與智慧</td><td>傷害減免+2</td></tr>
+          <tr><td>變身卡：公爵馬庫斯(傳說)<br>變身卡：軍團長艾克斯特(傳說)<br>變身卡：白金死亡騎士(神話)</td><td>白金死亡騎士:哈爾巴斯的力量</td><td>PVP傷害.PVP減免+2</td></tr>
+          <tr><td>變身卡：不敗的甘特(傳說)<br>變身卡：白金死亡騎士(神話)</td><td>白金死亡騎士:不敗神話</td><td>昏迷命中+3%</td></tr>
+          <tr><td>變身卡：暗夜殺戮者(傳說)<br>變身卡：白金死亡騎士(神話)</td><td>白金死亡騎士:龍之騎士</td><td>體力上限+100</td></tr>
+          <tr><td>變身卡：天鵝的勞安格林(傳說)<br>變身卡：貝里斯(傳說)<br>變身卡：白金死亡騎士(神話)</td><td>白金死亡騎士:騎士團的解放</td><td>近距離傷害.命中+2</td></tr>
+          <tr><td>變身卡：警衛(矛)隊長(傳說)<br>變身卡：警衛(弓)隊長(傳說)<br>變身卡：白金死亡騎士(神話)</td><td>白金死亡騎士:釋放的詛咒</td><td>遠距離傷害.命中+2</td></tr>
+          <tr><td>變身卡：變形怪(神話)<br>變身卡：職業變身(神話)<br>變身卡：白金死亡騎士(神話)<br>變身卡：白金巴風特(神話)</td><td>白金巴風特:集結</td><td>魔法傷害.命中+2</td></tr>
+          <tr><td>變身卡：白金死亡騎士(神話)<br>變身卡：白金巴風特(神話)</td><td>白金巴風特:白金</td><td>昏迷命中+10%</td></tr>
+          <tr><td>變身卡：貝里斯(傳說)<br>變身卡：白金巴風特(神話)</td><td>白金巴風特:暗黑騎士團</td><td>體力上限+200</td></tr>
+          <tr><td>變身卡：月之絲莉安(傳說)<br>變身卡：軍團長艾克斯特(傳說)<br>變身卡：白金巴風特(神話)</td><td>白金巴風特:瞄準</td><td>PVP傷害+5</td></tr>
+          <tr><td>變身卡：黑暗哈汀(傳說)<br>變身卡：哈汀之魂(傳說)<br>變身卡：白金巴風特(神話)</td><td>白金巴風特:魔物的解放</td><td>PVP傷害減免+5</td></tr>
+          <tr><td>變身卡：職業變身(神話)<br>變身卡：支配者吉爾塔斯(唯一)</td><td>支配者吉爾塔斯:壓倒</td><td>近.遠.魔法傷害+5</td></tr>
+          <tr><td>變身卡：變形怪(神話)<br>變身卡：支配者吉爾塔斯(唯一)</td><td>支配者吉爾塔斯:支配</td><td>體力上限+5</td></tr>
+          <tr><td>變身卡：白金死亡騎士(神話)<br>變身卡：支配者吉爾塔斯(唯一)</td><td>支配者吉爾塔斯:殲滅</td><td>體力上限+5</td></tr>
+          <tr><td>變身卡：白金巴風特(神話)<br>變身卡：支配者吉爾塔斯(唯一)</td><td>支配者吉爾塔斯:破壞</td><td>體力恢復量+1</td></tr>
+          <tr><td>變身卡：變形怪(神話)<br>變身卡：職業變身(神話)<br>變身卡：白金死亡騎士(神話)<br>變身卡：白金巴風特(神話)<br>變身卡：支配者吉爾塔斯(唯一)</td><td>支配者吉爾塔斯:集中</td><td>魔力上限+5</td></tr>
+        </tbody>
+      </table>
+    </div>
+  </div><!-- end tab-collection -->
+
+</div>
+
+<footer>
+  <div class="footer-inner">
+    <div>
+      <div class="footer-col-title">陀螺天堂</div>
+      <ul class="footer-links">
+        <li><a href="index.html">首頁</a></li>
+        <li><a href="events.html">活動介紹</a></li>
+        <li><a href="download.html">檔案下載</a></li>
+        <li><a href="rates.html">版本倍率</a></li>
+      </ul>
+    </div>
+    <div>
+      <div class="footer-col-title">遊戲資訊</div>
+      <ul class="footer-links">
+        <li><a href="features.html">遊戲特色</a></li>
+        <li><a href="boss.html">BOSS介紹</a></li>
+        <li><a href="maps.html">特殊地圖掉落</a></li>
+        <li><a href="items.html">道具介紹</a></li>
+      </ul>
+    </div>
+    <div>
+      <div class="footer-col-title">聯絡我們</div>
+      <ul class="footer-links">
+        <li><a href="#" onclick="document.getElementById('modal-line').classList.add('open');return false;">LINE 官方社群</a></li>
+        <li><a href="#" onclick="document.getElementById('modal-sponsor').classList.add('open');return false;">贊助方案</a></li>
+        <li><a href="#" onclick="document.getElementById('modal-gift').classList.add('open');return false;">申請新手禮包</a></li>
+        <li><a href="referral.html">推文系統</a></li>
+      </ul>
+    </div>
+  </div>
+  <div class="footer-copy">
+    © 2026 陀螺天堂 · 版權所有<br>
+  </div>
+</footer>
+<script src="main.js"></script>
+<script>
+function switchTab(name){
+  document.querySelectorAll('.page-tab').forEach((t,i)=>{
+    t.classList.toggle('active', (i===0&&name==='atlas')||(i===1&&name==='collection'));
+  });
+  document.getElementById('tab-atlas').classList.toggle('active', name==='atlas');
+  document.getElementById('tab-collection').classList.toggle('active', name==='collection');
+}
+</script>
+<button id="backToTop" title="回到頂部">&#8679;</button>
+</body></html>
