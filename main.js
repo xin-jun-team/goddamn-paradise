@@ -117,17 +117,42 @@ function initTOC() {
 // ══ C: Tab 系統 ══
 function initTabs() {
   document.querySelectorAll('.tab-wrap').forEach(wrap => {
-    const btns = wrap.querySelectorAll(':scope > .tab-nav > .tab-btn');
+    const nav    = wrap.querySelector(':scope > .tab-nav');
+    const btns   = wrap.querySelectorAll(':scope > .tab-nav > .tab-btn');
     const panels = wrap.querySelectorAll(':scope > .tab-panel');
+
+    // 建立滑動指示條
+    const indicator = document.createElement('div');
+    indicator.className = 'tab-indicator';
+    nav.appendChild(indicator);
+
+    function moveIndicatorTo(btn) {
+      indicator.style.left  = btn.offsetLeft + 'px';
+      indicator.style.width = btn.offsetWidth + 'px';
+    }
+
     btns.forEach((btn, i) => {
       btn.addEventListener('click', () => {
         btns.forEach(b => b.classList.remove('active'));
         panels.forEach(p => p.classList.remove('active'));
         btn.classList.add('active');
         panels[i]?.classList.add('active');
+        moveIndicatorTo(btn);
       });
+      btn.addEventListener('mouseenter', () => moveIndicatorTo(btn));
     });
-    if (btns.length) { btns[0].classList.add('active'); panels[0]?.classList.add('active'); }
+
+    // 滑鼠離開 nav 時回到 active 按鈕
+    nav.addEventListener('mouseleave', () => {
+      const active = nav.querySelector('.tab-btn.active');
+      if (active) moveIndicatorTo(active);
+    });
+
+    if (btns.length) {
+      btns[0].classList.add('active');
+      panels[0]?.classList.add('active');
+      setTimeout(() => moveIndicatorTo(btns[0]), 0);
+    }
   });
 }
 
