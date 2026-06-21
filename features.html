@@ -3,10 +3,10 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>陀螺天堂 - 遊戲特色</title>
+  <title>尬電天堂 - 遊戲特色</title>
   <link rel="stylesheet" href="style.css?v=5">
   <style>
-    body { background-image:url('https://telegraph-image-1n0.pages.dev/file/AgACAgUAAyEGAAS3SV8sAAIDl2oKsIrQ--LWATlPU2Lr4azsyw-mAAKhD2sbx8dQVB2-s2pJCrnTAQADAgADeQADOwQ.jpg');background-size:cover;background-position:center center;background-attachment:fixed; }
+    body { background-image:none; }
     .section     { background:rgba(7,6,15,0.82)  !important; }
     .section-alt { background:rgba(15,12,12,0.88) !important; }
   </style>
@@ -14,7 +14,7 @@
 <body>
 
 <nav class="topnav">
-  <a class="topnav-logo" href="index.html">🌀 陀螺天堂</a>
+  <a class="topnav-logo" href="index.html">⚡ 尬電天堂</a>
   <div class="topnav-sep"></div>
   <div class="topnav-links" id="navLinks"><a class="topnav-link" href="index.html">首頁</a><a class="topnav-link" href="sponsor.html">贊助系統</a><a class="topnav-link" href="events-list.html">活動介紹</a><a class="topnav-link" href="features.html">遊戲特色</a><a class="topnav-link" href="items.html">裝備與道具</a><a class="topnav-link" href="boss.html">BOSS介紹</a><a class="topnav-link" href="maps.html">地圖特殊掉落</a><a class="topnav-link" href="download.html">檔案下載</a><a class="topnav-link" href="rates.html">版本倍率</a><a class="topnav-link" href="promote.html">推文與直播</a><div class="topnav-dropdown"><a class="topnav-link">遊戲規章 ▾</a><div class="dropdown-menu"><a href="rules.html">伺服器規章</a><a href="disclaimer.html">免責聲明</a><a href="anti-cheat.html">防作弊聲明</a></div></div><div class="topnav-dropdown"><a class="topnav-link">聯絡我們 ▾</a><div class="dropdown-menu"><a href="https://line.me/ti/g2/efPZsZj8mqabZSOVQgvk0SXqPZMlvBfa-ut1Mw?utm_source=invitation&utm_medium=link_copy&utm_campaign=default" target="_blank">LINE 官方社群</a><a href="https://lin.ee/5u5GsiK" target="_blank">LINE 官方</a></div></div><a class="topnav-link" href="search.html" style="color:var(--pink);font-weight:bold">🔍 搜尋</a></div>
   <div class="topnav-right">
@@ -47,182 +47,159 @@
     <div class="section-line"></div>
   </div>
 
-  <div class="feature-card-grid">
+  <style>
+    .ft-list{display:flex;flex-direction:column;gap:0}
+    .ft-item{
+      display:flex;align-items:center;gap:18px;
+      padding:18px 22px;
+      border-bottom:1px solid rgba(0,204,255,.1);
+      text-decoration:none;color:var(--text);
+      transition:all .2s;position:relative;overflow:hidden
+    }
+    .ft-item::before{
+      content:'';position:absolute;left:0;top:0;bottom:0;width:3px;
+      background:var(--pink);opacity:0;transition:opacity .25s
+    }
+    .ft-item:hover{background:rgba(0,204,255,.04);transform:translateX(6px)}
+    .ft-item:hover::before{opacity:1}
+    .ft-item:hover .ft-num{color:var(--pink);text-shadow:0 0 12px rgba(0,204,255,.5)}
+    .ft-item:hover .ft-arrow{transform:translateX(6px);color:var(--pink)}
+    .ft-num{
+      font-family:'Noto Serif TC',serif;font-size:1.6rem;font-weight:900;
+      color:rgba(0,204,255,.25);min-width:48px;text-align:center;
+      transition:all .3s;letter-spacing:2px
+    }
+    .ft-icon{font-size:1.5rem;flex-shrink:0;width:36px;text-align:center}
+    .ft-body{flex:1}
+    .ft-title{font-size:.95rem;font-weight:700;color:var(--white);letter-spacing:1px}
+    .ft-desc{font-size:.78rem;color:var(--text-muted);margin-top:3px;line-height:1.5}
+    .ft-arrow{
+      font-size:.82rem;color:var(--text-dim);flex-shrink:0;
+      transition:all .25s;letter-spacing:1px
+    }
+  </style>
 
-    <a href="feature-01.html" class="feature-card">
-      <div class="feature-card-img">
-        <img loading="lazy" src="https://telegraph-image-1n0.pages.dev/file/AgACAgUAAyEGAAS3SV8sAAIDuGoQI9gVuwacNDCi_K26yyOJKL8uAAK_Dmsb09WJVP1HUYzf6CALAQADAgADeQADOwQ.jpg" alt="法師召喚物系統">
+  <div class="ft-list">
+    <a href="feature-01.html" class="ft-item">
+      <div class="ft-num">01</div>
+      <div class="ft-icon">🔮</div>
+      <div class="ft-body">
+        <div class="ft-title">法師召喚物系統</div>
+        <div class="ft-desc">召喚強力僕從協助戰鬥，法師專屬的極致火力</div>
       </div>
-      <div class="feature-card-body">
-        <div class="feature-card-num">01</div>
-        <div class="feature-card-title">法師召喚物系統</div>
-        <div class="feature-card-arrow">了解更多 →</div>
-      </div>
+      <div class="ft-arrow">→</div>
     </a>
-
-    <a href="feature-02.html" class="feature-card">
-      <div class="feature-card-img">
-        <img loading="lazy" src="https://telegraph-image-1n0.pages.dev/file/AgACAgUAAyEGAAS3SV8sAAIDuWoQJAMgIbMGzFMNSqdpHTY1MngoAALADmsb09WJVBD5_gv4v2QTAQADAgADeQADOwQ.jpg" alt="職業特色技能">
+    <a href="feature-02.html" class="ft-item">
+      <div class="ft-num">02</div>
+      <div class="ft-icon">⚔️</div>
+      <div class="ft-body">
+        <div class="ft-title">職業特色技能</div>
+        <div class="ft-desc">各職業獨有技能樹，打造你的專屬戰鬥風格</div>
       </div>
-      <div class="feature-card-body">
-        <div class="feature-card-num">02</div>
-        <div class="feature-card-title">職業特色技能</div>
-        <div class="feature-card-arrow">了解更多 →</div>
-      </div>
+      <div class="ft-arrow">→</div>
     </a>
-
-    <a href="feature-03.html" class="feature-card">
-      <div class="feature-card-img">
-        <img loading="lazy" src="https://telegraph-image-1n0.pages.dev/file/AgACAgUAAyEGAAS3SV8sAAIDumoQJB3KLntZ3_ycTpDBjjRt0Eb-AALBDmsb09WJVKzW7SyOIVfSAQADAgADeQADOwQ.jpg" alt="職業之力介紹">
+    <a href="feature-03.html" class="ft-item">
+      <div class="ft-num">03</div>
+      <div class="ft-icon">💪</div>
+      <div class="ft-body">
+        <div class="ft-title">職業之力介紹</div>
+        <div class="ft-desc">突破等級限制的終極力量覺醒系統</div>
       </div>
-      <div class="feature-card-body">
-        <div class="feature-card-num">03</div>
-        <div class="feature-card-title">職業之力介紹</div>
-        <div class="feature-card-arrow">了解更多 →</div>
-      </div>
+      <div class="ft-arrow">→</div>
     </a>
-
-    <a href="feature-05.html" class="feature-card">
-      <div class="feature-card-img">
-        <img loading="lazy" src="https://telegraph-image-1n0.pages.dev/file/AgACAgUAAyEGAAS3SV8sAAIDu2oQJC_Vsl83Yj03IR-5mz4GRw0UAALCDmsb09WJVEz8TtvW0-f6AQADAgADeQADOwQ.jpg" alt="寵物系統介紹">
+    <a href="feature-05.html" class="ft-item">
+      <div class="ft-num">04</div>
+      <div class="ft-icon">🐾</div>
+      <div class="ft-body">
+        <div class="ft-title">寵物系統介紹</div>
+        <div class="ft-desc">捕捉、培養你的戰鬥夥伴，一起征戰天堂世界</div>
       </div>
-      <div class="feature-card-body">
-        <div class="feature-card-num">04</div>
-        <div class="feature-card-title">寵物系統介紹</div>
-        <div class="feature-card-arrow">了解更多 →</div>
-      </div>
+      <div class="ft-arrow">→</div>
     </a>
-
-    <a href="feature-07.html" class="feature-card">
-      <div class="feature-card-img">
-        <img loading="lazy" src="https://telegraph-image-1n0.pages.dev/file/AgACAgUAAyEGAAS3SV8sAAIDvGoQJEtn9xYZaaYXrCMb7Bma2KgNAALDDmsb09WJVKODv7cIKJJ-AQADAgADeQADOwQ.jpg" alt="威望系統">
+    <a href="feature-07.html" class="ft-item">
+      <div class="ft-num">05</div>
+      <div class="ft-icon">🏅</div>
+      <div class="ft-body">
+        <div class="ft-title">威望系統</div>
+        <div class="ft-desc">累積威望提升稱號與屬性，展現你的實力地位</div>
       </div>
-      <div class="feature-card-body">
-        <div class="feature-card-num">05</div>
-        <div class="feature-card-title">威望系統</div>
-        <div class="feature-card-arrow">了解更多 →</div>
-      </div>
+      <div class="ft-arrow">→</div>
     </a>
-
-    <a href="feature-08.html" class="feature-card">
-      <div class="feature-card-img">
-        <img loading="lazy" src="https://telegraph-image-1n0.pages.dev/file/AgACAgUAAyEGAAS3SV8sAAIDvWoQJHFBXEn_qtcl7uiRca2r4uIhAALEDmsb09WJVGaZ2e67Zb8wAQADAgADeQADOwQ.jpg" alt="高寵介紹">
+    <a href="feature-08.html" class="ft-item">
+      <div class="ft-num">06</div>
+      <div class="ft-icon">🐉</div>
+      <div class="ft-body">
+        <div class="ft-title">高寵介紹</div>
+        <div class="ft-desc">稀有高階寵物能力全覽，打寶練等的最佳拍檔</div>
       </div>
-      <div class="feature-card-body">
-        <div class="feature-card-num">06</div>
-        <div class="feature-card-title">高寵介紹</div>
-        <div class="feature-card-arrow">了解更多 →</div>
-      </div>
+      <div class="ft-arrow">→</div>
     </a>
-
-    <a href="feature-09.html" class="feature-card">
-      <div class="feature-card-img">
-        <img loading="lazy" src="https://telegraph-image-1n0.pages.dev/file/AgACAgUAAyEGAAS3SV8sAAIDvmoQJIG4CVFYEwi113-wfgbVYENVAALGDmsb09WJVDN0Y04OiK92AQADAgADeQADOwQ.jpg" alt="在線禮包">
+    <a href="feature-09.html" class="ft-item">
+      <div class="ft-num">07</div>
+      <div class="ft-icon">🎁</div>
+      <div class="ft-body">
+        <div class="ft-title">在線禮包</div>
+        <div class="ft-desc">每日在線自動領取好禮，越久獎勵越豐厚</div>
       </div>
-      <div class="feature-card-body">
-        <div class="feature-card-num">07</div>
-        <div class="feature-card-title">在線禮包</div>
-        <div class="feature-card-arrow">了解更多 →</div>
-      </div>
+      <div class="ft-arrow">→</div>
     </a>
-
-    <a href="feature-12.html" class="feature-card">
-      <div class="feature-card-img">
-        <img loading="lazy" src="https://telegraph-image-1n0.pages.dev/file/AgACAgUAAyEGAAS3SV8sAAIDv2oQJJjTzdRSqT8r7hUmpSBixLLmAALIDmsb09WJVCGn0PPOe_rsAQADAgADeQADOwQ.jpg" alt="換金道具">
+    <a href="feature-12.html" class="ft-item">
+      <div class="ft-num">08</div>
+      <div class="ft-icon">💰</div>
+      <div class="ft-body">
+        <div class="ft-title">換金道具</div>
+        <div class="ft-desc">多餘道具轉換為金幣或資源，不浪費任何戰利品</div>
       </div>
-      <div class="feature-card-body">
-        <div class="feature-card-num">08</div>
-        <div class="feature-card-title">換金道具</div>
-        <div class="feature-card-arrow">了解更多 →</div>
-      </div>
+      <div class="ft-arrow">→</div>
     </a>
-
-    <a href="anti-cheat.html" class="feature-card">
-      <div class="feature-card-img"><img loading="lazy" src="https://telegraph-image-1n0.pages.dev/file/AgACAgUAAyEGAAS3SV8sAAIDwGoQJKkjphnH7GPTn__BY0LMfUjyAALJDmsb09WJVO-Gm0r5pkNBAQADAgADeQADOwQ.jpg" alt="防外掛驗證"></div>
-      <div class="feature-card-body">
-        <div class="feature-card-num">09</div>
-        <div class="feature-card-title">防外掛驗證</div>
-        <div class="feature-card-arrow">了解更多 →</div>
+    <a href="anti-cheat.html" class="ft-item">
+      <div class="ft-num">09</div>
+      <div class="ft-icon">🛡️</div>
+      <div class="ft-body">
+        <div class="ft-title">防外掛驗證</div>
+        <div class="ft-desc">嚴格的反作弊機制，維護公平遊戲環境</div>
       </div>
+      <div class="ft-arrow">→</div>
     </a>
-
-    <a href="maps.html" class="feature-card">
-      <div class="feature-card-img"><img loading="lazy" src="https://telegraph-image-1n0.pages.dev/file/AgACAgUAAyEGAAS3SV8sAAIDwWoQJTh8iHx5_HpWU3fbowoTqqwBAALLDmsb09WJVCDx16j-f6_vAQADAgADeQADOwQ.jpg" alt="地圖介紹"></div>
-      <div class="feature-card-body">
-        <div class="feature-card-num">10</div>
-        <div class="feature-card-title">地圖介紹</div>
-        <div class="feature-card-arrow">了解更多 →</div>
+    <a href="maps.html" class="ft-item">
+      <div class="ft-num">10</div>
+      <div class="ft-icon">🗺️</div>
+      <div class="ft-body">
+        <div class="ft-title">地圖介紹</div>
+        <div class="ft-desc">各區域地圖特色與怪物分布，規劃你的冒險路線</div>
       </div>
+      <div class="ft-arrow">→</div>
     </a>
-
-
-    <a href="feature-mastery.html" class="feature-card">
-      <div class="feature-card-body" style="padding:28px 20px;text-align:center;">
-        <div style="font-size:40px;margin-bottom:10px;">📜</div>
-        <div class="feature-card-num">11</div>
-        <div class="feature-card-title">專精證明</div>
-        <div style="font-size:12px;color:rgba(255,255,255,0.55);margin:8px 0 12px;line-height:1.6;">透過世界事件冰天雪地蒐集碎片，升級力量/敏捷/智力/防禦四種專精證明，強化角色潛能。</div>
-        <div class="feature-card-arrow">了解更多 →</div>
+    <a href="feature-mastery.html" class="ft-item">
+      <div class="ft-num">11</div>
+      <div class="ft-icon">📜</div>
+      <div class="ft-body">
+        <div class="ft-title">專精證明</div>
+        <div class="ft-desc">透過世界事件蒐集碎片，升級力量/敏捷/智力/防禦四種專精</div>
       </div>
+      <div class="ft-arrow">→</div>
     </a>
-
-    <a href="transform.html" class="feature-card">
-      <div class="feature-card-body" style="padding:28px 20px;text-align:center;">
-        <div style="font-size:40px;margin-bottom:10px;">📖</div>
-        <div class="feature-card-num">12</div>
-        <div class="feature-card-title">變身圖鑑收藏清單</div>
-        <div style="font-size:12px;color:rgba(255,255,255,0.55);margin:8px 0 12px;line-height:1.6;">收錄所有變身卡圖鑑，從一般到神話等級一覽無遺，並完整列出收藏系統獎勵清單。</div>
-        <div class="feature-card-arrow">了解更多 →</div>
+    <a href="transform.html" class="ft-item">
+      <div class="ft-num">12</div>
+      <div class="ft-icon">📖</div>
+      <div class="ft-body">
+        <div class="ft-title">變身圖鑑收藏清單</div>
+        <div class="ft-desc">從一般到神話等級一覽無遺，完整收藏系統獎勵清單</div>
       </div>
+      <div class="ft-arrow">→</div>
     </a>
-
-    <a href="dolls.html" class="feature-card">
-      <div class="feature-card-body" style="padding:28px 20px;text-align:center;">
-        <div style="font-size:40px;margin-bottom:10px;">🧸</div>
-        <div class="feature-card-num">13</div>
-        <div class="feature-card-title">娃娃介紹</div>
-        <div style="font-size:12px;color:rgba(255,255,255,0.55);margin:8px 0 12px;line-height:1.6;">收錄所有娃娃圖鑑與屬性加成，從一般到神話等級一覽無遺，並完整列出收藏系統獎勵清單。</div>
-        <div class="feature-card-arrow">了解更多 →</div>
+    <a href="dolls.html" class="ft-item">
+      <div class="ft-num">13</div>
+      <div class="ft-icon">🧸</div>
+      <div class="ft-body">
+        <div class="ft-title">娃娃介紹</div>
+        <div class="ft-desc">所有娃娃圖鑑與屬性加成，收藏系統獎勵完整列出</div>
       </div>
+      <div class="ft-arrow">→</div>
     </a>
-
   </div>
 </div>
 
-<footer>
-  <div class="footer-inner">
-    <div>
-      <div class="footer-col-title">陀螺天堂</div>
-      <ul class="footer-links">
-        <li><a href="index.html">首頁</a></li>
-        <li><a href="events.html">活動介紹</a></li>
-        <li><a href="download.html">檔案下載</a></li>
-        <li><a href="rates.html">版本倍率</a></li>
-      </ul>
-    </div>
-    <div>
-      <div class="footer-col-title">遊戲資訊</div>
-      <ul class="footer-links">
-        <li><a href="features.html">遊戲特色</a></li>
-        <li><a href="boss.html">BOSS介紹</a></li>
-        <li><a href="maps.html">特殊地圖掉落</a></li>
-        <li><a href="items.html">道具介紹</a></li>
-      </ul>
-    </div>
-    <div>
-      <div class="footer-col-title">聯絡我們</div>
-      <ul class="footer-links">
-        <li><a href="#" onclick="document.getElementById('modal-line').classList.add('open');return false;">LINE 官方社群</a></li>
-        <li><a href="#" onclick="document.getElementById('modal-sponsor').classList.add('open');return false;">贊助方案</a></li>
-        <li></li>
-        <li><a href="promote.html">推文與直播</a></li>
-      </ul>
-    </div>
-  </div>
-  <div class="footer-copy">
-    © 2026 陀螺天堂 · 版權所有<br>
-  </div>
-</footer>
 
 <script src="main.js"></script>
 <button id="backToTop" title="回到頂部">&#8679;</button>

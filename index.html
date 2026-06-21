@@ -3,21 +3,13 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>陀螺天堂 — 首頁</title>
+  <title>尬電天堂 — 首頁</title>
     <link rel="preconnect" href="https://telegraph-image-1n0.pages.dev" crossorigin>
   <link rel="dns-prefetch" href="https://telegraph-image-1n0.pages.dev">
   <link rel="stylesheet" href="style.css">
   <style>
     /* ── 全頁背景圖延伸 ── */
-    body {
-      background-image:
-        linear-gradient(rgba(255,45,120,.035) 1px, transparent 1px),
-        linear-gradient(90deg, rgba(255,45,120,.035) 1px, transparent 1px),
-        url('https://telegraph-image-1n0.pages.dev/file/AgACAgUAAyEGAAS3SV8sAAIDqmoMNTafX8HA3HRS6u0-6wO300QBAAKPD2sbT3xgVMM6UC3EE-fjAQADAgADeQADOwQ.jpg');
-      background-size: 44px 44px, 44px 44px, cover;
-      background-position: 0 0, 0 0, center center;
-      background-attachment: scroll, scroll, fixed;
-    }
+    body { background-image: none; }
     /* sections 改為半透明，讓背景圖透出 */
     .section      { background: rgba(7,6,15,0.84) !important; }
     .section-alt  { background: rgba(15,13,30,0.90) !important; }
@@ -27,7 +19,7 @@
 
 <!-- ══ 導覽列 ══ -->
 <nav class="topnav">
-  <a class="topnav-logo" href="index.html">🌀 陀螺天堂</a>
+  <a class="topnav-logo" href="index.html">⚡ 尬電天堂</a>
   <div class="topnav-sep"></div>
   <div class="topnav-links" id="navLinks"><a class="topnav-link" href="index.html">首頁</a><a class="topnav-link" href="sponsor.html">贊助系統</a><a class="topnav-link" href="events-list.html">活動介紹</a><a class="topnav-link" href="features.html">遊戲特色</a><a class="topnav-link" href="items.html">裝備與道具</a><a class="topnav-link" href="boss.html">BOSS介紹</a><a class="topnav-link" href="maps.html">地圖特殊掉落</a><a class="topnav-link" href="download.html">檔案下載</a><a class="topnav-link" href="rates.html">版本倍率</a><a class="topnav-link" href="promote.html">推文與直播</a><div class="topnav-dropdown"><a class="topnav-link">遊戲規章 ▾</a><div class="dropdown-menu"><a href="rules.html">伺服器規章</a><a href="disclaimer.html">免責聲明</a><a href="anti-cheat.html">防作弊聲明</a></div></div><div class="topnav-dropdown"><a class="topnav-link">聯絡我們 ▾</a><div class="dropdown-menu"><a href="https://line.me/ti/g2/efPZsZj8mqabZSOVQgvk0SXqPZMlvBfa-ut1Mw?utm_source=invitation&utm_medium=link_copy&utm_campaign=default" target="_blank">LINE 官方社群</a><a href="https://lin.ee/5u5GsiK" target="_blank">LINE 官方</a></div></div><a class="topnav-link" href="search.html" style="color:var(--pink);font-weight:bold">🔍 搜尋</a></div>
   <div class="topnav-right">
@@ -75,18 +67,18 @@
 <!-- ══ Hero ══ -->
 <section class="hero" style="height:auto;min-height:unset">
   <!-- 全圖展示 -->
-  <img loading="eager" fetchpriority="high" src="https://telegraph-image-1n0.pages.dev/file/AgACAgUAAyEGAAS3SV8sAAIDqWoMNA1Ta_rfSQaDyMxelshQeRt6AAKGD2sbT3xgVDagscGUlGyEAQADAgADeQADOwQ.jpg"
-       alt="陀螺天堂" style="width:100%;display:block;position:relative;z-index:0">
+  <img loading="eager" fetchpriority="high" src="images/hero-main.jpg"
+       alt="尬電天堂" style="width:100%;display:block;position:relative;z-index:0">
   <!-- 下方漸層遮罩讓文字可讀 -->
   <div style="position:absolute;bottom:0;left:0;right:0;height:55%;background:linear-gradient(180deg,transparent 0%,rgba(10,8,8,0.7) 60%,rgba(10,8,8,1) 100%);z-index:1;pointer-events:none"></div>
   <!-- 浮動粒子層 -->
   <canvas id="heroParticles" style="position:absolute;inset:0;width:100%;height:100%;pointer-events:none;z-index:2"></canvas>
   <div class="hero-content" style="position:absolute;bottom:40px;left:0;right:0;z-index:3">
-    <div class="hero-badge">LINEAGE PRIVATE SERVER · 陀螺天堂</div>
+    <div class="hero-badge">GOD DAMN ELECTRIC · 尬電天堂</div>
     <h1 class="hero-title">
-      <span>陀螺天堂</span>
+      <span>尬電天堂</span>
     </h1>
-    <p class="hero-tagline">經典重現 · 熱血征戰</p>
+    <p class="hero-tagline">電流覺醒 · 狂妄尬電</p>
     <div class="hero-divider"></div>
     <div class="hero-stats">
       <div class="hero-stat">
@@ -115,107 +107,12 @@
       </div>
     </div>
   </div>
+<style>
+@keyframes lightning{0%,93%,95%,97%,100%{opacity:0}94%,96%{opacity:0.3}}
+.hero::after{content:'';position:absolute;inset:0;background:linear-gradient(180deg,rgba(0,204,255,0.1),transparent);animation:lightning 8s infinite;pointer-events:none;z-index:1}
+</style>
 </section>
 
-<!-- ══ 熱賣商品 ══ -->
-<section class="section">
-  <div class="container">
-    <div class="section-header">
-      <div class="section-eyebrow">HOT ITEMS</div>
-      <h2 class="section-title">熱賣商品
-        <span style="display:inline-block;background:linear-gradient(135deg,#ff4500,#ff8c00);color:#fff;font-size:.55em;font-weight:900;padding:3px 10px;border-radius:20px;letter-spacing:2px;margin-left:10px;vertical-align:middle;animation:hotPulse 1.5s ease-in-out infinite">🔥 HOT</span>
-      </h2>
-      <div class="section-line"></div>
-    </div>
-    <style>
-    @keyframes hotPulse{0%,100%{box-shadow:0 0 8px rgba(255,69,0,.5)}50%{box-shadow:0 0 20px rgba(255,140,0,.8)}}
-    .hot-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(200px,1fr));gap:16px}
-    .hot-card{background:var(--bg2);border:1px solid var(--border);border-radius:12px;overflow:hidden;text-decoration:none;display:flex;flex-direction:column;transition:transform .2s,box-shadow .2s;position:relative}
-    .hot-card:hover{transform:translateY(-5px);border-color:var(--border-hi);box-shadow:0 10px 30px rgba(0,0,0,.5)}
-    .hot-card-badge{position:absolute;top:10px;left:10px;background:linear-gradient(135deg,#ff4500,#ff8c00);color:#fff;font-size:.68em;font-weight:900;padding:2px 8px;border-radius:10px;letter-spacing:1px;z-index:1}
-    .hot-card-img{width:100%;height:130px;overflow:hidden;background:var(--bg3);display:flex;align-items:center;justify-content:center;font-size:3rem}
-    .hot-card-img img{width:100%;height:100%;object-fit:cover}
-    .hot-card-body{padding:14px 16px;flex:1;display:flex;flex-direction:column;gap:4px}
-    .hot-card-name{font-size:.92rem;font-weight:700;color:var(--white);letter-spacing:1px}
-    .hot-card-desc{font-size:.75rem;color:var(--text-muted);line-height:1.6;flex:1}
-    .hot-card-price{font-size:.9rem;font-weight:700;color:var(--gold);margin-top:8px}
-    .hot-card-btn{display:block;text-align:center;background:linear-gradient(135deg,#c9a96e,#f2d06b);color:#1a0e00;font-weight:700;font-size:.8rem;padding:8px;border-radius:0 0 12px 12px;text-decoration:none;letter-spacing:1px;transition:filter .2s}
-    .hot-card-btn:hover{filter:brightness(1.1)}
-    </style>
-    <div class="hot-grid">
-      <div class="hot-card">
-        <div class="hot-card-badge">🎁 首儲</div>
-        <div class="hot-card-img">🎀</div>
-        <div class="hot-card-body">
-          <div class="hot-card-name">首儲送紅布</div>
-          <div class="hot-card-desc">首次儲值即贈送稀有紅布，限每帳號一次</div>
-          <div class="hot-card-price">首儲限定</div>
-        </div>
-        <a href="sponsor.html" class="hot-card-btn">立即儲值 →</a>
-      </div>
-      <div class="hot-card">
-        <div class="hot-card-badge">🔥 熱銷</div>
-        <div class="hot-card-img">🍡</div>
-        <div class="hot-card-body">
-          <div class="hot-card-name">肉粽</div>
-          <div class="hot-card-desc">入門方案，輕鬆起步享受遊戲樂趣</div>
-          <div class="hot-card-price">NT$ 1,000</div>
-        </div>
-        <a href="sponsor.html" class="hot-card-btn">立即贊助 →</a>
-      </div>
-      <div class="hot-card">
-        <div class="hot-card-badge">💙 推薦</div>
-        <div class="hot-card-img">🌀</div>
-        <div class="hot-card-body">
-          <div class="hot-card-name">藍蕉肉粽</div>
-          <div class="hot-card-desc">中階方案，藍蕉加持戰力大幅提升</div>
-          <div class="hot-card-price">NT$ 3,000</div>
-        </div>
-        <a href="sponsor.html" class="hot-card-btn">立即贊助 →</a>
-      </div>
-      <div class="hot-card">
-        <div class="hot-card-badge">🌿 素食</div>
-        <div class="hot-card-img">🥬</div>
-        <div class="hot-card-body">
-          <div class="hot-card-name">素藍蕉肉粽</div>
-          <div class="hot-card-desc">清爽素食版，同樣滿滿藍蕉能量</div>
-          <div class="hot-card-price">NT$ 5,000</div>
-        </div>
-        <a href="sponsor.html" class="hot-card-btn">立即贊助 →</a>
-      </div>
-      <div class="hot-card">
-        <div class="hot-card-badge">💪 猛男</div>
-        <div class="hot-card-img">💪</div>
-        <div class="hot-card-body">
-          <div class="hot-card-name">猛男膠肉粽</div>
-          <div class="hot-card-desc">猛男特調配方，膠原蛋白滿點爆發力驚人</div>
-          <div class="hot-card-price">NT$ 10,000</div>
-        </div>
-        <a href="sponsor.html" class="hot-card-btn">立即贊助 →</a>
-      </div>
-      <div class="hot-card">
-        <div class="hot-card-badge">🍌 大尺寸</div>
-        <div class="hot-card-img">🍌</div>
-        <div class="hot-card-body">
-          <div class="hot-card-name">大藍蕉肉粽</div>
-          <div class="hot-card-desc">大份量藍蕉肉粽，頂級玩家首選豪華方案</div>
-          <div class="hot-card-price">NT$ 20,000</div>
-        </div>
-        <a href="sponsor.html" class="hot-card-btn">立即贊助 →</a>
-      </div>
-      <div class="hot-card">
-        <div class="hot-card-badge">👑 至尊</div>
-        <div class="hot-card-img">🏆</div>
-        <div class="hot-card-body">
-          <div class="hot-card-name">巨大藍蕉肉粽</div>
-          <div class="hot-card-desc">終極巨無霸方案，伺服器之王非你莫屬</div>
-          <div class="hot-card-price">NT$ 30,000</div>
-        </div>
-        <a href="sponsor.html" class="hot-card-btn">立即贊助 →</a>
-      </div>
-    </div>
-  </div>
-</section>
 
 <!-- ══ 快速入口 ══ -->
 <section class="section">
@@ -242,9 +139,9 @@
     .qc-download::before{background:linear-gradient(135deg,rgba(0,180,255,.12),rgba(0,100,200,.08));border:1px solid rgba(0,180,255,.5)}
     .qc-download:hover{box-shadow:0 8px 32px rgba(0,150,255,.25)}
 
-    .qc-sponsor{background:linear-gradient(135deg,#1e1200,#140d00);border-color:rgba(201,169,110,.35);color:#f2d06b}
-    .qc-sponsor::before{background:linear-gradient(135deg,rgba(201,169,110,.15),rgba(160,120,50,.08));border:1px solid rgba(201,169,110,.6)}
-    .qc-sponsor:hover{box-shadow:0 8px 32px rgba(201,169,110,.3)}
+    .qc-sponsor{background:linear-gradient(135deg,#0a0a28,#06061a);border-color:rgba(0,204,255,.35);color:#66eeff}
+    .qc-sponsor::before{background:linear-gradient(135deg,rgba(0,204,255,.15),rgba(0,136,170,.08));border:1px solid rgba(0,204,255,.6)}
+    .qc-sponsor:hover{box-shadow:0 8px 32px rgba(0,204,255,.3)}
 
     .qc-features{background:linear-gradient(135deg,#0e1a0d,#0a1408);border-color:rgba(0,220,150,.25);color:#6ee7b7}
     .qc-features::before{background:linear-gradient(135deg,rgba(0,220,150,.1),rgba(0,160,100,.06));border:1px solid rgba(0,220,150,.45)}
@@ -298,40 +195,40 @@
       <div class="section-line"></div>
     </div>
     <div class="ann-grid">
-      <a class="ann-card" href="events.html">
+      <a class="ann-card" href="event-line.html">
         <div class="ann-card-meta">
-          <span class="ann-tag tag-event">活動</span>
-          <span class="ann-date">2026-05-12</span>
+          <span class="ann-tag tag-event">禮包</span>
+          <span class="ann-date">2026-06-21</span>
         </div>
-        <div class="ann-card-title">【活動】開服公告</div>
-        <div class="ann-card-excerpt">陀螺天堂正式開放，歡迎所有玩家加入！</div>
+        <div class="ann-card-title">⚡【禮包】LINE 禮包預約</div>
+        <div class="ann-card-excerpt">加入官方 LINE 社群預約，開服即領專屬好禮，手快有手慢無！</div>
+        <div class="ann-card-more">閱讀更多 →</div>
+      </a>
+      <a class="ann-card" href="event-58hero.html">
+        <div class="ann-card-meta">
+          <span class="ann-tag tag-new">活動</span>
+          <span class="ann-date">2026-06-21</span>
+        </div>
+        <div class="ann-card-title">⚡【衝等】58等送3000藍鑽再送英雄武器</div>
+        <div class="ann-card-excerpt">衝到58等直送3000藍鑽發財金＋英雄神武，新手直接起飛不用爬！</div>
         <div class="ann-card-more">閱讀更多 →</div>
       </a>
       <a class="ann-card" href="sponsor.html">
         <div class="ann-card-meta">
-          <span class="ann-tag tag-new">新開</span>
-          <span class="ann-date">2026-05-12</span>
+          <span class="ann-tag tag-new">首儲</span>
+          <span class="ann-date">2026-06-21</span>
         </div>
-        <div class="ann-card-title">【贊助】開服限時贊助加碼</div>
-        <div class="ann-card-excerpt">開服首月贊助享有額外加碼，詳情請洽 LINE 客服。</div>
+        <div class="ann-card-title">⚡【首儲】首次贊助送英雄製作秘笈</div>
+        <div class="ann-card-excerpt">開服限定！首次贊助立即獲得「英雄製作秘笈」一張，直衝頂裝不是夢！</div>
         <div class="ann-card-more">閱讀更多 →</div>
       </a>
       <a class="ann-card" href="download.html">
         <div class="ann-card-meta">
           <span class="ann-tag tag-sys">系統</span>
-          <span class="ann-date">2026-05-12</span>
+          <span class="ann-date">2026-06-21</span>
         </div>
-        <div class="ann-card-title">【系統】客戶端下載上線</div>
-        <div class="ann-card-excerpt">遊戲客戶端已開放下載，請前往下載頁面取得最新版本。</div>
-        <div class="ann-card-more">閱讀更多 →</div>
-      </a>
-      <a class="ann-card" href="#">
-        <div class="ann-card-meta">
-          <span class="ann-tag tag-sys">規章</span>
-          <span class="ann-date">2026-05-12</span>
-        </div>
-        <div class="ann-card-title">【規章】伺服器公約 — 請詳閱</div>
-        <div class="ann-card-excerpt">為維護良好遊戲環境，請所有玩家遵守伺服器規章。</div>
+        <div class="ann-card-title">⚡【下載】客戶端開放下載</div>
+        <div class="ann-card-excerpt">遊戲客戶端已上線，前往下載頁面取得最新版本，尬電開打！</div>
         <div class="ann-card-more">閱讀更多 →</div>
       </a>
     </div>
@@ -380,41 +277,6 @@
 </section>
 
 <!-- ══ Footer ══ -->
-<footer>
-  <div class="footer-inner">
-    <div>
-      <div class="footer-col-title">陀螺天堂</div>
-      <ul class="footer-links">
-        <li><a href="index.html">首頁</a></li>
-        <li><a href="events.html">活動介紹</a></li>
-        <li><a href="download.html">檔案下載</a></li>
-        <li><a href="rates.html">版本倍率</a></li>
-      </ul>
-    </div>
-    <div>
-      <div class="footer-col-title">遊戲資訊</div>
-      <ul class="footer-links">
-        <li><a href="features.html">遊戲特色</a></li>
-        <li><a href="boss.html">BOSS介紹</a></li>
-        <li><a href="maps.html">特殊地圖掉落</a></li>
-        <li><a href="items.html">道具介紹</a></li>
-      </ul>
-    </div>
-    <div>
-      <div class="footer-col-title">聯絡我們</div>
-      <ul class="footer-links">
-        <li><a href="#" onclick="document.getElementById('modal-line').classList.add('open');return false;">LINE 官方社群</a></li>
-        <li><a href="#" onclick="document.getElementById('modal-sponsor').classList.add('open');return false;">贊助方案</a></li>
-        <li></li>
-        <li><a href="promote.html">推文與直播</a></li>
-      </ul>
-    </div>
-  </div>
-  <div style="text-align:center;padding:20px 0;"><a href="https://www.gamex123.com/lineage.html" target="_blank"><img src="https://telegraph-image-1n0.pages.dev/file/AgACAgUAAyEGAAS3SV8sAAIDxmoVY552dFOKeKn6_vyXg1NzhUZCAAJnD2sbhZOoVPrpotXRf4rQAQADAgADeAADOwQ.gif" alt="" style="max-width:100%;display:block;margin:0 auto;"></a></div>
-  <div class="footer-copy">
-    © 2026 陀螺天堂 · 版權所有<br>
-  </div>
-</footer>
 
 <script src="main.js"></script>
 <script>
@@ -443,7 +305,7 @@
       this.flickDir = 1;
       // gold or cyan tint
       this.color = Math.random() > 0.5
-        ? `rgba(201,169,110,${this.alpha})`
+        ? `rgba(0,204,255,${this.alpha})`
         : `rgba(0,229,255,${this.alpha * 0.6})`;
     };
     this.reset();

@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>尬電天堂 - 58衝拿英雄神武再送發財金</title>
+  <link rel="preconnect" href="https://telegraph-image-1n0.pages.dev" crossorigin>
+  <link rel="dns-prefetch" href="https://telegraph-image-1n0.pages.dev">
+  <link rel="stylesheet" href="style.css">
+  <style>
+    body {
+      background-image: none;
+      background-size: cover; background-position: center center; background-attachment: fixed;
+    }
+    .section     { background: rgba(6,9,16,0.88)  !important; }
+    .section-alt { background: rgba(10,13,30,0.92) !important; }
+
+    /* ── 主卡片 ── */
+    .promo-wrap {
+      max-width: 720px;
+      margin: 0 auto;
+      padding-bottom: 80px;
+    }
+
+    /* 頂部彩條 */
+    .promo-stripe {
+      height: 4px;
+      background: linear-gradient(90deg, #00c3ff, #c9a040, #e02020, #b9f2ff);
+      border-radius: 4px 4px 0 0;
+    }
+
+    .promo-card {
+      background: rgba(10, 13, 28, 0.92);
+      border: 1px solid rgba(201,160,64,0.3);
+      border-top: none;
+      border-radius: 0 0 16px 16px;
+      padding: 36px 32px 40px;
+      box-shadow: 0 20px 60px rgba(0,0,0,0.7), 0 0 40px rgba(201,160,64,0.06);
+      backdrop-filter: blur(12px);
+    }
+
+    /* ── 標題區 ── */
+    .promo-eyebrow {
+      font-size: 0.7rem; letter-spacing: 5px;
+      color: var(--text-muted); text-align: center;
+      margin-bottom: 10px;
+    }
+
+    .promo-title {
+      font-family: 'Noto Serif TC', serif;
+      font-size: 1.9rem; font-weight: 900;
+      color: #f2d06b; text-align: center;
+      letter-spacing: 4px; margin-bottom: 6px;
+      text-shadow: 0 0 24px rgba(242,208,107,0.5);
+    }
+
+    .promo-sub {
+      text-align: center; color: var(--text-dim);
+      font-size: 0.9rem; letter-spacing: 3px;
+      margin-bottom: 32px;
+    }
+
+    /* ── 功能卡片 ── */
+    .feature-list {
+      display: flex; flex-direction: column; gap: 14px;
+    }
+
+    .feat {
+      background: rgba(255,255,255,0.03);
+      border-radius: 12px;
+      padding: 22px 24px;
+      border-left: 5px solid transparent;
+      box-shadow: 0 4px 16px rgba(0,0,0,0.35);
+      transition: transform 0.2s, background 0.2s;
+    }
+    .feat:hover { transform: translateX(4px); background: rgba(255,255,255,0.055); }
+
+    .feat-blue    { border-left-color: #00c3ff; }
+    .feat-red     { border-left-color: #e03030; }
+    .feat-diamond {
+      border-left-color: #b9f2ff;
+      background: rgba(0,195,255,0.06);
+      border: 1px solid rgba(185,242,255,0.2);
+      border-left: 5px solid #b9f2ff;
+    }
+    .feat-gold    { border-left-color: #c9a040; }
+
+    .feat h3 {
+      margin: 0 0 8px;
+      font-family: 'Noto Serif TC', serif;
+      font-size: 1.15rem; font-weight: 700;
+      color: #e8e6d0; letter-spacing: 1px;
+    }
+    .feat p {
+      margin: 0; color: var(--text-dim);
+      font-size: 0.88rem; line-height: 1.75;
+    }
+
+    .hl-blue    { color: #5dd5ff; font-weight: 700; }
+    .hl-red     { color: #ff6060; font-weight: 700; }
+    .hl-diamond { color: #b9f2ff; font-weight: 700; text-shadow: 0 0 8px rgba(185,242,255,0.5); }
+    .hl-gold    { color: #f2d06b; font-weight: 700; }
+
+    /* ── 領取規則框 ── */
+    .rules-box {
+      margin-top: 14px;
+      background: rgba(0,0,0,0.35);
+      border: 1px dashed rgba(185,242,255,0.25);
+      border-radius: 8px;
+      padding: 14px 16px;
+      font-size: 0.82rem;
+      color: var(--text-dim);
+    }
+    .rules-box ul {
+      margin: 0; padding-left: 18px;
+    }
+    .rules-box li { margin-bottom: 5px; line-height: 1.6; }
+
+    .rules-warn {
+      display: block; margin-top: 10px;
+      color: #ff6060; font-weight: 700;
+      font-size: 0.82rem;
+      border-top: 1px solid rgba(255,96,96,0.25);
+      padding-top: 8px; text-align: center;
+    }
+
+    /* ── 底部 TAG ── */
+    .promo-tags {
+      margin-top: 32px;
+      text-align: center;
+      font-size: 0.78rem;
+      color: var(--text-muted);
+      letter-spacing: 1px;
+      border-top: 1px solid rgba(201,160,64,0.12);
+      padding-top: 18px;
+    }
+
+    /* ── RWD ── */
+    @media (max-width: 600px) {
+      .promo-card { padding: 24px 18px 32px; }
+      .promo-title { font-size: 1.4rem; }
+      .feat { padding: 18px 16px; }
+    }
+  </style>
+</head>
+<body>
+
+<!-- ══ 導覽列 ══ -->
+<nav class="topnav"><a class="topnav-logo" href="index.html">⚡ 尬電天堂</a><div class="topnav-sep"></div><div class="topnav-links" id="navLinks"><a class="topnav-link" href="index.html">首頁</a><a class="topnav-link" href="events-list.html">活動介紹</a><a class="topnav-link" href="features.html">遊戲特色</a><a class="topnav-link" href="items.html">裝備與道具</a><a class="topnav-link" href="boss.html">BOSS介紹</a><a class="topnav-link" href="maps.html">地圖特殊掉落</a><a class="topnav-link" href="download.html">檔案下載</a><a class="topnav-link" href="rates.html">版本倍率</a><a class="topnav-link" href="promote.html">推文與直播</a><div class="topnav-dropdown"><a class="topnav-link">遊戲規章 ▾</a><div class="dropdown-menu"><a href="rules.html">伺服器規章</a><a href="disclaimer.html">免責聲明</a><a href="anti-cheat.html">防作弊聲明</a></div></div><div class="topnav-dropdown"><a class="topnav-link">聯絡我們 ▾</a><div class="dropdown-menu"><a href="https://lin.ee/5u5GsiK" target="_blank">LINE 官方</a></div></div><a class="topnav-link" href="search.html" style="color:var(--pink);font-weight:bold">🔍 搜尋</a></div><div class="topnav-right"><a class="topnav-line-btn" href="https://lin.ee/5u5GsiK" target="_blank">LINE 客服</a></div><div class="hamburger" onclick="document.getElementById('navLinks').classList.toggle('open')"><span></span><span></span><span></span></div></nav>
+
+<!-- ══ 浮動側欄 ══ -->
+<div class="float-sidebar"><button class="float-btn gift" data-modal="modal-gift"><span class="fb-icon">🎁</span><span class="fb-label">申請禮包</span></button><button class="float-btn line-btn" data-modal="modal-line"><span class="fb-icon"><img loading="lazy" src="https://upload.wikimedia.org/wikipedia/commons/4/41/LINE_logo.svg" alt="LINE"></span><span class="fb-label">LINE</span></button></div>
+
+<!-- ══ 禮包 Modal ══ -->
+<div class="float-modal" id="modal-gift"><div class="float-modal-box"><span class="modal-close">✕</span><div class="modal-title">🎁 預約LINE禮包</div><div class="modal-body"><p>▸ 煉獄耳環<br>▸ 名譽貨幣【刻印】× 100<br>▸ 巧克力蛋糕【刻印】× 100<br>▸ 永久巧克力（永久三水）<br>▸ 永久名譽貨幣（永久三水）<br>▸ 象牙塔治癒藥水 × 10000<br><br><strong>加入 LINE 官方社群後私訊管理員即可領取。</strong></p></div><a class="modal-btn" href="https://lin.ee/5u5GsiK" target="_blank">加入 LINE 申請禮包</a></div></div>
+
+<!-- ══ LINE Modal ══ -->
+<div class="float-modal" id="modal-line"><div class="float-modal-box"><span class="modal-close">✕</span><div class="modal-title">💬 LINE 聯絡方式</div><div class="modal-body" style="text-align:center"><p style="margin-bottom:16px">加入官方 LINE 領取獎勵</p><p style="font-size:12px;color:var(--text-dim)">LINE ID：@638buyst</p></div><a class="modal-btn" href="https://lin.ee/5u5GsiK" target="_blank">加入 LINE 官方</a></div></div>
+
+<!-- ══ Hero ══ -->
+<div class="hero" style="height:220px">
+  <div class="hero-bg" style="background:linear-gradient(135deg,#0a0d20,#06090e);"></div>
+  <div class="hero-content">
+    <div class="hero-badge">LEVEL UP EVENT · 尬電天堂</div>
+    <h1 class="hero-title"><span style="font-size:1.8rem">58衝拿英雄神武再送發財金</span></h1>
+    <p class="hero-tagline">衝等就有獎 · 打寶才會爽</p>
+  </div>
+</div>
+
+<!-- ══ 活動內容 ══ -->
+<section class="section" style="padding-top:48px">
+  <div class="container">
+    <div class="promo-wrap">
+
+      <div class="promo-stripe"></div>
+      <div class="promo-card">
+
+        <div class="promo-eyebrow">LIMITED EVENT · 限時活動</div>
+        <div class="promo-title">⚔️ 58衝拿英雄神武<br>再送發財金 💰</div>
+        <div class="promo-sub">努力就有獎 · 不用贊助 · 只要爽</div>
+
+        <div class="feature-list">
+
+          <!-- 開局藍武 -->
+          <div class="feat feat-blue">
+            <h3>🎁 開局即領 <span class="hl-blue">藍色武器</span></h3>
+            <p>入服直接領取藍武，打怪效率翻倍，新手開局不卡關！加入後聯絡管理員即可領取。</p>
+          </div>
+
+          <!-- 58級英雄神武 -->
+          <div class="feat feat-red">
+            <h3>🔥 58等達成送 <span class="hl-red">英雄神武</span></h3>
+            <p>只要衝到 <strong style="color:#e8e6d0">58等</strong>，官方直接送你英雄級神武！努力就給獎勵，英雄神兵人人有份。</p>
+          </div>
+
+          <!-- 3000藍鑽再送英雄武器 -->
+          <div class="feat feat-diamond">
+            <h3>💎 58等達成再送 <span class="hl-diamond">3,000 藍鑽</span> 發財金</h3>
+            <p><strong style="color:#e8e6d0">58等才是遊戲的開始！</strong> 官方直接送你創業發財金，助你登頂當大爺。</p>
+
+            <div class="rules-box">
+              <ul>
+                <li>每位玩家限領取一份，不可重複申請。</li>
+                <li>請準備【截圖衝等證明 + 遊戲 ID + 帳號】私訊 LINE 官方提交。</li>
+                <li>官方查核後依序人工發放，審核中請勿催促。</li>
+              </ul>
+              <span class="rules-warn">
+                ⚠️ 若有惡意違規、重複領取、洗物資等行為，本團隊將嚴厲處罰，後果自負！
+              </span>
+            </div>
+          </div>
+
+          <!-- 公平服宣言 -->
+          <div class="feat feat-gold">
+            <h3>🌾 誠信正義 · <span class="hl-gold">公平服</span></h3>
+            <p>無工商、無親友、沒有AT，純手動最後淨土。穩定經營，官方人工審核保障所有玩家公平！</p>
+          </div>
+
+        </div><!-- /feature-list -->
+
+        <div class="promo-tags">
+          #人人有獎 &nbsp;#尬電天堂 &nbsp;#不用贊助 &nbsp;#公平服 &nbsp;#嚴禁違規
+        </div>
+
+      </div><!-- /promo-card -->
+    </div><!-- /promo-wrap -->
+
+    <!-- 上一則 / 下一則 -->
+    <div id="eventNav" style="max-width:720px;margin:0 auto"></div>
+
+  </div>
+</section>
+
+<!-- ══ Footer ══ -->
+
+<script src="events-data.js"></script>
+<script src="main.js"></script>
+</body>
+</html>
