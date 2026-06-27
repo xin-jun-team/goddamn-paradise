@@ -1,0 +1,1022 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+<meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>尬電天堂 - 七月累積贊助禮包</title>
+<link rel="preconnect" href="https://telegraph-image-1n0.pages.dev" crossorigin>
+<link rel="dns-prefetch" href="https://telegraph-image-1n0.pages.dev">
+<link rel="stylesheet" href="style.css">
+<style>
+  @import url('https://fonts.googleapis.com/css2?family=Noto+Serif+TC:wght@400;700;900&family=Oswald:wght@500;700&display=swap');
+
+  :root {
+    --cool-dark: #071a2b;
+    --cool-navy: #0d2440;
+    --cool-blue: #1976d2;
+    --cool-cyan: #00bcd4;
+    --cool-ice: #e0f7fa;
+    --cool-mint: #80deea;
+    --field-green: #388e3c;
+    --field-dark: #1b5e20;
+    --field-light: #4caf50;
+    --gold: #ffd740;
+    --white: #ffffff;
+    --text-main: #e3f2fd;
+    --text-dim: #78909c;
+    --border: #1a3a5c;
+    --tier1: #cd7f32;
+    --tier2: #b0bec5;
+    --tier3: #ffd740;
+    --tier4: #ff9100;
+    --tier5: #e040fb;
+    --tier6: #ff1744;
+  }
+
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+
+  body {
+    background: var(--cool-dark);
+    background-image:
+      radial-gradient(ellipse at 20% 0%, rgba(0,188,212,0.1) 0%, transparent 50%),
+      radial-gradient(ellipse at 80% 0%, rgba(25,118,210,0.08) 0%, transparent 50%);
+    font-family: 'Noto Serif TC', '微軟正黑體', serif;
+    color: var(--text-main);
+    min-height: 100vh;
+    padding: 0 0 60px 0;
+  }
+
+  /* ========================================
+     頂部橫幅 — 足球場俯瞰
+     ======================================== */
+  .main-banner {
+    position: relative;
+    overflow: hidden;
+    border-bottom: 4px solid var(--field-green);
+  }
+
+  /* 真實足球場草地 */
+  .banner-field {
+    position: relative;
+    background:
+      repeating-linear-gradient(
+        0deg,
+        rgba(27,94,32,0.95) 0px,
+        rgba(27,94,32,0.95) 40px,
+        rgba(46,125,50,0.95) 40px,
+        rgba(46,125,50,0.95) 80px
+      );
+    padding: 60px 20px 50px;
+    min-height: 340px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+  /* 球場白線 — 外框 */
+  .pitch-lines {
+    position: absolute;
+    top: 20px; left: 40px; right: 40px; bottom: 20px;
+    border: 2px solid rgba(255,255,255,0.25);
+    pointer-events: none;
+  }
+  /* 中線 */
+  .pitch-lines::before {
+    content: '';
+    position: absolute;
+    top: 0; bottom: 0; left: 50%;
+    width: 2px;
+    background: rgba(255,255,255,0.25);
+  }
+  /* 中圈 */
+  .pitch-center-circle {
+    position: absolute;
+    top: 50%; left: 50%; transform: translate(-50%,-50%);
+    width: 140px; height: 140px;
+    border: 2px solid rgba(255,255,255,0.25);
+    border-radius: 50%;
+    pointer-events: none;
+  }
+  .pitch-center-circle::after {
+    content: '';
+    position: absolute;
+    top: 50%; left: 50%; transform: translate(-50%,-50%);
+    width: 8px; height: 8px;
+    background: rgba(255,255,255,0.3);
+    border-radius: 50%;
+  }
+  /* 左禁區 */
+  .penalty-left {
+    position: absolute;
+    top: 50%; left: 0; transform: translateY(-50%);
+    width: 60px; height: 120px;
+    border: 2px solid rgba(255,255,255,0.2);
+    border-left: none;
+    pointer-events: none;
+  }
+  .penalty-left::after {
+    content: '';
+    position: absolute;
+    top: 50%; left: 0; transform: translateY(-50%);
+    width: 30px; height: 60px;
+    border: 2px solid rgba(255,255,255,0.15);
+    border-left: none;
+  }
+  /* 右禁區 */
+  .penalty-right {
+    position: absolute;
+    top: 50%; right: 0; transform: translateY(-50%);
+    width: 60px; height: 120px;
+    border: 2px solid rgba(255,255,255,0.2);
+    border-right: none;
+    pointer-events: none;
+  }
+  .penalty-right::after {
+    content: '';
+    position: absolute;
+    top: 50%; right: 0; transform: translateY(-50%);
+    width: 30px; height: 60px;
+    border: 2px solid rgba(255,255,255,0.15);
+    border-right: none;
+  }
+
+  /* 足球員剪影 — 左 (射門姿勢) */
+  .player-left {
+    position: absolute;
+    left: 60px; bottom: 20px;
+    width: 120px; height: 160px;
+    opacity: 0.12;
+    pointer-events: none;
+  }
+  /* 足球員剪影 — 右 (踢球姿勢) */
+  .player-right {
+    position: absolute;
+    right: 60px; bottom: 20px;
+    width: 120px; height: 160px;
+    opacity: 0.12;
+    pointer-events: none;
+    transform: scaleX(-1);
+  }
+  /* 足球 — 左上飛行 */
+  .ball-fly-1 {
+    position: absolute;
+    left: 180px; top: 30px;
+    width: 40px; height: 40px;
+    opacity: 0.2;
+    pointer-events: none;
+    animation: ball-spin 6s linear infinite;
+  }
+  /* 足球 — 右下 */
+  .ball-fly-2 {
+    position: absolute;
+    right: 180px; top: 40px;
+    width: 30px; height: 30px;
+    opacity: 0.15;
+    pointer-events: none;
+    animation: ball-spin 8s linear infinite reverse;
+  }
+  @keyframes ball-spin {
+    from { transform: rotate(0deg); }
+    to { transform: rotate(360deg); }
+  }
+
+  /* 陽光光暈 */
+  .sun-glow {
+    position: absolute;
+    top: -80px; left: 50%; transform: translateX(-50%);
+    width: 400px; height: 200px;
+    background: radial-gradient(ellipse at 50% 100%, rgba(255,235,59,0.2) 0%, rgba(255,193,7,0.1) 30%, transparent 70%);
+    pointer-events: none;
+    animation: sun-breathe 4s ease-in-out infinite alternate;
+  }
+  @keyframes sun-breathe {
+    0% { opacity: 0.5; }
+    100% { opacity: 1; }
+  }
+
+  .month-badge {
+    display: inline-block;
+    background: linear-gradient(135deg, #1565c0, #0d47a1);
+    border: 2px solid rgba(255,255,255,0.4);
+    border-radius: 4px;
+    padding: 5px 24px;
+    font-family: 'Oswald', sans-serif;
+    font-size: 15px; letter-spacing: 6px;
+    color: #fff;
+    margin-bottom: 14px;
+    text-shadow: 0 1px 3px rgba(0,0,0,0.4);
+    position: relative; z-index: 2;
+  }
+  .main-title {
+    font-size: clamp(30px, 5vw, 54px);
+    font-weight: 900;
+    color: #fff;
+    text-shadow: 0 0 40px rgba(255,255,255,0.3), 0 3px 10px rgba(0,0,0,0.7);
+    letter-spacing: 6px;
+    line-height: 1.2;
+    margin-bottom: 8px;
+    position: relative; z-index: 2;
+  }
+  .main-subtitle {
+    font-family: 'Oswald', sans-serif;
+    font-size: clamp(13px, 2vw, 17px);
+    color: rgba(255,255,255,0.7);
+    letter-spacing: 5px;
+    margin-bottom: 14px;
+    position: relative; z-index: 2;
+    text-transform: uppercase;
+  }
+  .theme-tags {
+    display: flex; justify-content: center; gap: 10px; flex-wrap: wrap;
+    margin-bottom: 18px;
+    position: relative; z-index: 2;
+  }
+  .theme-tag {
+    display: inline-flex; align-items: center; gap: 5px;
+    padding: 5px 18px; border-radius: 20px;
+    font-size: 13px; font-weight: 700; letter-spacing: 2px;
+    backdrop-filter: blur(4px);
+  }
+  .theme-tag.cool { background: rgba(0,188,212,0.3); border: 1px solid rgba(0,188,212,0.6); color: #e0f7fa; }
+  .theme-tag.football { background: rgba(255,255,255,0.15); border: 1px solid rgba(255,255,255,0.4); color: #fff; }
+  .theme-tag.dragon { background: rgba(33,150,243,0.3); border: 1px solid rgba(66,165,245,0.6); color: #bbdefb; }
+
+  .divider-ornament {
+    display: flex; align-items: center; justify-content: center; gap: 12px;
+    margin: 0 auto; max-width: 500px;
+    position: relative; z-index: 2;
+  }
+  .divider-ornament span { color: rgba(255,255,255,0.6); font-size: 18px; }
+  .divider-ornament .line { flex: 1; height: 1px; background: linear-gradient(90deg, transparent, rgba(255,255,255,0.3), transparent); }
+
+  /* ===== 主內容容器 ===== */
+  .container { max-width: 1100px; margin: 0 auto; padding: 0 16px; }
+
+  /* ===== 說明欄 ===== */
+  .notice-bar {
+    margin: 30px auto;
+    max-width: 860px;
+    background: linear-gradient(135deg, #0d2440, #071a2b);
+    border: 1px solid var(--border);
+    border-radius: 8px;
+    padding: 16px 24px;
+    text-align: center;
+    font-size: 14px;
+    color: var(--text-dim);
+    line-height: 1.8;
+  }
+  .notice-bar::before {
+    content: '◆ 活動說明 ◆';
+    display: block;
+    color: var(--cool-cyan);
+    font-weight: bold;
+    font-size: 13px;
+    letter-spacing: 4px;
+    margin-bottom: 8px;
+  }
+
+  /* ===== 龍印魔石提示 ===== */
+  .dragon-seal-bar {
+    margin: 0 auto 30px;
+    max-width: 860px;
+    background: linear-gradient(135deg, #0d1a2e, #0a1525);
+    border: 1px solid #1a3a6c;
+    border-left: 4px solid #42a5f5;
+    border-radius: 6px;
+    padding: 14px 20px;
+    display: flex; align-items: center; gap: 14px;
+    font-size: 14px; color: #90caf9;
+  }
+  .dragon-seal-bar .seal-icon { font-size: 32px; flex-shrink: 0; }
+  .dragon-seal-bar strong { color: #42a5f5; }
+
+  /* ===== 禮包區段 ===== */
+  .section-header { text-align: center; margin: 50px 0 30px; }
+  .section-header h2 { font-size: 22px; color: #fff; letter-spacing: 6px; font-weight: 700; }
+  .section-header .under-line {
+    width: 200px; height: 2px;
+    background: linear-gradient(90deg, transparent, var(--cool-cyan), transparent);
+    margin: 10px auto 0;
+  }
+
+  /* ===== 禮包卡片網格 ===== */
+  .packs-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+    gap: 24px;
+    margin: 0 auto; max-width: 1100px; padding: 0 16px;
+  }
+
+  /* ===== 禮包卡片 ===== */
+  .pack-card {
+    background: linear-gradient(160deg, #0f1e35 0%, #0a1525 100%);
+    border-radius: 10px;
+    overflow: hidden;
+    position: relative;
+    box-shadow: 0 4px 24px rgba(0,0,0,0.5), inset 0 1px 0 rgba(0,188,212,0.06);
+    transition: transform 0.25s, box-shadow 0.25s;
+  }
+  .pack-card:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 8px 36px rgba(0,0,0,0.6), 0 0 24px rgba(0,188,212,0.1);
+  }
+  .pack-card::before {
+    content: '';
+    position: absolute; inset: 0;
+    border-radius: 10px;
+    border: 1px solid var(--border);
+    pointer-events: none;
+  }
+  .pack-card.tier1 { --tier-color: #cd7f32; }
+  .pack-card.tier2 { --tier-color: #b0bec5; }
+  .pack-card.tier3 { --tier-color: #ffd740; }
+  .pack-card.tier4 { --tier-color: #ff9100; }
+  .pack-card.tier5 { --tier-color: #e040fb; }
+  .pack-card.tier6 { --tier-color: #ff1744; }
+  .pack-card::after {
+    content: '';
+    position: absolute;
+    top: 0; left: 0; right: 0; height: 3px;
+    background: var(--tier-color);
+    box-shadow: 0 0 10px var(--tier-color);
+  }
+
+  .pack-header {
+    padding: 20px 22px 14px;
+    background: linear-gradient(180deg, rgba(255,255,255,0.02) 0%, transparent 100%);
+    border-bottom: 1px solid rgba(255,255,255,0.06);
+    display: flex; align-items: center; gap: 14px;
+  }
+  .pack-icon {
+    width: 54px; height: 54px; border-radius: 50%;
+    border: 2px solid var(--tier-color);
+    display: flex; align-items: center; justify-content: center;
+    font-size: 26px; background: rgba(0,0,0,0.3);
+    box-shadow: 0 0 10px rgba(0,0,0,0.4);
+    flex-shrink: 0;
+  }
+  .pack-tier-label {
+    font-family: 'Oswald', sans-serif;
+    font-size: 11px; letter-spacing: 3px;
+    color: var(--tier-color);
+    margin-bottom: 3px;
+    text-shadow: 0 0 8px var(--tier-color);
+  }
+  .pack-title {
+    font-size: 18px; font-weight: 900; color: #fff;
+    text-shadow: 1px 1px 4px rgba(0,0,0,0.6);
+    line-height: 1.2;
+  }
+  .pack-title .threshold {
+    font-size: 22px; color: var(--tier-color);
+    text-shadow: 0 0 10px var(--tier-color);
+  }
+
+  .pack-body { padding: 16px 22px 20px; }
+  .items-label {
+    font-size: 11px; letter-spacing: 4px; color: var(--text-dim);
+    margin-bottom: 12px;
+    display: flex; align-items: center; gap: 8px;
+  }
+  .items-label::after { content: ''; flex: 1; height: 1px; background: rgba(255,255,255,0.08); }
+
+  .items-list { list-style: none; display: flex; flex-direction: column; gap: 6px; }
+  .item-row {
+    display: flex; align-items: baseline; justify-content: space-between;
+    padding: 5px 10px; border-radius: 4px;
+    background: rgba(255,255,255,0.02);
+    border-left: 2px solid transparent;
+    transition: background 0.15s, border-color 0.15s; gap: 8px;
+  }
+  .item-row:hover { background: rgba(0,188,212,0.06); border-left-color: var(--cool-cyan); }
+  .item-row .item-name { font-size: 13px; color: var(--text-main); flex: 1; line-height: 1.4; }
+  .item-row .item-qty {
+    font-size: 13px; font-weight: 700; color: var(--cool-cyan);
+    white-space: nowrap; text-shadow: 0 0 6px rgba(0,188,212,0.4);
+  }
+  .item-row.rare .item-name { color: #64b5f6; }
+  .item-row.hero .item-name { color: #ffb74d; }
+  .item-row.legend .item-name { color: #ce93d8; }
+  .item-row.myth .item-name { color: #ff5252; text-shadow: 0 0 8px rgba(255,82,82,0.4); }
+  .item-row.highlight .item-name { color: var(--gold); }
+  .item-row.dragon-seal .item-name { color: #42a5f5; text-shadow: 0 0 6px rgba(66,165,245,0.4); }
+
+  .total-bar {
+    margin-top: 14px; padding: 10px 10px 0;
+    border-top: 1px solid rgba(255,255,255,0.06);
+    display: flex; justify-content: space-between; align-items: center;
+  }
+  .total-bar .total-label { font-size: 12px; color: var(--text-dim); letter-spacing: 2px; }
+  .total-bar .total-count { font-size: 13px; color: var(--cool-cyan); font-weight: bold; }
+
+  /* ===== 世足預購禮包 ===== */
+  .preorder-section { max-width: 600px; margin: 50px auto 0; padding: 0 16px; }
+  .preorder-header { text-align: center; margin-bottom: 20px; }
+  .preorder-tag {
+    display: inline-block;
+    background: linear-gradient(135deg, #1b5e20, #2e7d32);
+    border: 2px solid #66bb6a; border-radius: 4px;
+    padding: 3px 16px; font-size: 12px; letter-spacing: 4px;
+    color: #a5d6a7; margin-bottom: 10px;
+  }
+  .preorder-title {
+    font-size: 24px; font-weight: 900; color: #69f0ae;
+    text-shadow: 0 0 20px rgba(105,240,174,0.5), 2px 2px 0 #003300;
+    letter-spacing: 3px;
+  }
+  .preorder-card {
+    background: linear-gradient(160deg, #0a1f14 0%, #061510 100%);
+    border: 1px solid #1a6030; border-top: 3px solid #69f0ae;
+    border-radius: 10px; padding: 20px 24px;
+    box-shadow: 0 4px 24px rgba(0,0,0,0.5);
+    position: relative; overflow: hidden;
+  }
+  .preorder-card .items-label { color: #69f0ae; }
+  .preorder-card .item-row:hover { background: rgba(105,240,174,0.06); border-left-color: #2e7d32; }
+  .preorder-card .item-qty { color: #69f0ae; text-shadow: 0 0 6px rgba(105,240,174,0.4); }
+  .preorder-badge {
+    display: inline-flex; align-items: center; gap: 6px;
+    background: linear-gradient(135deg, #1b5e20, #2e7d32);
+    border: 1px solid #66bb6a; border-radius: 20px;
+    padding: 4px 14px; font-size: 12px;
+    color: #c8e6c9; letter-spacing: 2px; margin-bottom: 16px;
+  }
+
+  /* ========================================
+     底部 — 運動陽光清涼場景
+     ======================================== */
+  .footer-scene {
+    position: relative;
+    margin-top: 60px;
+    padding: 60px 20px 40px;
+    overflow: hidden;
+    text-align: center;
+  }
+  /* 漸層天空 */
+  .footer-scene::before {
+    content: '';
+    position: absolute; inset: 0;
+    background: linear-gradient(180deg, var(--cool-dark) 0%, #0a2a44 30%, #0d3b5e 60%, #145a80 100%);
+    z-index: 0;
+  }
+  /* 太陽 */
+  .footer-sun {
+    position: absolute;
+    top: 20px; left: 50%; transform: translateX(-50%);
+    width: 80px; height: 80px;
+    z-index: 1;
+  }
+  /* 太陽光線 */
+  .sun-rays {
+    position: absolute;
+    top: 0px; left: 50%; transform: translateX(-50%);
+    width: 300px; height: 300px;
+    z-index: 0;
+    pointer-events: none;
+  }
+  /* 水面 */
+  .water-surface {
+    position: absolute;
+    bottom: 0; left: 0; right: 0; height: 60px;
+    background: linear-gradient(180deg, rgba(0,188,212,0.15) 0%, rgba(0,150,136,0.08) 100%);
+    z-index: 1;
+  }
+  .water-surface::before {
+    content: '';
+    position: absolute; top: 0; left: 0; right: 0; height: 2px;
+    background: linear-gradient(90deg, transparent 0%, rgba(0,229,255,0.3) 20%, rgba(128,222,234,0.4) 50%, rgba(0,229,255,0.3) 80%, transparent 100%);
+  }
+  /* 水波動畫 */
+  .wave {
+    position: absolute;
+    bottom: 0; left: 0; right: 0;
+    height: 30px; z-index: 1;
+    overflow: hidden;
+  }
+  .wave svg {
+    position: absolute; bottom: 0;
+    width: 200%; height: 30px;
+    animation: wave-move 6s linear infinite;
+  }
+  @keyframes wave-move {
+    0% { transform: translateX(0); }
+    100% { transform: translateX(-50%); }
+  }
+
+  .footer-content {
+    position: relative; z-index: 2;
+  }
+  .footer-scene .footer-text {
+    color: var(--text-dim); font-size: 12px;
+    letter-spacing: 3px; line-height: 2;
+  }
+  .footer-icons {
+    font-size: 28px;
+    margin-bottom: 12px;
+    opacity: 0.6;
+    letter-spacing: 16px;
+  }
+
+  /* ===== 浮動粒子 — 氣泡 + 水珠 ===== */
+  .particles { position: fixed; inset: 0; pointer-events: none; overflow: hidden; z-index: 0; }
+  .particle {
+    position: absolute; border-radius: 50%;
+    animation: bubble-up linear infinite; opacity: 0;
+  }
+  @keyframes bubble-up {
+    0% { transform: translateY(100vh) translateX(0) scale(0.5); opacity: 0; }
+    10% { opacity: 0.5; transform: translateY(90vh) translateX(5px) scale(0.8); }
+    50% { transform: translateY(50vh) translateX(-10px) scale(1); }
+    90% { opacity: 0.15; }
+    100% { transform: translateY(-50px) translateX(15px) scale(0.6); opacity: 0; }
+  }
+
+  /* ===== 動畫 ===== */
+  .pack-card, .preorder-card { animation: card-in 0.5s ease both; }
+  @keyframes card-in {
+    from { opacity: 0; transform: translateY(20px); }
+    to { opacity: 1; transform: translateY(0); }
+  }
+  .pack-card:nth-child(1) { animation-delay: 0.05s; }
+  .pack-card:nth-child(2) { animation-delay: 0.10s; }
+  .pack-card:nth-child(3) { animation-delay: 0.15s; }
+  .pack-card:nth-child(4) { animation-delay: 0.20s; }
+  .pack-card:nth-child(5) { animation-delay: 0.25s; }
+  .pack-card:nth-child(6) { animation-delay: 0.30s; }
+
+  @media (max-width: 680px) {
+    .packs-grid { grid-template-columns: 1fr; }
+    .main-title { font-size: 26px; letter-spacing: 3px; }
+    .player-left, .player-right { width: 70px; height: 100px; }
+    .player-left { left: 10px; }
+    .player-right { right: 10px; }
+    .ball-fly-1, .ball-fly-2 { display: none; }
+    .pitch-lines { left: 16px; right: 16px; }
+    .penalty-left, .penalty-right { width: 30px; height: 60px; }
+  }
+</style>
+</head>
+<body>
+<nav class="topnav"><a class="topnav-logo" href="index.html">⚔️ 尬電天堂</a><div class="topnav-sep"></div><div class="topnav-links" id="navLinks"><a class="topnav-link" href="index.html">首頁</a><a class="topnav-link" href="events-list.html">活動介紹</a><a class="topnav-link" href="features.html">遊戲特色</a><a class="topnav-link" href="items.html">裝備與道具</a><a class="topnav-link" href="boss.html">BOSS介紹</a><a class="topnav-link" href="maps.html">地圖特殊掉落</a><a class="topnav-link" href="download.html">檔案下載</a><a class="topnav-link" href="rates.html">版本倍率</a><a class="topnav-link" href="promote.html">推文與直播</a><div class="topnav-dropdown"><a class="topnav-link">遊戲規章 ▾</a><div class="dropdown-menu"><a href="rules.html">伺服器規章</a><a href="disclaimer.html">免責聲明</a><a href="anti-cheat.html">防作弊聲明</a></div></div><div class="topnav-dropdown"><a class="topnav-link">聯絡我們 ▾</a><div class="dropdown-menu"><a href="https://line.me/ti/g2/RXF5-vodTEcXp_iqPF8wcDh3Wnxxrd4hpo_RNQ?utm_source=invitation&utm_medium=link_copy&utm_campaign=default" target="_blank">LINE 官方社群</a><a href="https://lin.ee/R4Y4koAb" target="_blank">LINE 官方</a></div></div><a class="topnav-link" href="search.html" style="color:var(--pink);font-weight:bold">🔍 搜尋</a></div><div class="topnav-right"><a class="topnav-line-btn" href="https://lin.ee/R4Y4koAb" target="_blank">LINE 客服</a></div><div class="hamburger" onclick="document.getElementById('navLinks').classList.toggle('open')"><span></span><span></span><span></span></div></nav>
+<div class="float-sidebar"><button class="float-btn gift" data-modal="modal-gift"><span class="fb-icon">🎁</span><span class="fb-label">申請禮包</span></button><button class="float-btn line-btn" data-modal="modal-line"><span class="fb-icon"><img loading="lazy" src="https://upload.wikimedia.org/wikipedia/commons/4/41/LINE_logo.svg" alt="LINE"></span><span class="fb-label">LINE</span></button></div>
+<div class="float-modal" id="modal-gift"><div class="float-modal-box"><span class="modal-close">✕</span><div class="modal-title">🎁 預約LINE禮包</div><div class="modal-body"><p>▸ 煉獄耳環<br>▸ 名譽貨幣【刻印】× 100<br>▸ 巧克力蛋糕【刻印】× 100<br>▸ 永久巧克力（永久三水）<br>▸ 永久名譽貨幣（永久三水）<br>▸ 象牙塔治癒藥水 × 10000<br><br><strong>加入 LINE 官方社群後私訊管理員即可領取。</strong></p></div><a class="modal-btn" href="https://lin.ee/R4Y4koAb" target="_blank">加入 LINE 申請禮包</a></div></div>
+<div class="float-modal" id="modal-line"><div class="float-modal-box"><span class="modal-close">✕</span><div class="modal-title">💬 LINE 聯絡方式</div><div class="modal-body" style="text-align:center"><img loading="lazy" src="https://telegraph-image-1n0.pages.dev/file/AgACAgUAAyEGAAS3SV8sAAIDw2oVJZ2FdyRNX0Pr_KA7NJhHWUfUAALJDmsbhZOoVMSfPhUx5GY7AQADAgADeAADOwQ.png" alt="LINE QR Code" style="width:150px;height:150px;margin:0 auto 12px;display:block;border-radius:8px;"><p style="color:var(--text);font-size:.9em;margin:0">私訊小編幫您開單^^<br>給您最尊榮的服務</p></div><a class="modal-btn" href="https://line.me/ti/g2/RXF5-vodTEcXp_iqPF8wcDh3Wnxxrd4hpo_RNQ?utm_source=invitation&utm_medium=link_copy&utm_campaign=default" target="_blank">加入 LINE 官方社群</a></div></div>
+
+<!-- 浮動氣泡 -->
+<div class="particles" id="particles"></div>
+
+<!-- ========================================
+     主橫幅 — 足球場俯瞰圖
+     ======================================== -->
+<div class="main-banner">
+  <div class="banner-field">
+    <!-- 陽光 -->
+    <div class="sun-glow"></div>
+
+    <!-- 球場白線 -->
+    <div class="pitch-lines"></div>
+    <div class="pitch-center-circle"></div>
+    <div class="penalty-left"></div>
+    <div class="penalty-right"></div>
+
+    <!-- 足球員剪影 左 — 射門 -->
+    <svg class="player-left" viewBox="0 0 120 160" fill="white">
+      <path d="M60 8 a10 10 0 1 0 0.1 0 Z M52 28 L42 58 L28 52 L24 60 L44 68 L48 56 L56 80 L38 120 L30 148 L40 152 L56 124 L60 100 L64 124 L80 152 L90 148 L82 120 L64 80 L72 56 L76 68 L96 60 L92 52 L78 58 L68 28 Z"/>
+    </svg>
+
+    <!-- 足球員剪影 右 — 踢球 -->
+    <svg class="player-right" viewBox="0 0 120 160" fill="white">
+      <path d="M55 8 a10 10 0 1 0 0.1 0 Z M48 28 L38 56 L22 48 L18 56 L40 66 L44 54 L50 78 L34 116 L28 148 L38 152 L52 120 L56 96 L70 130 L56 152 L66 156 L84 128 L68 90 L78 60 L100 72 L104 64 L80 50 L64 28 Z"/>
+    </svg>
+
+    <!-- 旋轉足球 -->
+    <svg class="ball-fly-1" viewBox="0 0 50 50">
+      <circle cx="25" cy="25" r="23" fill="none" stroke="white" stroke-width="1.5"/>
+      <path d="M25 2 L30 14 L44 12 L36 24 L48 30 L36 36 L44 48 L30 46 L25 58 L20 46 L6 48 L14 36 L2 30 L14 24 L6 12 L20 14 Z" fill="none" stroke="white" stroke-width="1"/>
+      <circle cx="25" cy="25" r="8" fill="none" stroke="white" stroke-width="1"/>
+    </svg>
+    <svg class="ball-fly-2" viewBox="0 0 50 50">
+      <circle cx="25" cy="25" r="23" fill="none" stroke="white" stroke-width="1.5"/>
+      <path d="M25 2 L30 14 L44 12 L36 24 L48 30 L36 36 L44 48 L30 46 L25 58 L20 46 L6 48 L14 36 L2 30 L14 24 L6 12 L20 14 Z" fill="none" stroke="white" stroke-width="1"/>
+      <circle cx="25" cy="25" r="8" fill="none" stroke="white" stroke-width="1"/>
+    </svg>
+
+    <!-- 文字內容 -->
+    <div class="month-badge">2026 ‧ JULY ‧ 七月</div>
+    <h1 class="main-title">七月累積贊助禮包</h1>
+    <p class="main-subtitle">July Cumulative Sponsorship Gift Pack</p>
+    <div class="theme-tags">
+      <span class="theme-tag cool">❄️ 清涼一夏</span>
+      <span class="theme-tag football">⚽ 世足盛會</span>
+      <span class="theme-tag dragon">🐉 龍印魔石</span>
+    </div>
+    <div class="divider-ornament">
+      <div class="line"></div>
+      <span>⚽</span>
+      <span>◆</span>
+      <span>⚽</span>
+      <div class="line"></div>
+    </div>
+  </div>
+</div>
+
+<!-- ===== 活動說明 ===== -->
+<div class="container">
+  <div class="notice-bar">
+    活動期間：2026年7月1日 ─ 2026年7月31日<br>
+    累積贊助金額達到對應門檻，即可領取對應等級禮包<br>
+    <span style="color:#ef5350; font-weight:bold; font-size:15px; text-shadow:0 0 8px rgba(239,83,80,0.6);">※ 光之肩甲箱、光之手環箱內含強化卷</span>
+  </div>
+  <div class="dragon-seal-bar">
+    <span class="seal-icon">🐉</span>
+    <span>本月新增 <strong>龍印魔石強化卷軸</strong>，累計 3,000 以上禮包皆有包含！強化你的龍印魔石，提升戰力無上限。</span>
+  </div>
+</div>
+
+<!-- ===== 禮包一覽 ===== -->
+<div class="section-header">
+  <h2>◈ 累積贊助禮包一覽 ◈</h2>
+  <div class="under-line"></div>
+</div>
+
+<div class="packs-grid">
+
+  <!-- 1000 -->
+  <div class="pack-card tier1">
+    <div class="pack-header">
+      <div class="pack-icon">🎁</div>
+      <div class="pack-title-wrap">
+        <div class="pack-tier-label">■ TIER I ■ BRONZE</div>
+        <div class="pack-title">七月累計 <span class="threshold">1,000</span><br>贊助禮包</div>
+      </div>
+    </div>
+    <div class="pack-body">
+      <div class="items-label">內容物</div>
+      <ul class="items-list">
+        <li class="item-row"><span class="item-name">專精碎片</span><span class="item-qty">× 100</span></li>
+        <li class="item-row"><span class="item-name">自動練功1小時能量石</span><span class="item-qty">× 1</span></li>
+        <li class="item-row"><span class="item-name">光之力量肩甲箱</span><span class="item-qty">× 1</span></li>
+        <li class="item-row"><span class="item-name">光之敏捷肩甲箱</span><span class="item-qty">× 1</span></li>
+        <li class="item-row"><span class="item-name">光之智慧肩甲箱</span><span class="item-qty">× 1</span></li>
+        <li class="item-row highlight"><span class="item-name">(2階) 200% 經驗藥水（刻印）</span><span class="item-qty">× 10</span></li>
+        <li class="item-row highlight"><span class="item-name">300% 經驗藥水（刻印）</span><span class="item-qty">× 10</span></li>
+        <li class="item-row"><span class="item-name">高級製作秘笈</span><span class="item-qty">× 3</span></li>
+        <li class="item-row rare"><span class="item-name">稀有製作秘笈</span><span class="item-qty">× 2</span></li>
+        <li class="item-row rare"><span class="item-name">稀有武器箱</span><span class="item-qty">× 1</span></li>
+        <li class="item-row rare"><span class="item-name">稀有防具箱</span><span class="item-qty">× 1</span></li>
+        <li class="item-row rare"><span class="item-name">稀有飾品箱</span><span class="item-qty">× 1</span></li>
+        <li class="item-row"><span class="item-name">PVP幣</span><span class="item-qty">× 100</span></li>
+        <li class="item-row highlight"><span class="item-name">職業之力箱（自選）</span><span class="item-qty">× 1</span></li>
+        <li class="item-row"><span class="item-name">高級變身卡寶箱</span><span class="item-qty">× 3</span></li>
+        <li class="item-row rare"><span class="item-name">稀有變身卡寶箱</span><span class="item-qty">× 2</span></li>
+        <li class="item-row"><span class="item-name">高級娃娃卡寶箱</span><span class="item-qty">× 3</span></li>
+        <li class="item-row rare"><span class="item-name">稀有娃娃卡寶箱</span><span class="item-qty">× 2</span></li>
+        <li class="item-row highlight"><span class="item-name">自選稀有武器箱子</span><span class="item-qty">× 1</span></li>
+        <li class="item-row"><span class="item-name">時空裂痕寶箱</span><span class="item-qty">× 3</span></li>
+      </ul>
+      <div class="total-bar"><span class="total-label">共計物品</span><span class="total-count">20 種</span></div>
+    </div>
+  </div>
+
+  <!-- 3000 -->
+  <div class="pack-card tier2">
+    <div class="pack-header">
+      <div class="pack-icon">💎</div>
+      <div class="pack-title-wrap">
+        <div class="pack-tier-label">■ TIER II ■ SILVER</div>
+        <div class="pack-title">七月累計 <span class="threshold">3,000</span><br>贊助禮包</div>
+      </div>
+    </div>
+    <div class="pack-body">
+      <div class="items-label">內容物</div>
+      <ul class="items-list">
+        <li class="item-row"><span class="item-name">專精碎片</span><span class="item-qty">× 200</span></li>
+        <li class="item-row"><span class="item-name">自動練功3小時能量石</span><span class="item-qty">× 1</span></li>
+        <li class="item-row"><span class="item-name">光之力量肩甲箱</span><span class="item-qty">× 1</span></li>
+        <li class="item-row"><span class="item-name">光之敏捷肩甲箱</span><span class="item-qty">× 1</span></li>
+        <li class="item-row"><span class="item-name">光之智慧肩甲箱</span><span class="item-qty">× 1</span></li>
+        <li class="item-row highlight"><span class="item-name">(2階) 200% 經驗藥水（刻印）</span><span class="item-qty">× 10</span></li>
+        <li class="item-row highlight"><span class="item-name">300% 經驗藥水（刻印）</span><span class="item-qty">× 10</span></li>
+        <li class="item-row"><span class="item-name">高級製作秘笈</span><span class="item-qty">× 3</span></li>
+        <li class="item-row rare"><span class="item-name">稀有製作秘笈</span><span class="item-qty">× 2</span></li>
+        <li class="item-row hero"><span class="item-name">英雄製作秘笈</span><span class="item-qty">× 1</span></li>
+        <li class="item-row"><span class="item-name">PVP幣</span><span class="item-qty">× 150</span></li>
+        <li class="item-row rare"><span class="item-name">稀有變身卡寶箱</span><span class="item-qty">× 3</span></li>
+        <li class="item-row hero"><span class="item-name">英雄變身卡寶箱</span><span class="item-qty">× 1</span></li>
+        <li class="item-row rare"><span class="item-name">稀有娃娃卡寶箱</span><span class="item-qty">× 3</span></li>
+        <li class="item-row hero"><span class="item-name">英雄娃娃卡寶箱</span><span class="item-qty">× 1</span></li>
+        <li class="item-row hero"><span class="item-name">英雄變身結晶</span><span class="item-qty">× 4</span></li>
+        <li class="item-row highlight"><span class="item-name">自選屬性卷軸</span><span class="item-qty">× 1</span></li>
+        <li class="item-row"><span class="item-name">時空裂痕寶箱</span><span class="item-qty">× 5</span></li>
+        <li class="item-row dragon-seal"><span class="item-name">🐉 龍印魔石強化卷軸</span><span class="item-qty">× 5</span></li>
+      </ul>
+      <div class="total-bar"><span class="total-label">共計物品</span><span class="total-count">19 種</span></div>
+    </div>
+  </div>
+
+  <!-- 5000 -->
+  <div class="pack-card tier3">
+    <div class="pack-header">
+      <div class="pack-icon">🏆</div>
+      <div class="pack-title-wrap">
+        <div class="pack-tier-label">■ TIER III ■ GOLD</div>
+        <div class="pack-title">七月累計 <span class="threshold">5,000</span><br>贊助禮包</div>
+      </div>
+    </div>
+    <div class="pack-body">
+      <div class="items-label">內容物</div>
+      <ul class="items-list">
+        <li class="item-row"><span class="item-name">專精碎片</span><span class="item-qty">× 300</span></li>
+        <li class="item-row"><span class="item-name">自動練功6小時能量石</span><span class="item-qty">× 1</span></li>
+        <li class="item-row"><span class="item-name">光之力量肩甲箱</span><span class="item-qty">× 1</span></li>
+        <li class="item-row"><span class="item-name">光之敏捷肩甲箱</span><span class="item-qty">× 1</span></li>
+        <li class="item-row"><span class="item-name">光之智慧肩甲箱</span><span class="item-qty">× 1</span></li>
+        <li class="item-row hero"><span class="item-name">光之英雄手環箱</span><span class="item-qty">× 1</span></li>
+        <li class="item-row"><span class="item-name">光之防禦手環箱</span><span class="item-qty">× 1</span></li>
+        <li class="item-row highlight"><span class="item-name">(2階) 200% 經驗藥水（刻印）</span><span class="item-qty">× 10</span></li>
+        <li class="item-row highlight"><span class="item-name">300% 經驗藥水（刻印）</span><span class="item-qty">× 10</span></li>
+        <li class="item-row highlight"><span class="item-name">防爆卷箱子</span><span class="item-qty">× 1</span></li>
+        <li class="item-row rare"><span class="item-name">稀有製作秘笈</span><span class="item-qty">× 3</span></li>
+        <li class="item-row hero"><span class="item-name">英雄製作秘笈</span><span class="item-qty">× 1</span></li>
+        <li class="item-row hero"><span class="item-name">英雄防具箱</span><span class="item-qty">× 1</span></li>
+        <li class="item-row hero"><span class="item-name">英雄飾品箱</span><span class="item-qty">× 1</span></li>
+        <li class="item-row"><span class="item-name">PVP幣</span><span class="item-qty">× 200</span></li>
+        <li class="item-row legend"><span class="item-name">傳說變身卡寶箱</span><span class="item-qty">× 1</span></li>
+        <li class="item-row hero"><span class="item-name">英雄娃娃卡寶箱</span><span class="item-qty">× 1</span></li>
+        <li class="item-row highlight"><span class="item-name">夜月之力</span><span class="item-qty">× 5</span></li>
+        <li class="item-row highlight"><span class="item-name">自選英雄武器箱子</span><span class="item-qty">× 1</span></li>
+        <li class="item-row"><span class="item-name">時空裂痕寶箱</span><span class="item-qty">× 5</span></li>
+        <li class="item-row dragon-seal"><span class="item-name">🐉 龍印魔石強化卷軸</span><span class="item-qty">× 5</span></li>
+      </ul>
+      <div class="total-bar"><span class="total-label">共計物品</span><span class="total-count">21 種</span></div>
+    </div>
+  </div>
+
+  <!-- 10000 -->
+  <div class="pack-card tier4">
+    <div class="pack-header">
+      <div class="pack-icon">⚔️</div>
+      <div class="pack-title-wrap">
+        <div class="pack-tier-label">■ TIER IV ■ PLATINUM</div>
+        <div class="pack-title">七月累計 <span class="threshold">10,000</span><br>贊助禮包</div>
+      </div>
+    </div>
+    <div class="pack-body">
+      <div class="items-label">內容物</div>
+      <ul class="items-list">
+        <li class="item-row"><span class="item-name">專精碎片</span><span class="item-qty">× 400</span></li>
+        <li class="item-row"><span class="item-name">自動練功12小時能量石</span><span class="item-qty">× 1</span></li>
+        <li class="item-row"><span class="item-name">光之力量肩甲箱</span><span class="item-qty">× 1</span></li>
+        <li class="item-row"><span class="item-name">光之敏捷肩甲箱</span><span class="item-qty">× 1</span></li>
+        <li class="item-row"><span class="item-name">光之智慧肩甲箱</span><span class="item-qty">× 1</span></li>
+        <li class="item-row hero"><span class="item-name">光之英雄手環箱</span><span class="item-qty">× 1</span></li>
+        <li class="item-row"><span class="item-name">光之防禦手環箱</span><span class="item-qty">× 1</span></li>
+        <li class="item-row highlight"><span class="item-name">(2階) 200% 經驗藥水（刻印）</span><span class="item-qty">× 10</span></li>
+        <li class="item-row highlight"><span class="item-name">300% 經驗藥水（刻印）</span><span class="item-qty">× 10</span></li>
+        <li class="item-row highlight"><span class="item-name">防止噴物品（帶幾個防噴幾個）</span><span class="item-qty">× 10</span></li>
+        <li class="item-row highlight"><span class="item-name">防爆卷箱子</span><span class="item-qty">× 2</span></li>
+        <li class="item-row rare"><span class="item-name">稀有製作秘笈</span><span class="item-qty">× 3</span></li>
+        <li class="item-row hero"><span class="item-name">英雄製作秘笈</span><span class="item-qty">× 2</span></li>
+        <li class="item-row legend"><span class="item-name">傳說製作秘笈</span><span class="item-qty">× 1</span></li>
+        <li class="item-row hero"><span class="item-name">英雄防具箱</span><span class="item-qty">× 1</span></li>
+        <li class="item-row hero"><span class="item-name">英雄飾品箱</span><span class="item-qty">× 1</span></li>
+        <li class="item-row"><span class="item-name">PVP幣</span><span class="item-qty">× 200</span></li>
+        <li class="item-row legend"><span class="item-name">傳說變身卡寶箱</span><span class="item-qty">× 1</span></li>
+        <li class="item-row legend"><span class="item-name">傳說娃娃卡寶箱</span><span class="item-qty">× 1</span></li>
+        <li class="item-row legend"><span class="item-name">傳說變身結晶</span><span class="item-qty">× 1</span></li>
+        <li class="item-row hero"><span class="item-name">任選英雄變身卡</span><span class="item-qty">× 1</span></li>
+        <li class="item-row highlight"><span class="item-name">夜月之力</span><span class="item-qty">× 5</span></li>
+        <li class="item-row highlight"><span class="item-name">自選英雄武器箱子</span><span class="item-qty">× 1</span></li>
+        <li class="item-row dragon-seal"><span class="item-name">🐉 龍印魔石強化卷軸</span><span class="item-qty">× 10</span></li>
+      </ul>
+      <div class="total-bar"><span class="total-label">共計物品</span><span class="total-count">24 種</span></div>
+    </div>
+  </div>
+
+  <!-- 20000 -->
+  <div class="pack-card tier5">
+    <div class="pack-header">
+      <div class="pack-icon">👑</div>
+      <div class="pack-title-wrap">
+        <div class="pack-tier-label">■ TIER V ■ DIAMOND</div>
+        <div class="pack-title">七月累計 <span class="threshold">20,000</span><br>贊助禮包</div>
+      </div>
+    </div>
+    <div class="pack-body">
+      <div class="items-label">內容物</div>
+      <ul class="items-list">
+        <li class="item-row"><span class="item-name">專精碎片</span><span class="item-qty">× 500</span></li>
+        <li class="item-row"><span class="item-name">自動練功12小時能量石</span><span class="item-qty">× 1</span></li>
+        <li class="item-row"><span class="item-name">光之力量肩甲箱</span><span class="item-qty">× 1</span></li>
+        <li class="item-row"><span class="item-name">光之敏捷肩甲箱</span><span class="item-qty">× 1</span></li>
+        <li class="item-row"><span class="item-name">光之智慧肩甲箱</span><span class="item-qty">× 1</span></li>
+        <li class="item-row hero"><span class="item-name">光之英雄手環箱</span><span class="item-qty">× 1</span></li>
+        <li class="item-row"><span class="item-name">光之防禦手環箱</span><span class="item-qty">× 1</span></li>
+        <li class="item-row highlight"><span class="item-name">(2階) 200% 經驗藥水（刻印）</span><span class="item-qty">× 10</span></li>
+        <li class="item-row highlight"><span class="item-name">300% 經驗藥水（刻印）</span><span class="item-qty">× 10</span></li>
+        <li class="item-row highlight"><span class="item-name">防止噴物品（帶幾個防噴幾個）</span><span class="item-qty">× 20</span></li>
+        <li class="item-row highlight"><span class="item-name">防爆卷箱子</span><span class="item-qty">× 3</span></li>
+        <li class="item-row rare"><span class="item-name">稀有製作秘笈</span><span class="item-qty">× 3</span></li>
+        <li class="item-row hero"><span class="item-name">英雄製作秘笈</span><span class="item-qty">× 3</span></li>
+        <li class="item-row legend"><span class="item-name">傳說製作秘笈</span><span class="item-qty">× 1</span></li>
+        <li class="item-row myth"><span class="item-name">神話製作秘笈</span><span class="item-qty">× 1</span></li>
+        <li class="item-row hero"><span class="item-name">英雄防具箱</span><span class="item-qty">× 2</span></li>
+        <li class="item-row hero"><span class="item-name">英雄飾品箱</span><span class="item-qty">× 2</span></li>
+        <li class="item-row"><span class="item-name">PVP幣</span><span class="item-qty">× 300</span></li>
+        <li class="item-row legend"><span class="item-name">傳說娃娃卡寶箱</span><span class="item-qty">× 1</span></li>
+        <li class="item-row legend"><span class="item-name">傳說變身結晶</span><span class="item-qty">× 1</span></li>
+        <li class="item-row hero"><span class="item-name">任選英雄變身卡</span><span class="item-qty">× 1</span></li>
+        <li class="item-row hero"><span class="item-name">任選英雄娃娃卡</span><span class="item-qty">× 1</span></li>
+        <li class="item-row highlight"><span class="item-name">夜月之力</span><span class="item-qty">× 10</span></li>
+        <li class="item-row dragon-seal"><span class="item-name">🐉 龍印魔石強化卷軸</span><span class="item-qty">× 10</span></li>
+      </ul>
+      <div class="total-bar"><span class="total-label">共計物品</span><span class="total-count">24 種</span></div>
+    </div>
+  </div>
+
+  <!-- 30000 -->
+  <div class="pack-card tier6">
+    <div class="pack-header">
+      <div class="pack-icon">🌟</div>
+      <div class="pack-title-wrap">
+        <div class="pack-tier-label">■ TIER VI ■ CHAMPION</div>
+        <div class="pack-title">七月累計 <span class="threshold">30,000</span><br>贊助禮包</div>
+      </div>
+    </div>
+    <div class="pack-body">
+      <div class="items-label">內容物</div>
+      <ul class="items-list">
+        <li class="item-row"><span class="item-name">專精碎片</span><span class="item-qty">× 600</span></li>
+        <li class="item-row"><span class="item-name">自動練功12小時能量石</span><span class="item-qty">× 1</span></li>
+        <li class="item-row"><span class="item-name">光之力量肩甲箱</span><span class="item-qty">× 1</span></li>
+        <li class="item-row"><span class="item-name">光之敏捷肩甲箱</span><span class="item-qty">× 1</span></li>
+        <li class="item-row"><span class="item-name">光之智慧肩甲箱</span><span class="item-qty">× 1</span></li>
+        <li class="item-row hero"><span class="item-name">光之英雄手環箱</span><span class="item-qty">× 1</span></li>
+        <li class="item-row"><span class="item-name">光之防禦手環箱</span><span class="item-qty">× 1</span></li>
+        <li class="item-row highlight"><span class="item-name">(2階) 200% 經驗藥水（刻印）</span><span class="item-qty">× 10</span></li>
+        <li class="item-row highlight"><span class="item-name">300% 經驗藥水（刻印）</span><span class="item-qty">× 10</span></li>
+        <li class="item-row highlight"><span class="item-name">祝福的防爆卷軸</span><span class="item-qty">× 3</span></li>
+        <li class="item-row highlight"><span class="item-name">防止噴物品（帶幾個防噴幾個）</span><span class="item-qty">× 30</span></li>
+        <li class="item-row rare"><span class="item-name">稀有製作秘笈</span><span class="item-qty">× 8</span></li>
+        <li class="item-row hero"><span class="item-name">英雄製作秘笈</span><span class="item-qty">× 3</span></li>
+        <li class="item-row legend"><span class="item-name">傳說製作秘笈</span><span class="item-qty">× 1</span></li>
+        <li class="item-row hero"><span class="item-name">英雄防具箱</span><span class="item-qty">× 2</span></li>
+        <li class="item-row hero"><span class="item-name">英雄飾品箱</span><span class="item-qty">× 2</span></li>
+        <li class="item-row"><span class="item-name">PVP幣</span><span class="item-qty">× 500</span></li>
+        <li class="item-row highlight"><span class="item-name">紅利幣</span><span class="item-qty">× 5,000</span></li>
+        <li class="item-row legend"><span class="item-name">傳說娃娃卡寶箱</span><span class="item-qty">× 1</span></li>
+        <li class="item-row legend"><span class="item-name">傳說變身結晶</span><span class="item-qty">× 1</span></li>
+        <li class="item-row hero"><span class="item-name">任選英雄變身卡</span><span class="item-qty">× 2</span></li>
+        <li class="item-row legend"><span class="item-name">任選傳說變身卡</span><span class="item-qty">× 1</span></li>
+        <li class="item-row hero"><span class="item-name">任選英雄娃娃卡</span><span class="item-qty">× 2</span></li>
+        <li class="item-row highlight"><span class="item-name">夜月之力</span><span class="item-qty">× 10</span></li>
+        <li class="item-row myth"><span class="item-name">神話變身卡寶箱</span><span class="item-qty">× 1</span></li>
+        <li class="item-row dragon-seal"><span class="item-name">🐉 龍印魔石強化卷軸</span><span class="item-qty">× 10</span></li>
+      </ul>
+      <div class="total-bar"><span class="total-label">共計物品</span><span class="total-count">26 種</span></div>
+    </div>
+  </div>
+
+</div>
+
+<!-- ===== 世足預購禮包 ===== -->
+<div class="preorder-section">
+  <div class="preorder-header">
+    <div class="preorder-tag">LIMITED ‧ 限時預購</div>
+    <h2 class="preorder-title">⚽ 世足預購禮包</h2>
+  </div>
+  <div class="preorder-card">
+    <div style="text-align:center; margin-bottom:18px;">
+      <span class="preorder-badge">⏰ 即日起開放至 07/01 18:00 維修前</span>
+    </div>
+    <div class="items-label" style="color:#69f0ae;">內容物</div>
+    <ul class="items-list">
+      <li class="item-row"><span class="item-name">專精碎片</span><span class="item-qty" style="color:#69f0ae;">× 100</span></li>
+      <li class="item-row"><span class="item-name">自動練功1小時能量石</span><span class="item-qty" style="color:#69f0ae;">× 1</span></li>
+      <li class="item-row highlight"><span class="item-name">⚽ 世足金袋</span><span class="item-qty" style="color:#69f0ae;">× 2</span></li>
+      <li class="item-row"><span class="item-name">PVP幣</span><span class="item-qty" style="color:#69f0ae;">× 66</span></li>
+      <li class="item-row highlight"><span class="item-name">防止噴物品（帶幾個防噴幾個）</span><span class="item-qty" style="color:#69f0ae;">× 5</span></li>
+      <li class="item-row highlight"><span class="item-name">防爆卷箱子</span><span class="item-qty" style="color:#69f0ae;">× 1</span></li>
+      <li class="item-row dragon-seal"><span class="item-name">🐉 龍印魔石強化卷軸</span><span class="item-qty" style="color:#69f0ae;">× 2</span></li>
+    </ul>
+    <div class="total-bar" style="border-top-color:rgba(46,125,50,0.35);">
+      <span class="total-label" style="color:#69f0ae; opacity:0.6;">共計物品</span>
+      <span class="total-count" style="color:#69f0ae;">7 種</span>
+    </div>
+  </div>
+</div>
+
+<!-- ===== 活動導覽 ===== -->
+<div id="eventNav" style="max-width:860px;margin:30px auto 0;padding:0 16px"></div>
+
+<!-- ========================================
+     底部 — 陽光水面裝飾場景
+     ======================================== -->
+<div class="footer-scene">
+  <!-- 太陽光線 -->
+  <svg class="sun-rays" viewBox="0 0 300 300">
+    <defs>
+      <linearGradient id="rayGrad" x1="0" y1="0" x2="0" y2="1">
+        <stop offset="0%" stop-color="#ffd740" stop-opacity="0.3"/>
+        <stop offset="100%" stop-color="#ffd740" stop-opacity="0"/>
+      </linearGradient>
+    </defs>
+    <g opacity="0.4">
+      <polygon points="150,150 140,0 160,0" fill="url(#rayGrad)"/>
+      <polygon points="150,150 100,10 120,5" fill="url(#rayGrad)"/>
+      <polygon points="150,150 180,5 200,10" fill="url(#rayGrad)"/>
+      <polygon points="150,150 55,40 75,28" fill="url(#rayGrad)"/>
+      <polygon points="150,150 225,28 245,40" fill="url(#rayGrad)"/>
+      <polygon points="150,150 20,80 40,65" fill="url(#rayGrad)"/>
+      <polygon points="150,150 260,65 280,80" fill="url(#rayGrad)"/>
+    </g>
+  </svg>
+  <!-- 太陽 -->
+  <svg class="footer-sun" viewBox="0 0 80 80">
+    <defs>
+      <radialGradient id="sunGrad">
+        <stop offset="0%" stop-color="#fff9c4"/>
+        <stop offset="40%" stop-color="#ffd740"/>
+        <stop offset="100%" stop-color="#ff8f00" stop-opacity="0"/>
+      </radialGradient>
+    </defs>
+    <circle cx="40" cy="40" r="38" fill="url(#sunGrad)" opacity="0.7"/>
+    <circle cx="40" cy="40" r="20" fill="#ffd740" opacity="0.9"/>
+  </svg>
+  <!-- 水波 -->
+  <div class="water-surface"></div>
+  <div class="wave">
+    <svg viewBox="0 0 1200 30" preserveAspectRatio="none">
+      <path d="M0,15 Q75,0 150,15 T300,15 T450,15 T600,15 T750,15 T900,15 T1050,15 T1200,15 V30 H0 Z" fill="rgba(0,188,212,0.12)"/>
+      <path d="M0,18 Q75,8 150,18 T300,18 T450,18 T600,18 T750,18 T900,18 T1050,18 T1200,18 V30 H0 Z" fill="rgba(0,150,136,0.08)"/>
+    </svg>
+  </div>
+  <!-- 文字 -->
+  <div class="footer-content">
+    <div class="footer-icons">⚽ ❄️ 🐉 ☀️</div>
+    <div class="footer-text">
+      以上禮包內容最終解釋權歸主辦方所有<br>
+      如有任何疑問請聯繫遊戲客服
+    </div>
+  </div>
+</div>
+
+<footer>
+  <div class="footer-inner">
+    <div>
+      <div class="footer-col-title">尬電天堂</div>
+      <ul class="footer-links">
+        <li><a href="index.html">首頁</a></li>
+        <li><a href="events-list.html">活動介紹</a></li>
+        <li><a href="download.html">檔案下載</a></li>
+        <li><a href="rates.html">版本倍率</a></li>
+      </ul>
+    </div>
+    <div>
+      <div class="footer-col-title">遊戲資訊</div>
+      <ul class="footer-links">
+        <li><a href="features.html">遊戲特色</a></li>
+        <li><a href="boss.html">BOSS介紹</a></li>
+        <li><a href="maps.html">特殊地圖掉落</a></li>
+        <li><a href="items.html">道具介紹</a></li>
+      </ul>
+    </div>
+    <div>
+      <div class="footer-col-title">聯絡我們</div>
+      <ul class="footer-links">
+        <li><a href="#" onclick="document.getElementById('modal-line').classList.add('open');return false;">LINE 官方社群</a></li>
+        <li><a href="promote.html">推文與直播</a></li>
+      </ul>
+    </div>
+  </div>
+  <div style="text-align:center;padding:20px 0;"><a href="https://www.gamex123.com/lineage.html" target="_blank"><img src="https://telegraph-image-1n0.pages.dev/file/AgACAgUAAyEGAAS3SV8sAAIDxmoVY552dFOKeKn6_vyXg1NzhUZCAAJnD2sbhZOoVPrpotXRf4rQAQADAgADeAADOwQ.gif" alt="" style="max-width:100%;display:block;margin:0 auto;"></a></div>
+  <div class="footer-copy">© 2026 尬電天堂 · 版權所有</div>
+</footer>
+
+<script src="main.js"></script>
+<script src="events-data.js"></script>
+<script>
+// 清涼氣泡粒子
+(function() {
+  const c = document.getElementById('particles');
+  for (let i = 0; i < 30; i++) {
+    const p = document.createElement('div');
+    p.className = 'particle';
+    p.style.left = Math.random() * 100 + '%';
+    p.style.animationDuration = (10 + Math.random() * 16) + 's';
+    p.style.animationDelay = (Math.random() * 18) + 's';
+    const s = 2 + Math.random() * 4;
+    p.style.width = s + 'px'; p.style.height = s + 'px';
+    // 氣泡半透明邊框效果
+    const colors = ['rgba(0,188,212,0.6)','rgba(128,222,234,0.5)','rgba(255,255,255,0.4)','rgba(66,165,245,0.5)','rgba(178,235,242,0.4)'];
+    const c2 = colors[Math.floor(Math.random() * colors.length)];
+    p.style.background = 'transparent';
+    p.style.border = '1px solid ' + c2;
+    p.style.boxShadow = 'inset 0 0 ' + (s/2) + 'px ' + c2;
+    c.appendChild(p);
+  }
+})();
+</script>
+<button id="backToTop" title="回到頂部">&#8679;</button>
+</body>
+</html>

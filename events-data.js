@@ -43,6 +43,14 @@ var EVENTS = [
     date:  '2026-05-12',
   },
   {
+    url:   'event-july-sponsor.html',
+    tag:   '贊助',
+    title: '🏆 七月累積贊助禮包',
+    desc:  '累積贊助達門檻送超值禮包！龍印魔石強化卷、神話製作秘笈、世足預購限定好禮',
+    date:  '2026-07-01',
+    pin:   true,
+  },
+  {
     url:   'event-summer.html',
     tag:   '活動',
     title: '💦沁涼消暑大作戰💦',
