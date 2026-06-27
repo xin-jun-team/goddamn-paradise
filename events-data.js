@@ -43,6 +43,14 @@ var EVENTS = [
     date:  '2026-05-12',
   },
   {
+    url:   'event-summer.html',
+    tag:   '活動',
+    title: '💦沁涼消暑大作戰💦',
+    desc:  '消暑冰霜・消暑西瓜・沁涼項鍊・燥熱的炎魔BOSS・活動時間 07/01~07/31',
+    date:  '2026-07-01',
+    pin:   true,
+  },
+  {
     url:   'sponsor.html',
     tag:   '首儲',
     title: '⚡ 首儲獎勵・英雄製作秘笈直送',
