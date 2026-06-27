@@ -10,37 +10,37 @@
   @import url('https://fonts.googleapis.com/css2?family=Noto+Serif+TC:wght@400;700;900&family=Oswald:wght@500;700&display=swap');
 
   :root {
-    --cool-dark: #071a2b;
-    --cool-navy: #0d2440;
-    --cool-blue: #1976d2;
-    --cool-cyan: #00bcd4;
-    --cool-ice: #e0f7fa;
-    --cool-mint: #80deea;
-    --field-green: #388e3c;
-    --field-dark: #1b5e20;
-    --field-light: #4caf50;
-    --gold: #ffd740;
-    --white: #ffffff;
-    --text-main: #e3f2fd;
-    --text-dim: #78909c;
-    --border: #1a3a5c;
-    --tier1: #cd7f32;
-    --tier2: #b0bec5;
-    --tier3: #ffd740;
-    --tier4: #ff9100;
-    --tier5: #e040fb;
-    --tier6: #ff1744;
+    --cool-dark: #071a2b !important;
+    --cool-navy: #0d2440 !important;
+    --cool-blue: #1976d2 !important;
+    --cool-cyan: #00bcd4 !important;
+    --cool-ice: #e0f7fa !important;
+    --cool-mint: #80deea !important;
+    --field-green: #388e3c !important;
+    --field-dark: #1b5e20 !important;
+    --field-light: #4caf50 !important;
+    --gold: #ffd740 !important;
+    --white: #ffffff !important;
+    --text-main: #e3f2fd !important;
+    --text-dim: #78909c !important;
+    --border: #1a3a5c !important;
+    --tier1: #cd7f32 !important;
+    --tier2: #b0bec5 !important;
+    --tier3: #ffd740 !important;
+    --tier4: #ff9100 !important;
+    --tier5: #e040fb !important;
+    --tier6: #ff1744 !important;
   }
 
   * { box-sizing: border-box; margin: 0; padding: 0; }
 
   body {
-    background: var(--cool-dark);
+    background: #071a2b !important;
     background-image:
       radial-gradient(ellipse at 20% 0%, rgba(0,188,212,0.1) 0%, transparent 50%),
-      radial-gradient(ellipse at 80% 0%, rgba(25,118,210,0.08) 0%, transparent 50%);
-    font-family: 'Noto Serif TC', '微軟正黑體', serif;
-    color: var(--text-main);
+      radial-gradient(ellipse at 80% 0%, rgba(25,118,210,0.08) 0%, transparent 50%) !important;
+    font-family: 'Noto Serif TC', '微軟正黑體', serif !important;
+    color: #e3f2fd !important;
     min-height: 100vh;
     padding: 0 0 60px 0;
   }
@@ -249,8 +249,8 @@
   .divider-ornament span { color: rgba(255,255,255,0.6); font-size: 18px; }
   .divider-ornament .line { flex: 1; height: 1px; background: linear-gradient(90deg, transparent, rgba(255,255,255,0.3), transparent); }
 
-  /* ===== 主內容容器 ===== */
-  .container { max-width: 1100px; margin: 0 auto; padding: 0 16px; }
+  /* ===== 主內容容器（覆蓋 style.css） ===== */
+  .container { max-width: 1100px !important; margin: 0 auto !important; padding: 0 16px !important; }
 
   /* ===== 說明欄 ===== */
   .notice-bar {
@@ -290,9 +290,9 @@
   .dragon-seal-bar .seal-icon { font-size: 32px; flex-shrink: 0; }
   .dragon-seal-bar strong { color: #42a5f5; }
 
-  /* ===== 禮包區段 ===== */
-  .section-header { text-align: center; margin: 50px 0 30px; }
-  .section-header h2 { font-size: 22px; color: #fff; letter-spacing: 6px; font-weight: 700; }
+  /* ===== 禮包區段（覆蓋 style.css） ===== */
+  .section-header { text-align: center !important; margin: 50px 0 30px !important; background: transparent !important; border: none !important; padding: 0 !important; backdrop-filter: none !important; -webkit-backdrop-filter: none !important; border-radius: 0 !important; }
+  .section-header h2 { font-size: 22px !important; color: #fff !important; letter-spacing: 6px !important; font-weight: 700 !important; background: none !important; -webkit-background-clip: unset !important; -webkit-text-fill-color: #fff !important; background-clip: unset !important; }
   .section-header .under-line {
     width: 200px; height: 2px;
     background: linear-gradient(90deg, transparent, var(--cool-cyan), transparent);
